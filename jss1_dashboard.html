@@ -11,10 +11,11 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Inter', sans-serif;
-            /* background image with full visibility */
+            /* Background image - 25% size and centered */
             background: url('img/wisdom_logo1.png') no-repeat center center fixed;
             background-color: #f5a623;
-            background-size: contain;
+            background-size: 25%;
+            background-position: center;
             min-height: 100vh;
             padding: 20px;
             position: relative;
@@ -27,7 +28,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(255, 215, 0, 0.25);
+            background-color: rgba(255, 215, 0, 0.3);
             z-index: 0;
             pointer-events: none;
         }
@@ -206,12 +207,15 @@
                 gap: 12px;
                 text-align: center;
             }
+            body {
+                background-size: 40%; /* slightly larger on mobile for visibility */
+            }
         }
     </style>
 </head>
 <body oncontextmenu="return false;">
 <div class="container">
-    <!-- LOGO CENTERED using proper CSS - replacing the centre tag -->
+    <!-- LOGO CENTERED using proper CSS -->
     <div class="logo-centre">
         <img src="img/wisdom_logo1.png" alt="School Logo">
     </div>
