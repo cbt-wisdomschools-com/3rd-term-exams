@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Login | WISDOM FOUNDATION School Ado Ekiti</title>
+     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* same as before, no changes */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: url('img/lab1.png') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+            opacity: 0.7;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 0;
+        }
+        .login-card {
+            background: white;
+            max-width: 450px;
+            width: 100%;
+            border-radius: 32px;
+            padding: 2rem 1.8rem;
+            box-shadow: 0 20px 35px rgba(0,0,0,0.2);
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 15px;
+        }
+        .logo img {
+            width: 100%;
+            height: auto;
+        }
+        h2 {
+            color: yellow;
+            margin-bottom: 8px;
+            font-size: 1.8rem;
+        }
+        .sub {
+            color: #6c757d;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+        .input-group {
+            text-align: left;
+            margin-bottom: 1.2rem;
+        }
+        .input-group label {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 6px;
+            color: #0a2f44;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 50px;
+            font-size: 1rem;
+            transition: 0.2s;
+        }
+        .input-group input:focus {
+            outline: none;
+            border-color: #ffb347;
+            box-shadow: 0 0 0 3px rgba(255,180,71,0.2);
+        }
+        .btn {
+            background: black;
+            color: yellow;
+            border: none;
+            width: 100%;
+            padding: 12px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.2s;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background: yellow;
+            color: red;
+        }
+        .error-msg {
+            color: #d9534f;
+            font-size: 0.85rem;
+            margin-top: 12px;
+            background: #f8d7da;
+            padding: 8px;
+            border-radius: 50px;
+            display: none;
+        }
+        footer {
+            margin-top: 1.5rem;
+            font-size: 0.75rem;
+            color: #6c757d;
+        }
+        @media (max-width: 500px) {
+            .login-card {
+                padding: 1.5rem;
+            }
+            .logo {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    </style>
+</head>
+<body oncontextmenu="return false;">
+<div class="login-card">
+    <div class="logo">
+        <img src="img/mainlogo.png" alt="Ado Community Logo">
+    </div>
+    <h2>CBT  EXAMS PORTAL</h2>
+    <div class="sub">Enter your username and password </div>
+
+    <form id="loginForm">
+        <div class="input-group">
+            <label><i class="fas fa-user"></i> Username </label>
+            <input type="text" id="username" placeholder="e.g. Michael owen" required>
+        </div>
+        <div class="input-group">
+            <label><i class="fas fa-lock"></i> Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div id="errorMsg" class="error-msg"></div>
+    </form>
+    <footer>WISDOM FOUNDATION SCHOOL ADO EKITI – GATEWAY TO UNIVERSITY</footer>
+    <a href="index.html">HOME</a>
+</div>
+
+<script>
+    // Array of dummy users with username, password, classPrefix, paid status, and image filename
+  
+         const users = [
+
+        
+                { username: "Shehu Ahmeed Marvelous", password: "wfs101", classPrefix: "wfs1", paid: true,  image: "wfs101.png" },
+
+                // JSS1 STUDENTS GIRLS
+                { username: "Fasuan Obaloluwa Adebowale", password: "wfs102", classPrefix: "wfs1", paid: true,  image: "wfs102.png" },
+
+               // JSS2 STUDENTS BOYS
+                { username: "George Emmanuel", password: "wfs201", classPrefix: "wfs2", paid: true,  image: "wfs201.png" },
+                { username: "Adejemilua Peter", password: "wfs202", classPrefix: "wfs2", paid: true,  image: "wfs202.png" },
+                { username: "Oke Ayobami", password: "wfs203", classPrefix: "wfs2", paid: true,  image: "wfs203.png" },
+                { username: "Ibrahim Abdulsalami", password: "wfs204", classPrefix: "wfs2", paid: true,  image: "wfs204.png" },
+                { username: "Chukwuemeka Emmanuel", password: "wfs205", classPrefix: "wfs2", paid: true,  image: "wfs205.png" },
+                { username: "Olorungbohunmi Ayo", password: "wfs206", classPrefix: "wfs2", paid: true,  image: "wfs206.png" },
+
+                { username: "Dada Tiwalade", password: "wfs207", classPrefix: "wfs2", paid: true,  image: "wfs207.png" },
+                { username: "Nofiu Habibat", password: "wfs208", classPrefix: "wfs2", paid: true,  image: "wfs208.png" },
+                { username: "Fasuan Adetutu", password: "wfs209", classPrefix: "wfs2", paid: true,  image: "wfs209.png" },
+
+                { username: "Salami Semilore", password: "wfs210", classPrefix: "wfs2", paid: true,  image: "wfs210.jpg" },
+
+                // JSS2 STUDENTS GIRLS
+                { username: "Shinaola Treasure", password: "wfs211", classPrefix: "wfs2", paid: true,  image: "wfs211.png" },
+
+
+                // JSS3 STUDENTS BOYS
+                { username: "Abdulateef Qudus Ademola", password: "wfs301", classPrefix: "wfs3", paid: true,  image: "wfs301.png" },
+                { username: "Afeez Abdulahi Pelumi", password: "wfs302", classPrefix: "wfs3", paid: true,  image: "wfs302.png" },
+                { username: "Isaac Richard Feranmi", password: "wfs303", classPrefix: "wfs3", paid: true,  image: "wfs303.png" },
+                { username: "Ogunmiloyo Inioluwa David", password: "wfs304", classPrefix: "wfs3", paid: true,  image: "wfs304.png" },
+                { username: "Oladiti David Henry", password: "wfs305", classPrefix: "wfs3", paid: true,  image: "wfs305.png" },
+
+                // JSS3 STUDENTS GIRLS
+                { username: "Adebayo Khadijat Iyanu", password: "wfs306", classPrefix: "wfs3", paid: true,  image: "wfs306.png" },
+                { username: "Akindele Dunsi Faith", password: "wfs307", classPrefix: "wfs3", paid: true,  image: "wfs307.png" },
+                { username: "Olusola Divine Oluwaseun", password: "wfs308", classPrefix: "wfs3", paid: true,  image: "wfs308.png" },
+                { username: "Onuchie Amarachukwu Esther", password: "wfs309", classPrefix: "wfs3", paid: true,  image: "wfs309.png" },
+                { username: "Umar Fatima Lamine", password: "wfs310", classPrefix: "wfs3", paid: true,  image: "wfs310.png" },
+
+                  // SS1 STUDENTS BOYS
+                { username: "Ajisafe Ezekeil", password: "wfs401", classPrefix: "wfs4", paid: true,  image: "wfs401.png" },
+                { username: "Omolade Darasimi", password: "wfs402", classPrefix: "wfs4", paid: true,  image: "wfs402.png" },
+                { username: "Owolabi Timilehin Testimony", password: "wfs403", classPrefix: "wfs4", paid: true,  image: "wfs403.png" },
+                { username: "Umar Aliyu", password: "wfs404", classPrefix: "wfs4", paid: true,  image: "wfs404.png" },
+                { username: "Dada Faramade", password: "wfs405", classPrefix: "wfs4", paid: true,  image: "wfs405.png" },
+                { username: "Bayode Goodness Opemipo", password: "wfs406", classPrefix: "wfs4", paid: true,  image: "wfs406.png" },
+
+                // SS1 STUDENTS GIRLS
+                { username: "Oke Inumidun", password: "wfs407", classPrefix: "wfs4", paid: true,  image: "wfs407.png" },
+                { username: "Akindele Mayorkun Rachael", password: "wfs408", classPrefix: "wfs4", paid: true,  image: "wfs408.png" },
+                { username: "Lawal Desmond", password: "wfs409", classPrefix: "wfs4", paid: true,  image: "wfs409.png" },
+
+               
+                // SS2 STUDENTS BOYS
+                { username: "Aborisadede Timilehin Ayomide", password: "wfs501", classPrefix: "wfs5", paid: true,  image: "wfs501.png" },
+                { username: "Adebisi Mahfouz Adewole", password: "wfs502", classPrefix: "wfs5", paid: true,  image: "wfs502.png" },
+                { username: "Adekunle Samuel Ayomikun", password: "wfs503", classPrefix: "wfs5", paid: true,  image: "wfs503.png" },
+                { username: "Adeyemi Obasanjo Toheeb", password: "wfs504", classPrefix: "wfs5", paid: true,  image: "wfs504.png" },
+                { username: "Ikpengwa Emmanuel", password: "wfs505", classPrefix: "wfs5", paid: true,  image: "wfs505.png" },
+                { username: "Olofintoye Victor Omobarewa", password: "wfs506", classPrefix: "wfs5", paid: true,  image: "wfs506.png" },
+                { username: "Olumide Erioluwa Emmanuel", password: "wfs507", classPrefix: "wfs5", paid: true,  image: "wfs507.png" },
+                { username: "Oluwadare Praise Ayowamide", password: "wfs508", classPrefix: "wfs5", paid: true,  image: "wfs508.png" },
+                { username: "Gabriel Victor Kachisieme", password: "wfs509", classPrefix: "wfs5", paid: true,  image: "wfs509.png" },
+
+                // SS2 STUDENTS GIRLS
+                { username: "Adeola Precious Eniola", password: "wfs510", classPrefix: "wfs5", paid: true,  image: "wfs510.png" },
+                { username: "Afolalu Faith Toluwanimi", password: "wfs511", classPrefix: "wfs5", paid: true,  image: "wfs511.png" },
+                { username: "Olorunmaiye Nifemi Faith", password: "wfs512", classPrefix: "wfs5", paid: true,  image: "wfs512.png" },
+                { username: "Olowoyo Kemisola Glory", password: "wfs513", classPrefix: "wfs5", paid: true,  image: "wfs513.png" },
+                { username: "Ariyo Elizabeth Celestina", password: "wfs514", classPrefix: "wfs5", paid: true,  image: "wfs514.png" },
+
+                // SS3 STUDENTS BOYS
+                { username: "Abdulateef Abdulbasit", password: "wfs601", classPrefix: "wfs6", paid: true,  image: "wfs601.png" },
+                { username: "Adediran Ayomide", password: "wfs602", classPrefix: "wfs6", paid: true,  image: "wfs602.png" },
+                { username: "Atolagbe Peace", password: "wfs603", classPrefix: "wfs6", paid: true,  image: "wfs603.png" },
+                { username: "Chimobi Vincent", password: "wfs604", classPrefix: "wfs6", paid: true,  image: "wfs604.png" },
+                { username: "Dada Babalola Joshua", password: "wfs605", classPrefix: "wfs6", paid: true,  image: "wfs605.png" },
+                { username: "Enemchukwu Michael", password: "wfs606", classPrefix: "wfs6", paid: true,  image: "wfs606.png" },
+                { username: "Ifeanyi Augustine", password: "wfs607", classPrefix: "wfs6", paid: true,  image: "wfs607.png" },
+                { username: "Oladiti Inumidun", password: "wfs608", classPrefix: "wfs6", paid: true,  image: "wfs608.png" },
+                { username: "Olusola Dennis", password: "wfs609", classPrefix: "wfs6", paid: true,  image: "wfs609.png" },
+                { username: "Umar Muhammed", password: "wfs610", classPrefix: "wfs6", paid: true,  image: "wfs610.png" },
+
+                // SS3 STUDENTS GIRLS
+                { username: "Abe Favour", password: "wfs611", classPrefix: "wfs6", paid: true,  image: "wfs611.png" },
+                { username: "Afinjuomo Mercy", password: "wfs612", classPrefix: "wfs6", paid: true,  image: "wfs612.png" },
+                { username: "Ajisola Rachael", password: "wfs613", classPrefix: "wfs6", paid: true,  image: "wfs613.png" },
+                { username: "Enemchukwu Victoria", password: "wfs614", classPrefix: "wfs6", paid: true,  image: "wfs614.png" },
+                { username: "Omodaratan Diamond", password: "wfs615", classPrefix: "wfs6", paid: true,  image: "wfs615.png" },
+                { username: "Ibrahim Ganiyat Oluwaseun", password: "wfs616", classPrefix: "wfs6", paid: true,  image: "wfs616.png" },
+                { username: "Chibueze Victoria", password: "wfs617", classPrefix: "wfs6", paid: true,  image: "wfs617.png" },
+
+                // ADMIN (optional)
+                { username: "admin", password: "wfs100", classPrefix: "wfs1", paid: true, image: "admin.png" }
+            
+
+      
+    ];
+
+    // Mapping class prefix to dashboard page
+    const classMap = {
+        'wfs1': 'jss1_dashboard.html',
+        'wfs2': 'jss2_dashboard.html',
+        'wfs3': 'jss3_dashboard.html',
+        'wfs4': 'ss1_dashboard.html',
+        'wfs5': 'ss2_dashboard.html',
+        'wfs6': 'ss3_dashboard.html'
+    };
+
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const username = document.getElementById('username').value.trim();
+        const password = document.getElementById('password').value.trim();
+        const errorDiv = document.getElementById('errorMsg');
+
+        if (!username || !password) {
+            errorDiv.style.display = 'block';
+            errorDiv.textContent = 'Please fill in both fields.';
+            return;
+        }
+
+        const user = users.find(u => u.username === username && u.password === password);
+        if (!user) {
+            errorDiv.style.display = 'block';
+            errorDiv.textContent = 'Invalid username or password.';
+            return;
+        }
+
+        // Check payment status
+        if (user.paid === false) {
+            localStorage.setItem('debtorUsername', username);
+            window.location.href = 'debtors.html';
+            return;
+        }
+
+        const classPrefix = user.classPrefix;
+        const dashboardPage = classMap[classPrefix];
+        if (!dashboardPage) {
+            errorDiv.style.display = 'block';
+            errorDiv.textContent = 'Invalid class prefix. Contact admin.';
+            return;
+        }
+
+        // Store full user info (including image) in localStorage
+        localStorage.setItem('studentUsername', username);
+        localStorage.setItem('studentClass', classPrefix);
+        localStorage.setItem('studentImage', user.image);   // store image filename
+        localStorage.setItem('loggedInUser', JSON.stringify(user));
+
+        window.location.href = dashboardPage;
+    });
+</script>
+</body>
+</html>
