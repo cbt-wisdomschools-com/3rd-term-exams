@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>JSS1 Dashboard | Wisdom Foundation School</title>
+    <title>SS1 Dashboard | Wisdom Foundation School</title>
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -285,16 +285,13 @@
             </div>
         </div>
         <div class="top-bar-actions">
-            <!--<a href="admin_reset.html" class="admin-link" title="Admin Panel">
-                <i class="fas fa-user-shield"></i> Admin
-            </a>-->
             <button class="logout-top" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Logout</button>
         </div>
     </div>
 
     <div class="school-header">
         <img src="img/wisdom_logo1.png" alt="School Logo">
-        <h1>WISDOM FOUNDATION SCHOOLS JSS1 3RD TERM EXAMINATION BOARD</h1>
+        <h1>WISDOM FOUNDATION SCHOOLS SS1 3RD TERM EXAMINATION BOARD</h1>
     </div>
     <div class="welcome-card">
         <p>Welcome, <strong id="studentName">Student</strong>! Select a subject below and enter the subject password to begin your exam. <strong>Note:</strong> Once you submit an exam, you cannot retake it.</p>
@@ -314,7 +311,7 @@
 <script>
     // ======================= SESSION CHECK =======================
     const studentUsername = localStorage.getItem('studentUsername');
-    const studentClass = localStorage.getItem('studentClass') || 'jss1';
+    const studentClass = localStorage.getItem('studentClass') || 'ss1';
     const studentImage = localStorage.getItem('studentImage') || 'default.jpg';
     const isLoggedIn = localStorage.getItem('isLoggedIn');
 
@@ -333,30 +330,88 @@
 
     console.log(`✅ Dashboard loaded for: ${studentUsername} (${studentClass})`);
 
-  // ======================= JSS1 SUBJECT PASSWORDS =======================
-const classSubjectPasswords = {
-    jss1: {
-        intermediate_science: "w5r6t3",
-        music: "k9m4n2",
-        mathematics: "x8p7q1",
-        french: "f3r6c9",
-        agric_science: "a4s7d2",
-        livestock_farming: "l8v5k1",
-        cultural_art: "c6a9t3",
-        history: "h2i4s7",
-        basic_science: "b8s5c1",
-        basic_technology: "t6e9c2",
-        yoruba: "y4o7r3",
-        civic_education: "c8v9d1",
-        citizenship_studies: "c5t6s2",
-        fine_art: "f4a8r3",
-        phe: "p9h6e2",
-        crs: "c7r5s3",
-        social_studies: "s8c6t1",
-        business_studies: "b9s4n2",
-        digital_technology: "d7g5t3"
-    }
-};
+    // ======================= SUBJECT PASSWORDS =======================
+    const classSubjectPasswords = {
+     
+        // SS1 Subjects
+        ss1: {
+            mathematics: "mat401",
+            english_language: "eng401",
+            citizenship_education: "cit401",
+            physics: "phy401",
+            digital_technology: "dig401",
+            economics: "eco401",
+            livestock_farming: "liv401",
+            chemistry: "che401",
+            biology: "bio401",
+            cultural_art: "art401",
+            yoruba: "yor401",
+            geography: "geo401",
+            crs: "crs401",
+            account: "acc401",
+            government: "gov401",
+            commerce: "com401",
+            literature_in_english: "lit401",
+            marketing: "mkt401",
+            fine_art: "fin401",
+            phonics: "pho401",
+            further_mathematics: "fma401",
+            music: "mus401",
+            history: "his401"
+        },
+        // SS2 Subjects
+        ss2: {
+            mathematics: "mat501",
+            english_language: "eng501",
+            citizenship_education: "cit501",
+            physics: "phy501",
+            digital_technology: "dig501",
+            economics: "eco501",
+            livestock_farming: "liv501",
+            chemistry: "che501",
+            biology: "bio501",
+            cultural_art: "art501",
+            yoruba: "yor501",
+            geography: "geo501",
+            crs: "crs501",
+            account: "acc501",
+            government: "gov501",
+            commerce: "com501",
+            literature_in_english: "lit501",
+            marketing: "mkt501",
+            fine_art: "fin501",
+            phonics: "pho501",
+            further_mathematics: "fma501",
+            music: "mus501",
+            history: "his501"
+        },
+        // SS3 Subjects
+        ss3: {
+            mathematics: "mat601",
+            english_language: "eng601",
+            citizenship_education: "cit601",
+            physics: "phy601",
+            digital_technology: "dig601",
+            economics: "eco601",
+            livestock_farming: "liv601",
+            chemistry: "che601",
+            biology: "bio601",
+            cultural_art: "art601",
+            yoruba: "yor601",
+            geography: "geo601",
+            crs: "crs601",
+            account: "acc601",
+            government: "gov601",
+            commerce: "com601",
+            literature_in_english: "lit601",
+            marketing: "mkt601",
+            fine_art: "fin601",
+            phonics: "pho601",
+            further_mathematics: "fma601",
+            music: "mus601",
+            history: "his601"
+        }
+    };
 
     // ======================= EXAM ATTEMPT TRACKING =======================
     function getExamAttempts(cls) {
@@ -385,27 +440,31 @@ const classSubjectPasswords = {
         console.log(`✅ Exam marked completed: ${username} - ${sub} in ${cls}`);
     }
 
-    // ======================= SUBJECT LIST =======================
+    // ======================= SUBJECT LIST (Updated for all classes) =======================
     const subjects = [
-        { name: "Intermediate Science", key: "intermediate_science" },
-        { name: "Music", key: "music" },
         { name: "Mathematics", key: "mathematics" },
-        { name: "French", key: "french" },
-        { name: "Agric Science", key: "agric_science" },
+        { name: "English Language", key: "english_language" },
+        { name: "Citizenship Education", key: "citizenship_education" },
+        { name: "Physics", key: "physics" },
+        { name: "Digital & Computer Technology", key: "digital_technology" },
+        { name: "Economics", key: "economics" },
         { name: "Livestock Farming", key: "livestock_farming" },
-        { name: "Cultural Art", key: "cultural_art" },
-        { name: "History", key: "history" },
-        { name: "Basic Science", key: "basic_science" },
-        { name: "Basic Technology", key: "basic_technology" },
+        { name: "Chemistry", key: "chemistry" },
+        { name: "Biology", key: "biology" },
+        { name: "Cultural & Creative Art", key: "cultural_art" },
         { name: "Yoruba", key: "yoruba" },
-        { name: "Civic Education", key: "civic_education" },
-        { name: "Citizenship Studies", key: "citizenship_studies" },
+        { name: "Geography", key: "geography" },
+        { name: "Christian Religious Studies", key: "crs" },
+        { name: "Financial Accounting", key: "account" },
+        { name: "Government", key: "government" },
+        { name: "Commerce", key: "commerce" },
+        { name: "Literature in English", key: "literature_in_english" },
+        { name: "Marketing", key: "marketing" },
         { name: "Fine Art", key: "fine_art" },
-        { name: "PHE", key: "phe" },
-        { name: "CRS", key: "crs" },
-        { name: "Social Studies", key: "social_studies" },
-        { name: "Business Studies", key: "business_studies" },
-        { name: "Digital Technology", key: "digital_technology" }
+        { name: "Phonics", key: "phonics" },
+        { name: "Further Mathematics", key: "further_mathematics" },
+        { name: "Music", key: "music" },
+        { name: "Nigerian History", key: "history" }
     ];
 
     const container = document.getElementById('subjectsContainer');
@@ -473,7 +532,7 @@ const classSubjectPasswords = {
         localStorage.setItem("pendingClass", studentClass);
         localStorage.setItem("pendingSubject", subjectKey);
         
-        // Construct exam file name (matches your actual file naming)
+        // Construct exam file name
         const examFileName = `${studentClass}_${subjectKey}_exam.html`;
         
         try {
@@ -483,7 +542,6 @@ const classSubjectPasswords = {
                 window.location.href = examFileName;
             } else {
                 alert(`⚠️ Exam page for ${subjectDisplay} is not available yet. Please contact your teacher.`);
-                // Redirect to a fallback or stay
             }
         } catch (error) {
             console.error("Fetch error:", error);
@@ -545,7 +603,7 @@ const classSubjectPasswords = {
         return sessionStorage.getItem("class") || localStorage.getItem("pendingClass") || studentClass;
     };
     
-    console.log(`✅ JSS1 Dashboard ready. Student: ${studentUsername}, Class: ${studentClass}`);
+    console.log(`✅ Dashboard ready. Student: ${studentUsername}, Class: ${studentClass}`);
     console.log(`📚 ${subjects.length} subjects loaded.`);
 </script>
 </body>

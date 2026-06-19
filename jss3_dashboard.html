@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>JSS1 Dashboard | Wisdom Foundation School</title>
+    <title>JSS3 Dashboard | Wisdom Foundation School</title>
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -294,7 +294,7 @@
 
     <div class="school-header">
         <img src="img/wisdom_logo1.png" alt="School Logo">
-        <h1>WISDOM FOUNDATION SCHOOLS JSS1 3RD TERM EXAMINATION BOARD</h1>
+        <h1>WISDOM FOUNDATION SCHOOLS JSS3 3RD TERM EXAMINATION BOARD</h1>
     </div>
     <div class="welcome-card">
         <p>Welcome, <strong id="studentName">Student</strong>! Select a subject below and enter the subject password to begin your exam. <strong>Note:</strong> Once you submit an exam, you cannot retake it.</p>
@@ -314,7 +314,7 @@
 <script>
     // ======================= SESSION CHECK =======================
     const studentUsername = localStorage.getItem('studentUsername');
-    const studentClass = localStorage.getItem('studentClass') || 'jss1';
+    const studentClass = localStorage.getItem('studentClass') || 'jss3';
     const studentImage = localStorage.getItem('studentImage') || 'default.jpg';
     const isLoggedIn = localStorage.getItem('isLoggedIn');
 
@@ -333,28 +333,28 @@
 
     console.log(`✅ Dashboard loaded for: ${studentUsername} (${studentClass})`);
 
-  // ======================= JSS1 SUBJECT PASSWORDS =======================
+  // ======================= JSS3 SUBJECT PASSWORDS =======================
 const classSubjectPasswords = {
-    jss1: {
-        intermediate_science: "w5r6t3",
-        music: "k9m4n2",
-        mathematics: "x8p7q1",
-        french: "f3r6c9",
-        agric_science: "a4s7d2",
-        livestock_farming: "l8v5k1",
-        cultural_art: "c6a9t3",
-        history: "h2i4s7",
-        basic_science: "b8s5c1",
-        basic_technology: "t6e9c2",
-        yoruba: "y4o7r3",
-        civic_education: "c8v9d1",
-        citizenship_studies: "c5t6s2",
-        fine_art: "f4a8r3",
-        phe: "p9h6e2",
-        crs: "c7r5s3",
-        social_studies: "s8c6t1",
-        business_studies: "b9s4n2",
-        digital_technology: "d7g5t3"
+    jss3: {
+        intermediate_science: "x9v5m3",
+        music: "p2n6r8",
+        mathematics: "w4e7q9",
+        french: "b8c3f6",
+        agric_science: "d5s9k2",
+        livestock_farming: "l7m4n1",
+        cultural_art: "t6a3c8",
+        history: "j8h5p2",
+        basic_science: "n4b7c3",
+        basic_technology: "r9t5e2",
+        yoruba: "o7y3p6",
+        civic_education: "v4c8d1",
+        citizenship_studies: "t3s7c9",
+        fine_art: "a6f9r4",
+        phe: "h8p3e5",
+        crs: "s4r8c7",
+        social_studies: "c7s9t5",
+        business_studies: "n6b8s4",
+        digital_technology: "g9d6t3"
     }
 };
 
@@ -545,7 +545,7 @@ const classSubjectPasswords = {
         return sessionStorage.getItem("class") || localStorage.getItem("pendingClass") || studentClass;
     };
     
-    console.log(`✅ JSS1 Dashboard ready. Student: ${studentUsername}, Class: ${studentClass}`);
+    console.log(`✅ JSS3 Dashboard ready. Student: ${studentUsername}, Class: ${studentClass}`);
     console.log(`📚 ${subjects.length} subjects loaded.`);
 </script>
 </body>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exam Results | Christ’s School</title>
+    <title>Exam Results | Wisdom Foundation School</title>
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -21,7 +21,7 @@
             justify-content: center;
             align-items: center;
             padding: 20px;
-            background: linear-gradient(135deg, #0a2f44 0%, #1e1a4b 100%);
+            background: linear-gradient(135deg, #FF00FF 0%, #FF1493 50%, #C71585 100%);
             position: relative;
         }
 
@@ -33,9 +33,10 @@
             right: -10%;
             width: 400px;
             height: 400px;
-            background: rgba(114, 46, 209, 0.2);
+            background: rgba(255, 215, 0, 0.15);
             border-radius: 50%;
             z-index: 0;
+            animation: float 6s ease-in-out infinite;
         }
 
         body::after {
@@ -45,9 +46,16 @@
             left: -10%;
             width: 350px;
             height: 350px;
-            background: rgba(10, 47, 68, 0.3);
+            background: rgba(255, 215, 0, 0.1);
             border-radius: 50%;
             z-index: 0;
+            animation: float 8s ease-in-out infinite reverse;
+        }
+
+        @keyframes float {
+            0% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(30px, -30px) scale(1.1); }
+            100% { transform: translate(0, 0) scale(1); }
         }
 
         .result-card {
@@ -57,39 +65,42 @@
             border-radius: 48px;
             padding: 40px 35px;
             text-align: center;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
             position: relative;
             z-index: 1;
             backdrop-filter: blur(2px);
             transition: transform 0.3s ease;
+            border: 2px solid rgba(255, 215, 0, 0.3);
         }
 
         .result-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 30px 60px -12px rgba(255, 215, 0, 0.3);
         }
 
         .logout-result {
             position: absolute;
             top: 25px;
             right: 25px;
-            background: linear-gradient(135deg, #6f42c1, #8e44ad);
-            color: white;
+            background: linear-gradient(135deg, #FFD700, #FFC107);
+            color: #1a1a2e;
             border: none;
             padding: 8px 18px;
             border-radius: 40px;
             cursor: pointer;
-            font-weight: 600;
+            font-weight: 700;
             font-size: 0.85rem;
             transition: 0.2s;
             display: flex;
             align-items: center;
             gap: 8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
         }
 
         .logout-result:hover {
-            background: linear-gradient(135deg, #5a32a3, #7a3b9a);
-            transform: scale(1.02);
+            background: linear-gradient(135deg, #FFC107, #FFB300);
+            transform: scale(1.05) translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
         }
 
         .school-logo img {
@@ -98,30 +109,43 @@
             background: white;
             border-radius: 50%;
             padding: 8px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3);
+            border: 2px solid #FFD700;
         }
 
         h1 {
             font-size: 2rem;
             font-weight: 800;
-            background: linear-gradient(135deg, #0a2f44, #6f42c1);
+            background: linear-gradient(135deg, #FFD700, #FFA500, #FF8C00);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
             margin-bottom: 8px;
         }
 
+        .school-motto {
+            font-size: 0.9rem;
+            color: #FFD700;
+            background: rgba(255, 215, 0, 0.1);
+            display: inline-block;
+            padding: 4px 16px;
+            border-radius: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
         .subject-name {
             font-size: 1.1rem;
-            font-weight: 600;
-            background: linear-gradient(135deg, #6f42c1, #a855f7);
+            font-weight: 700;
+            background: linear-gradient(135deg, #FFD700, #FFA500);
             display: inline-block;
             padding: 6px 20px;
             border-radius: 60px;
-            color: white;
+            color: #1a1a2e;
             margin-bottom: 20px;
             letter-spacing: 0.5px;
-            box-shadow: 0 4px 12px rgba(111, 66, 193, 0.3);
+            box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
         }
 
         .student-info {
@@ -130,11 +154,11 @@
             justify-content: center;
             gap: 25px;
             margin: 25px 0;
-            background: linear-gradient(135deg, #f8f9ff, #f0eaff);
+            background: linear-gradient(135deg, #FFF8E1, #FFF3CD);
             padding: 20px 25px;
             border-radius: 40px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-            border: 1px solid rgba(111, 66, 193, 0.2);
+            box-shadow: 0 8px 20px rgba(255, 215, 0, 0.15);
+            border: 1px solid rgba(255, 215, 0, 0.3);
         }
 
         .student-avatar {
@@ -142,19 +166,19 @@
             height: 85px;
             border-radius: 50%;
             object-fit: cover;
-            border: 3px solid #6f42c1;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            border: 3px solid #FFD700;
+            box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
         }
 
         .student-details p {
-            color: #4a5568;
-            font-weight: 500;
+            color: #5a4a2a;
+            font-weight: 600;
             font-size: 0.85rem;
             margin-bottom: 4px;
         }
 
         .student-details h3 {
-            color: #0a2f44;
+            color: #1a1a2e;
             font-size: 1.5rem;
             font-weight: 700;
             margin-bottom: 5px;
@@ -163,7 +187,7 @@
         .score-circle {
             width: 200px;
             height: 200px;
-            background: linear-gradient(145deg, #0a2f44, #1e1a4b);
+            background: linear-gradient(145deg, #1a1a2e, #2d2d44);
             border-radius: 50%;
             margin: 20px auto;
             display: flex;
@@ -171,57 +195,78 @@
             justify-content: center;
             align-items: center;
             color: white;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-            border: 4px solid rgba(255,255,255,0.2);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            border: 4px solid #FFD700;
+            position: relative;
+        }
+
+        .score-circle::before {
+            content: "⭐";
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            font-size: 2rem;
+            animation: spin 10s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
 
         .score-number {
             font-size: 3.5rem;
             font-weight: 800;
             letter-spacing: 2px;
+            color: #FFD700;
         }
 
         .percentage {
             font-size: 1.4rem;
             margin-top: 8px;
             font-weight: 700;
-            background: rgba(255,255,255,0.2);
+            background: rgba(255, 215, 0, 0.2);
             padding: 4px 12px;
             border-radius: 40px;
+            color: #FFD700;
         }
 
         .message {
             margin: 25px 0 20px;
             font-size: 1.1rem;
-            font-weight: 500;
-            color: #2d3748;
-            background: #edf2f7;
+            font-weight: 600;
+            color: #1a1a2e;
+            background: linear-gradient(135deg, #FFF8E1, #FFECD2);
             padding: 12px 20px;
             border-radius: 60px;
             display: inline-block;
             width: auto;
+            border: 1px solid rgba(255, 215, 0, 0.2);
         }
 
         .confirm-section {
-            background: linear-gradient(135deg, #e6f7ec, #d4f0e0);
-            border: 1px solid #28a745;
+            background: linear-gradient(135deg, #FFF8E1, #FFECD2);
+            border: 2px solid #FFD700;
             border-radius: 28px;
             padding: 22px 20px;
             margin: 25px 0 15px;
             text-align: center;
-            box-shadow: 0 6px 14px rgba(40,167,69,0.15);
+            box-shadow: 0 6px 14px rgba(255, 215, 0, 0.2);
         }
 
         .confirm-message {
             font-size: 1rem;
-            color: #1e7e34;
+            color: #5a4a2a;
             margin-bottom: 15px;
             font-weight: 600;
+        }
+        .confirm-message strong {
+            color: #FFD700;
         }
 
         .btn {
             display: inline-block;
-            background: #0a2f44;
+            background: #1a1a2e;
             color: white;
             padding: 12px 32px;
             border-radius: 60px;
@@ -236,13 +281,16 @@
         }
 
         .btn-success {
-            background: linear-gradient(135deg, #28a745, #20c997);
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            color: #1a1a2e;
+            font-weight: 800;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
         }
 
         .btn-success:hover {
-            background: linear-gradient(135deg, #218838, #1ba87b);
-            transform: scale(1.02);
-            box-shadow: 0 6px 14px rgba(40,167,69,0.3);
+            background: linear-gradient(135deg, #FFC107, #FF8C00);
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
         }
 
         .btn:hover {
@@ -251,10 +299,37 @@
 
         #datetime {
             font-size: 0.75rem;
-            color: #718096;
+            color: #999;
             margin-top: 20px;
             border-top: 1px solid #e2e8f0;
             padding-top: 15px;
+        }
+
+        .footer-text {
+            font-size: 0.7rem;
+            color: #999;
+            margin-top: 10px;
+            font-weight: 500;
+        }
+        .footer-text i {
+            color: #FFD700;
+        }
+
+        /* Loading spinner */
+        .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: #1a1a2e;
+            animation: spin 0.8s linear infinite;
+            margin-right: 8px;
+        }
+
+        .btn-loading {
+            opacity: 0.7;
+            cursor: not-allowed;
         }
 
         @media (max-width: 550px) {
@@ -288,9 +363,10 @@
 <div class="result-card">
     <button class="logout-result" id="logoutResultBtn"><i class="fas fa-sign-out-alt"></i> Logout</button>
     <div class="school-logo">
-        <img src="img/school-logo1.png" alt="School Logo">
+        <img src="img/wisdom_logo1.png" alt="Wisdom Foundation School Logo">
     </div>
     <h1>📊 Examination Result</h1>
+    <div class="school-motto"><i class="fas fa-graduation-cap"></i> Gateway to the university</div>
     <div class="subject-name" id="subjectName">Mathematics</div>
 
     <div class="student-info">
@@ -317,6 +393,7 @@
     </div>
 
     <p id="datetime"></p>
+    <div class="footer-text"><i class="fas fa-crown"></i> Wisdom Foundation School Ado Ekiti – Gateway to the university</div>
 </div>
 
 <script>
@@ -355,11 +432,11 @@
             localStorage.removeItem('pendingSubject');
             localStorage.removeItem('pendingUsername');
             sessionStorage.clear();
-            window.location.href = 'login.html';
+            window.location.href = 'cbt_login.html';
         }
     }
 
-    // ======================= EXAM ATTEMPT TRACKING =======================
+    // ======================= EXAM ATTEMPT TRACKING (Matches Dashboard) =======================
     function getExamAttempts(cls) {
         const key = `${cls}_exam_attempts`;
         const stored = localStorage.getItem(key);
@@ -371,6 +448,7 @@
         localStorage.setItem(key, JSON.stringify(data));
     }
 
+    // This function matches exactly with the dashboard's markExamCompleted
     function markExamCompleted(cls, sub, username) {
         const attempts = getExamAttempts(cls);
         if (!attempts[username]) {
@@ -379,10 +457,19 @@
         attempts[username][sub] = true;
         saveExamAttempts(cls, attempts);
         console.log(`✅ Exam marked as completed for ${username} - ${sub} in ${cls}`);
+        return true;
     }
 
-    // ======================= CONFIRM ATTEMPT (redirects to login) =======================
+    // ======================= CONFIRM ATTEMPT (Saves to localStorage) =======================
     function confirmAttempt() {
+        // Get the button and show loading state
+        const confirmBtn = document.getElementById('confirmBtn');
+        const originalText = confirmBtn.innerHTML;
+        confirmBtn.innerHTML = '<span class="spinner"></span> Saving...';
+        confirmBtn.disabled = true;
+        confirmBtn.classList.add('btn-loading');
+
+        // Gather all required data (matches dashboard flow)
         let cls = localStorage.getItem("pendingClass") 
                || localStorage.getItem("examClass")
                || sessionStorage.getItem("class");
@@ -393,29 +480,55 @@
         let username = localStorage.getItem("pendingUsername") 
                      || localStorage.getItem("studentUsername");
         
+        // Validate data
         if (!cls || !sub || !username) {
             alert("❌ Error: Could not confirm attempt. Missing class, subject, or username. Please contact administrator.");
+            confirmBtn.innerHTML = originalText;
+            confirmBtn.disabled = false;
+            confirmBtn.classList.remove('btn-loading');
             return;
         }
-        
-        markExamCompleted(cls, sub, username);
-        
-        localStorage.removeItem("pendingClass");
-        localStorage.removeItem("pendingSubject");
-        localStorage.removeItem("pendingUsername");
-        localStorage.removeItem("pendingAttempt");
-        localStorage.removeItem("examClass");
-        localStorage.removeItem("examSubject");
-        sessionStorage.removeItem("class");
-        sessionStorage.removeItem("subject");
-        sessionStorage.removeItem("examInfo");
-        
-        const confirmDiv = document.getElementById("confirmationSection");
-        if (confirmDiv) confirmDiv.style.display = "none";
-        
-        alert("✅ Your exam attempt has been confirmed successfully!\n\nYou have completed this exam.");
-        
-        window.location.href = "login.html";
+
+        // Save the exam attempt to localStorage (matches dashboard format)
+        try {
+            const success = markExamCompleted(cls, sub, username);
+            
+            if (success) {
+                // Clear pending data
+                localStorage.removeItem("pendingClass");
+                localStorage.removeItem("pendingSubject");
+                localStorage.removeItem("pendingUsername");
+                localStorage.removeItem("pendingAttempt");
+                localStorage.removeItem("examClass");
+                localStorage.removeItem("examSubject");
+                sessionStorage.removeItem("class");
+                sessionStorage.removeItem("subject");
+                sessionStorage.removeItem("examInfo");
+                
+                // Hide the confirmation section
+                const confirmDiv = document.getElementById("confirmationSection");
+                if (confirmDiv) confirmDiv.style.display = "none";
+                
+                // Show success message
+                confirmBtn.innerHTML = '✅ Saved Successfully!';
+                confirmBtn.style.background = 'linear-gradient(135deg, #28a745, #20c997)';
+                
+                alert("✅ Your exam attempt has been confirmed and saved successfully!\n\nYou have completed this exam.");
+                
+                // Redirect to login page after a short delay
+                setTimeout(() => {
+                    window.location.href = 'cbt_login.html';
+                }, 1500);
+            } else {
+                throw new Error("Failed to save exam attempt");
+            }
+        } catch (error) {
+            console.error("Error saving exam attempt:", error);
+            alert("❌ An error occurred while saving your exam attempt. Please try again or contact support.");
+            confirmBtn.innerHTML = originalText;
+            confirmBtn.disabled = false;
+            confirmBtn.classList.remove('btn-loading');
+        }
     }
 
     // ======================= DISPLAY RESULT & SUBJECT NAME =======================
@@ -454,6 +567,7 @@
         else message = '💪 Needs improvement. Keep studying!';
         document.getElementById('scoreMessage').innerText = message;
         
+        // Set pending data for confirmation (matches dashboard flow)
         if (!localStorage.getItem("pendingClass") && (localStorage.getItem("examClass") || sessionStorage.getItem("class"))) {
             let cls = localStorage.getItem("examClass") || sessionStorage.getItem("class");
             localStorage.setItem("pendingClass", cls);
@@ -465,15 +579,23 @@
             localStorage.setItem("pendingUsername", localStorage.getItem("studentUsername"));
         }
         
+        // Check if we have all needed data for confirmation
         const pendingClass = localStorage.getItem("pendingClass");
         const pendingSubject = localStorage.getItem("pendingSubject");
         const pendingUsername = localStorage.getItem("pendingUsername");
         
-        if (!pendingClass || !pendingSubject || !pendingUsername) {
-            const confirmSection = document.getElementById("confirmationSection");
-            if (confirmSection) confirmSection.style.display = "none";
+        // If the exam is already completed, hide the confirmation section
+        if (pendingClass && pendingSubject && pendingUsername) {
+            const attempts = getExamAttempts(pendingClass);
+            if (attempts[pendingUsername] && attempts[pendingUsername][pendingSubject] === true) {
+                const confirmSection = document.getElementById("confirmationSection");
+                if (confirmSection) {
+                    confirmSection.style.display = "none";
+                }
+            }
         }
         
+        // Attach event listener to confirm button
         document.getElementById('confirmBtn').addEventListener('click', confirmAttempt);
         document.getElementById('logoutResultBtn').addEventListener('click', logout);
     });
