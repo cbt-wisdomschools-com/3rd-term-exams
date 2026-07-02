@@ -126,6 +126,34 @@
             color: #777;
             margin-bottom: 5px;
         }
+
+           .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            background: white;
+            padding: 10px 0;
+        }
+    
+        /* Moving text animation */
+        .marquee-text {
+            display: inline-block;
+            color: red;
+            font-size: 24px;
+            font-weight: bold;
+            animation: marquee 10s linear infinite;
+        }
+
+        /* Keyframes for moving text */
+        @keyframes marquee {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
     </style>
 </head>
 <body oncontextmenu="return false;">
@@ -136,6 +164,9 @@
 
     <div class="login-container">
         <h3><label style="color: red; font-size: 25px;">CBT PORTAL</label></h3>
+           <div class="marquee-container">
+                        <span class="marquee-text">2025/2026 3RD TERM PROMOTION EXAMINATION </span>
+                    </div>
         <p class="subtitle"  style="color: lime; font-size: 15px;">Please sign in to your account</p>
        
         <form id="loginForm">
@@ -164,6 +195,9 @@
             <label style="color: lime; font-size: 25px;">WISFOS CBT PORTAL...</label>
              <a href="https://cbt-wisdomschools-com.github.io/home/" style="color: red; font-size: 18px;">Home</a>
         </form>
+           <div class="marquee-container">
+                        <span class="marquee-text">2025/2026 3RD TERM PROMOTION EXAMINATION </span>
+                    </div>
     </div>
 
     <script>
