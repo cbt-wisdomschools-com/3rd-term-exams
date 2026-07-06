@@ -464,18 +464,17 @@
     <header>
         <div class="logo-container">
             <img src="img/wisdom_logo1.png" alt="School Logo">
-            <div class="school-name">WISDOM FOUNDATION   SCHOOLS</div>
+            <div class="school-name">WISDOM FOUNDATION SCHOOLS</div>
         </div>
          <button class="logout-btn" onclick="confirmAttempt()">Logout</button>
     </header>
    
     <div class="container">
         <div class="marquee-container">
-        <span class="marquee-text">WISDOM FOUNDATION  SCHOOLS :  GATEWAY TO THE UNIVERSITY</span></div>
+        <span class="marquee-text">WISDOM FOUNDATION SCHOOLS : GATEWAY TO THE UNIVERSITY</span></div>
         <div class="exam-info-header">
-               
-            <h2 id="examInfoHeader">EXAMINATION RESULTS</h2>
-            <p id="examDetails">Loading exam information...</p>
+            <h2 id="examInfoHeader">THIRD TERM EXAMINATION RESULTS</h2>
+            <p id="examDetails"> (THIRD TERM) - Loading exam information...</p>
         </div>
        
         <div class="student-info-container">
@@ -485,7 +484,7 @@
             <div class="student-details">
                 <h1 id="studentName" class="student-name">Student Name</h1>
                 <div id="congratulationsMessage" class="congratulations">Congratulations!</div>
-                <div id="scoreMessage" class="score-message">You've successfully completed your test</div>
+                <div id="scoreMessage" class="score-message">You've successfully completed your THIRD TERM examination</div>
                 <div id="examDate" class="exam-date">Date: Loading...</div>
                 <center><p id="datetime"></p></center>
             </div>
@@ -495,7 +494,7 @@
         <div class="confirmation-section" id="confirmationSection">
             <div class="confirmation-message">
                 📝 <strong>Important:</strong> Please confirm your exam attempt by clicking the button below.
-                This will mark your exam as completed.
+                This will mark your THIRD TERM exam as completed.
             </div>
             <button class="btn btn-success" onclick="confirmAttempt()">
                 <i class="fa-solid fa-check-circle"></i> OK
@@ -503,7 +502,7 @@
         </div>
        
         <div class="score-container">
-            <h2 class="score-title">EXAMINATION RESULT</h2>
+            <h2 class="score-title">THIRD TERM EXAMINATION SCORE</h2>
             <div id="scoreCircle" class="score-circle" style="background: linear-gradient(gold, fuchsia, fuchsia);">
                 <span id="scoreValue">0</span>/<span id="totalQuestions">0</span>
             </div>
@@ -511,9 +510,52 @@
             <div id="performanceMessage" class="performance-message" style="background-color: #e0e0e0; color: #333;">Performance</div>
         </div>
        
-        
-       
-       
+        <div class="details-container">
+            <div class="detail-card">
+                <h3>📊 Score Summary</h3>
+                <div class="detail-item">
+                    <span class="detail-label">Correct Answers:</span>
+                    <span class="detail-value" id="detailCorrect">0</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Incorrect Answers:</span>
+                    <span class="detail-value" id="detailIncorrect">0</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Total Questions:</span>
+                    <span class="detail-value" id="detailTotal">0</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Percentage:</span>
+                    <span class="detail-value" id="detailPercentage">0%</span>
+                </div>
+            </div>
+           
+           <!-- <div class="detail-card">
+                <h3>📝 Exam Information</h3>
+                <div class="detail-item">
+                    <span class="detail-label">Term:</span>
+                    <span class="detail-value">THIRD TERM</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Subject:</span>
+                    <span class="detail-value">BIOLOGY</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Class:</span>
+                    <span class="detail-value">SS1</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Session:</span>
+                    <span class="detail-value">2025/2026</span>
+                </div>
+            </div>
+        </div>-->
+
+        <div class="actions-container">
+            <button class="btn btn-secondary" onclick="window.print()">🖨️ Print Results</button>
+            <button class="btn" onclick="window.location.href='index.html'">🏠 Back to Dashboard</button>
+        </div>
     </div>
    
     <footer>
@@ -571,25 +613,24 @@
             document.getElementById("confirmationSection").style.display = "none";
            
             // Show success message
-            alert("✅ Your exam attempt has been confirmed successfully!\n\nYou have completed this exam .");
+            alert("✅ Your THIRD TERM exam attempt has been confirmed successfully!\n\nYou have completed this exam.");
             window.location.href = "index.html";
         }
 
         // Get data from localStorage
         document.addEventListener('DOMContentLoaded', function() {
             // Get exam information
-            const examInfo = localStorage.getItem('examInfo') || '';
-            const examClass = localStorage.getItem('examClass') || '';
-            const examSubject = localStorage.getItem('examSubject') || '';
+            const examInfo = localStorage.getItem('examInfo') || 'BIOLOGY SS1 (THIRD TERM)';
+            const examClass = localStorage.getItem('examClass') || 'SS1';
+            const examSubject = localStorage.getItem('examSubject') || 'BIOLOGY';
            
             // Display exam information
-            document.getElementById('examInfoHeader').textContent = examSubject ? `${examSubject.toUpperCase()} EXAMINATION RESULTS` : 'EXAMINATION RESULTS';
-            document.getElementById('examDetails').textContent = examInfo || 'Exam Results';
+            document.getElementById('examInfoHeader').textContent = 'THIRD TERM EXAMINATION RESULTS';
+            document.getElementById('examDetails').textContent = `${examSubject} ${examClass} (THIRD TERM) - ${examInfo}`;
            
             // Get student information
             const username = localStorage.getItem('examUser') || sessionStorage.getItem('username') || 'Student';
             const userImage = sessionStorage.getItem('image') || 'default_user.jpg';
-            //document.getElementById('userImage').src = sessionStorage.getItem('image') || 'img/default_user.jpg';
            
             // Get exam results
             const score = localStorage.getItem('examScore') || 0;
@@ -600,10 +641,7 @@
            
             // Set student information
             document.getElementById('studentName').textContent = username;
-            //document.getElementById('studentImage').src = 'img/' + userImage;
             document.getElementById('studentImage').src = sessionStorage.getItem('image') || 'img/default_user.jpg';
-            
-           
            
             // Set score information
             document.getElementById('scoreValue').textContent = score;
@@ -618,7 +656,7 @@
            
             // Update score message with actual score
             document.getElementById('scoreMessage').textContent =
-                `You've successfully completed your test and your score for this test is ${score}/${totalQuestions}`;
+                `You've successfully completed your THIRD TERM examination and your score is ${score}/${totalQuestions}`;
            
             // Set performance message and color
             const performanceMessage = document.getElementById('performanceMessage');
@@ -654,27 +692,27 @@
             document.getElementById('examDate').textContent = 'Date: ' + formattedDate;
 
             function updateDateTime() {
-            let now = new Date();
-            let day = now.getDate();
-            let month = now.toLocaleString('default', { month: 'long' });
-            let year = now.getFullYear();
-            let suffix = "th";
-           
-            if (day === 1 || day === 21 || day === 31) suffix = "st";
-            else if (day === 2 || day === 22) suffix = "nd";
-            else if (day === 3 || day === 23) suffix = "rd";
-           
-            let hours = now.getHours();
-            let minutes = now.getMinutes();
-            let seconds = now.getSeconds();
-            let ampm = hours >= 12 ? "PM" : "AM";
-            hours = hours % 12 || 12;
-            minutes = minutes < 10 ? "0" + minutes : minutes;
-            seconds = seconds < 10 ? "0" + seconds : seconds;
-           
-            let formattedDateTime = `${month} ${day}${suffix} ${year}, ${hours}:${minutes}:${seconds} ${ampm}`;
-            document.getElementById("datetime").innerText = formattedDateTime;
-        }
+                let now = new Date();
+                let day = now.getDate();
+                let month = now.toLocaleString('default', { month: 'long' });
+                let year = now.getFullYear();
+                let suffix = "th";
+               
+                if (day === 1 || day === 21 || day === 31) suffix = "st";
+                else if (day === 2 || day === 22) suffix = "nd";
+                else if (day === 3 || day === 23) suffix = "rd";
+               
+                let hours = now.getHours();
+                let minutes = now.getMinutes();
+                let seconds = now.getSeconds();
+                let ampm = hours >= 12 ? "PM" : "AM";
+                hours = hours % 12 || 12;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+               
+                let formattedDateTime = `${month} ${day}${suffix} ${year}, ${hours}:${minutes}:${seconds} ${ampm}`;
+                document.getElementById("datetime").innerText = formattedDateTime;
+            }
            
             // Check if attempt is already confirmed
             const cls = localStorage.getItem("pendingClass");
@@ -685,22 +723,10 @@
                 // Attempt already confirmed, hide confirmation section
                 document.getElementById("confirmationSection").style.display = "none";
             }
-           
-            // Button event listeners
-            document.getElementById('printBtn').addEventListener('click', function() {
-                window.print();
-            });
-           
-            document.getElementById('dashboardBtn').addEventListener('click', function() {
-                window.location.href = 'index.html';
-            });
         });
 
-
         function logout() {
-          
-                window.location.href = "index.html";
-            
+            window.location.href = "index.html";
         }
     </script>
 </body>
