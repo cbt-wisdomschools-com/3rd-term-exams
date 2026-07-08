@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.wisdomfoundationchools.org - JSS3 PHONETICS | TEST OF ORALS Exam</title>
+    <title>cbt.wisdom foundationschools.org - JSS2 PHONETICS Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -118,7 +118,7 @@
             background: #2c3e50;
         }
         #datetime {
-            color: rgb(120,200,150);
+            color:gold;
             font-size: 18px;
             font-weight: bold;
             text-align: center;
@@ -135,7 +135,7 @@
         }
         #header {
             padding: 20px;
-            background: linear-gradient(to right, rgb(120,200,150), orange);
+            background: linear-gradient(to right, orange, purple);
             color: white;
             border-bottom: 5px solid #ff9800;
         }
@@ -468,22 +468,18 @@
             100% { opacity: 1; }
         }
 
-
-
-
-
          .marquee-container {
             width: 100%;
             overflow: hidden;
             white-space: nowrap;
-            background: gold;
+            background: rgb(150,125,150);
             padding: 10px 0;
         }
     
         /* Moving text animation */
         .marquee-text {
             display: inline-block;
-            color: white;
+            color: gold;
             font-size: 24px;
             font-weight: bold;
             animation: marquee 10s linear infinite;
@@ -500,6 +496,84 @@
         }
 
 
+        /* Logo container - makes it a flex container for horizontal layout */
+#logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding: 20px 0;
+}
+
+/* Style for the center/main logo */
+#logo img:not(.logo-left img):not(.logo-right img) {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+/* Left logo container */
+.logo-left {
+    flex: 0 0 auto;
+    z-index: 1;
+    margin-left: 20px;
+}
+
+/* Right logo container */
+.logo-right {
+    flex: 0 0 auto;
+    z-index: 1;
+    margin-right: 20px;
+}
+
+/* Logo images inside left and right containers */
+.logo-left img,
+.logo-right img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for left and right logos */
+.logo-left img:hover,
+.logo-right img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    #logo {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px 0;
+    }
+    
+    #logo img:not(.logo-left img):not(.logo-right img) {
+        position: static;
+        transform: none;
+        margin: 10px auto;
+    }
+    
+    .logo-left, .logo-right {
+        margin: 5px 0;
+    }
+    
+    .logo-left img,
+    .logo-right img {
+        max-width: 80px;
+    }
+}
+
+
+
     </style>
 </head>
 <body oncontextmenu="return false">
@@ -507,13 +581,19 @@
         <div id="logout-container">
             <button id="logout" onclick="logout()">Logout</button>
                  <div class="marquee-container">
-        <span class="marquee-text">WISDOM FOUNDATION SCHOOLS  :  GATEWAY TO THE UNIVERSITY FOR YOUR CHILD </span>
+        <span class="marquee-text">WISDOM FOUNDATION SCHOOLS  :  GATEWAY TO THE UNIVERSITY</span>
     </div>
         </div>
         <div id="logo">
             <img src="img/wisdom_logo1.png" alt="image">
 
-           
+               <!--<div class="logo-left">
+                <img src="img/9ja1.png" alt="Nigeria Logo" >
+            </div>
+
+            <div class="logo-right">
+                <img src="img/nappps1.png" alt="NAPPS Logo" >
+            </div>-->
         </div>
 
            
@@ -536,8 +616,7 @@
     
         <center><h3>WISDOM FOUNDATION SCHOOLS EGBEWA  ADO EKITI </h3></center> 
         <center><h3>THIRD TERM EXAMINATION 2025/2026 ACADEMIC SESSION</h3></center>
-
-
+       
         <!-- SECTION TOGGLE BUTTONS -->
         <div class="section-toggle">
             <button id="objectivesBtn" class="section-btn active" onclick="showSection('objectives')">OBJECTIVE QUESTIONS</button>
@@ -545,7 +624,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  JSS3 PHONETICS   (THIRD TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  JSS2 PHONETICS (THIRD TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -611,11 +690,11 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text">3RD TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION</span>
+        <span class="marquee-text"> JSS2 PHONETICS  FOR 3RD TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION  </span>
     </div>
    
     <div class="windows-activate">
-        <p> &copy; cbt.<span style="color: red;">wisdom</span><span style="color: green;">foundation schools</span>.org</p>
+        <p> &copy; cbt.<span style="color: red;">wisdom foundation</span><span style="color: green;">schools</span>.org</p>
     </div>
 
 
@@ -626,1252 +705,752 @@
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-                             
- {
+        
+ 
+        {
       "id": 1,
-      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the underlined letter(s). M<u>o</u>ney",
+      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the letter(s) underlined. w<u>o</u>men",
       "options": {
-        "A": "port",
-        "B": "coney",
-        "C": "son",
-        "D": "bottle"
+        "A": "red",
+        "B": "rid",
+        "C": "bead",
+        "D": "cool"
       },
-      "answer": "C",
+      "answer": "B",
       "image": null
     },
     {
       "id": 2,
-      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the underlined letter(s). p<u>our</u>",
+      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the letter(s) underlined. p<u>ear</u>l",
       "options": {
-        "A": "favour",
-        "B": "ore",
-        "C": "hour",
-        "D": "how"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 3,
-      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the underlined letter(s). t<u>ie</u>",
-      "options": {
-        "A": "hail",
-        "B": "hey",
-        "C": "bile",
-        "D": "farce"
-      },
-      "answer": "C",
-      "image": null
-    },
-    {
-      "id": 4,
-      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the underlined letter(s). p<u>u</u>t",
-      "options": {
-        "A": "fool",
-        "B": "wool",
-        "C": "cool",
-        "D": "school"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 5,
-      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the underlined letter(s). t<u>ai</u>lor",
-      "options": {
-        "A": "torn",
-        "B": "partake",
-        "C": "dent",
-        "D": "orchard"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 6,
-      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the underlined letter(s). f<u>a</u>te",
-      "options": {
-        "A": "weight",
-        "B": "flat",
-        "C": "share",
-        "D": "said"
+        "A": "curtain",
+        "B": "fear",
+        "C": "care",
+        "D": "sergeant"
       },
       "answer": "A",
       "image": null
     },
     {
-      "id": 7,
-      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the underlined letter(s). f<u>er</u>n",
+      "id": 3,
+      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the letter(s) underlined. <u>e</u>dit",
       "options": {
-        "A": "merge",
-        "B": "beryl",
-        "C": "heart",
-        "D": "eureka"
+        "A": "many",
+        "B": "earthy",
+        "C": "forte",
+        "D": "meaty"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 4,
+      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the letter(s) underlined. p<u>e</u>nal",
+      "options": {
+        "A": "penalty",
+        "B": "reality",
+        "C": "receipt",
+        "D": "pleasant"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 5,
+      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the letter(s) underlined. p<u>a</u>ssage",
+      "options": {
+        "A": "message",
+        "B": "package",
+        "C": "mortar",
+        "D": "partner"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 6,
+      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the letter(s) underlined. c<u>oar</u>se",
+      "options": {
+        "A": "coax",
+        "B": "chore",
+        "C": "road",
+        "D": "rod"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 7,
+      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the letter(s) underlined. stipend",
+      "options": {
+        "A": "still",
+        "B": "free",
+        "C": "bear",
+        "D": "kite"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 8,
-      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the underlined letter(s). p<u>ow</u>der",
+      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the letter(s) underlined. d<u>u</u>mb",
       "options": {
-        "A": "low",
-        "B": "loud",
-        "C": "tour",
-        "D": "potty"
+        "A": "comb",
+        "B": "pupil",
+        "C": "urban",
+        "D": "month"
       },
-      "answer": "B",
+      "answer": "D",
       "image": null
     },
     {
       "id": 9,
-      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the underlined letter(s). cr<u>ui</u>se",
+      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the letter(s) underlined. w<u>o</u>lf",
       "options": {
-        "A": "move",
-        "B": "suite",
-        "C": "quit",
-        "D": "hood"
+        "A": "golf",
+        "B": "scold",
+        "C": "crude",
+        "D": "wood"
       },
-      "answer": "A",
+      "answer": "D",
       "image": null
     },
     {
       "id": 10,
-      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the underlined letter(s). p<u>ure</u>",
+      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the letter(s) underlined. m<u>a</u>nure",
       "options": {
-        "A": "favour",
-        "B": "fur",
-        "C": "furore",
-        "D": "schwa"
+        "A": "party",
+        "B": "search",
+        "C": "again",
+        "D": "bad"
       },
       "answer": "C",
       "image": null
     },
     {
       "id": 11,
-      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the underlined letter(s). sp<u>o</u>t",
+      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the letter(s) underlined. h<u>o</u>st",
       "options": {
-        "A": "slot",
-        "B": "sport",
-        "C": "hurt",
-        "D": "glut"
+        "A": "now",
+        "B": "hoarse",
+        "C": "thought",
+        "D": "known"
       },
-      "answer": "A",
+      "answer": "D",
       "image": null
     },
     {
       "id": 12,
-      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the underlined letter(s). th<u>ere</u>",
+      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the letter(s) underlined. st<u>ea</u>k",
       "options": {
-        "A": "their",
-        "B": "fear",
-        "C": "ear",
-        "D": "peer"
+        "A": "stake",
+        "B": "mead",
+        "C": "meadow",
+        "D": "bellow"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 13,
-      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the underlined letter(s). cr<u>e</u>st",
+      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the letter(s) underlined. br<u>u</u>te",
       "options": {
-        "A": "goitre",
-        "B": "wheat",
-        "C": "breakfast",
-        "D": "firm"
+        "A": "should",
+        "B": "stood",
+        "C": "lose",
+        "D": "brought"
       },
       "answer": "C",
       "image": null
     },
     {
       "id": 14,
-      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the underlined letter(s). sh<u>ea</u>th",
+      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the letter(s) underlined. s<u>ou</u>th",
       "options": {
-        "A": "meadow",
-        "B": "weather",
-        "C": "heart",
-        "D": "beach"
+        "A": "drought",
+        "B": "foal",
+        "C": "southerners",
+        "D": "doughy"
       },
-      "answer": "D",
+      "answer": "A",
       "image": null
     },
     {
       "id": 15,
-      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the underlined letter(s). g<u>o</u>rilla",
+      "question": "From the words lettered A to D, choose the word that has the same vowel sound as the one represented by the letter(s) underlined. pl<u>oy</u>",
       "options": {
-        "A": "doe",
-        "B": "colour",
-        "C": "ordain",
-        "D": "tot"
+        "A": "plough",
+        "B": "law",
+        "C": "noise",
+        "D": "sort"
       },
       "answer": "C",
       "image": null
     },
     {
       "id": 16,
-      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. Or<u>ch</u>id",
+      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. e<u>sc</u>ape",
       "options": {
-        "A": "chagrin",
-        "B": "scepter",
-        "C": "skewer",
-        "D": "sham"
+        "A": "lacks",
+        "B": "exact",
+        "C": "scene",
+        "D": "school"
       },
       "answer": "D",
       "image": null
     },
     {
       "id": 17,
-      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. Pic<u>t</u>ure",
+      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. <u>ch</u>ute",
       "options": {
-        "A": "lurch",
-        "B": "passion",
-        "C": "nation",
-        "D": "castor"
-      },
-      "answer": "D",
-      "image": null
-    },
-    {
-      "id": 18,
-      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. Fi<u>ss</u>ure",
-      "options": {
-        "A": "unsure",
-        "B": "feature",
-        "C": "erase",
-        "D": "vision"
-      },
-      "answer": "A",
-      "image": null
-    },
-    {
-      "id": 19,
-      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. Vi<u>s</u>it",
-      "options": {
-        "A": "mouse",
-        "B": "face",
-        "C": "easy",
-        "D": "peace"
+        "A": "loch",
+        "B": "usual",
+        "C": "sugar",
+        "D": "choose"
       },
       "answer": "C",
       "image": null
     },
     {
-      "id": 20,
-      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. <u>h</u>ack",
+      "id": 18,
+      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. <u>sc</u>ion",
       "options": {
-        "A": "behaviour",
-        "B": "schedule",
-        "C": "exhibit",
-        "D": "honourable"
+        "A": "cars",
+        "B": "barks",
+        "C": "sure",
+        "D": "zoo"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 19,
+      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. su<u>t</u>ure",
+      "options": {
+        "A": "chalet",
+        "B": "badge",
+        "C": "chalk",
+        "D": "city"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 20,
+      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. <u>wh</u>ole",
+      "options": {
+        "A": "white",
+        "B": "ewe",
+        "C": "house",
+        "D": "sword"
       },
       "answer": "C",
       "image": null
     },
     {
       "id": 21,
-      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. <u>l</u>eft",
+      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. so<u>ld</u>",
       "options": {
-        "A": "yolk",
-        "B": "bulk",
-        "C": "half",
-        "D": "could"
+        "A": "could",
+        "B": "fodder",
+        "C": "soldier",
+        "D": "fold"
       },
-      "answer": "C",
+      "answer": "A",
       "image": null
     },
     {
       "id": 22,
-      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. <u>f</u>ly",
+      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. lu<u>str</u>e",
       "options": {
-        "A": "though",
-        "B": "dough",
-        "C": "revive",
-        "D": "tough"
+        "A": "stay",
+        "B": "straight",
+        "C": "treat",
+        "D": "castle"
       },
       "answer": "D",
       "image": null
     },
     {
       "id": 23,
-      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. Te<u>xt</u>",
+      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. help<u>ed</u>",
       "options": {
-        "A": "risked",
-        "B": "kissed",
-        "C": "west",
-        "D": "fixed"
+        "A": "moved",
+        "B": "banded",
+        "C": "risked",
+        "D": "begged"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 24,
+      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. vi<u>sc</u>ount",
+      "options": {
+        "A": "scent",
+        "B": "car",
+        "C": "race",
+        "D": "vital"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 25,
+      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. pu<u>n</u>ctual",
+      "options": {
+        "A": "ankle",
+        "B": "funny",
+        "C": "damn",
+        "D": "thin"
       },
       "answer": "A",
       "image": null
     },
     {
-      "id": 24,
-      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. U<u>n</u>cle",
-      "options": {
-        "A": "bangle",
-        "B": "knuckle",
-        "C": "singe",
-        "D": "ankle"
-      },
-      "answer": "D",
-      "image": null
-    },
-    {
-      "id": 25,
-      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. <u>d</u>rive",
-      "options": {
-        "A": "risked",
-        "B": "kicked",
-        "C": "jumped",
-        "D": "wounded"
-      },
-      "answer": "D",
-      "image": null
-    },
-    {
       "id": 26,
-      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. La<u>b</u>oratory",
+      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. <u>r</u>est",
       "options": {
-        "A": "debtor",
-        "B": "thumb",
-        "C": "dabble",
-        "D": "subtle"
-      },
-      "answer": "C",
-      "image": null
-    },
-    {
-      "id": 27,
-      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. U<u>ph</u>olstery",
-      "options": {
-        "A": "reception",
-        "B": "rehearsal",
-        "C": "upheaval",
-        "D": "phonetics"
+        "A": "near",
+        "B": "survey",
+        "C": "choir",
+        "D": "carry"
       },
       "answer": "B",
       "image": null
     },
     {
-      "id": 28,
-      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. Rou<u>g</u>e",
+      "id": 27,
+      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. <u>wh</u>at",
       "options": {
-        "A": "gem",
-        "B": "rage",
-        "C": "leisure",
-        "D": "jest"
+        "A": "who",
+        "B": "write",
+        "C": "one",
+        "D": "whose"
       },
       "answer": "C",
       "image": null
     },
     {
-      "id": 29,
-      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. <u>th</u>en",
+      "id": 28,
+      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) in brackets. gi(<u>gg</u>)le",
       "options": {
-        "A": "thaw",
-        "B": "smooth",
-        "C": "den",
-        "D": "wealthy"
+        "A": "league",
+        "B": "ensign",
+        "C": "genre",
+        "D": "gesture"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 29,
+      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. pea<u>s</u>ant",
+      "options": {
+        "A": "lacy",
+        "B": "passion",
+        "C": "loser",
+        "D": "leisure"
       },
       "answer": "B",
       "image": null
     },
     {
       "id": 30,
-      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. Si<u>gn</u>",
+      "question": "From the words lettered A to D, choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. indi<u>ct</u>",
       "options": {
-        "A": "fawn",
-        "B": "thing",
-        "C": "hymn",
-        "D": "single"
+        "A": "pack",
+        "B": "listen",
+        "C": "fiction",
+        "D": "till"
       },
-      "answer": "C",
+      "answer": "A",
       "image": null
     },
     {
       "id": 31,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. The fisherman said he sighted a ........... of fish in the river.",
+      "question": "From the words lettered A to D, choose the word that rhymes with the given word. muscle",
       "options": {
-        "A": "pack",
-        "B": "colony",
-        "C": "shoal",
-        "D": "swarm"
+        "A": "tousle",
+        "B": "puzzle",
+        "C": "tussle",
+        "D": "dozen"
       },
       "answer": "C",
       "image": null
     },
     {
       "id": 32,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. The principal corrected no one else but ______.",
+      "question": "From the words lettered A to D, choose the word that rhymes with the given word. trouser",
       "options": {
-        "A": "Me",
-        "B": "I",
-        "C": "She",
-        "D": "Myself"
-      },
-      "answer": "A",
-      "image": null
-    },
-    {
-      "id": 33,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. The thug was ......... murder.",
-      "options": {
-        "A": "convicted for",
-        "B": "charged with",
-        "C": "charged for",
-        "D": "sued with"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 34,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. Asokoro office ................ is located in Ibadan.",
-      "options": {
-        "A": "headquarters'",
-        "B": "headquarter",
-        "C": "headquarter's",
-        "D": "headquarters"
+        "A": "browser",
+        "B": "bounce",
+        "C": "trowel",
+        "D": "cower"
       },
       "answer": "D",
       "image": null
     },
     {
-      "id": 35,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. John should be through with his work,_______?",
+      "id": 33,
+      "question": "From the words lettered A to D, choose the word that rhymes with the given word. aisle",
       "options": {
-        "A": "can't he",
-        "B": "didn't he",
-        "C": "shouldn't he",
-        "D": "isn't it"
+        "A": "isle",
+        "B": "bail",
+        "C": "fly",
+        "D": "real"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 34,
+      "question": "From the words lettered A to D, choose the word that rhymes with the given word. potter",
+      "options": {
+        "A": "porters",
+        "B": "pear",
+        "C": "otter",
+        "D": "rotten"
       },
       "answer": "C",
       "image": null
     },
     {
-      "id": 36,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. This is the man ........... I said told me the interesting story.",
+      "id": 35,
+      "question": "From the words lettered A to D, choose the word that rhymes with the given word. plaque",
       "options": {
-        "A": "which",
-        "B": "whose",
-        "C": "whom",
-        "D": "who"
-      },
-      "answer": "D",
-      "image": null
-    },
-    {
-      "id": 37,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. The accused forgot ............",
-      "options": {
-        "A": "what the police said",
-        "B": "that the police said",
-        "C": "when the police said",
-        "D": "why the police said"
+        "A": "lake",
+        "B": "lark",
+        "C": "luck",
+        "D": "plague"
       },
       "answer": "A",
       "image": null
     },
     {
-      "id": 38,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. The officer ............. is my brother.",
+      "id": 36,
+      "question": "In each of the following questions, the main/ primary stress is indicated by writing the syllables on which it occurs in capital letters. From the words lettered A to D, choose the one that has the correct stress. leguminous",
       "options": {
-        "A": "on uniform",
-        "B": "in uniform dress",
-        "C": "in uniform",
-        "D": "with uniform"
+        "A": "LE-gum-in-ous",
+        "B": "le-GUM-in-ous",
+        "C": "le-gum-IM-ous",
+        "D": "le-gum-in-OUS"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 37,
+      "question": "In each of the following questions, the main/ primary stress is indicated by writing the syllables on which it occurs in capital letters. From the words lettered A to D, choose the one that has the correct stress. manifesto",
+      "options": {
+        "A": "MA-ni-fes-to",
+        "B": "ma-NI-fes-to",
+        "C": "ma-ni-FES-to",
+        "D": "ma-ni-fes-TO"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 38,
+      "question": "In each of the following questions, the main/ primary stress is indicated by writing the syllables on which it occurs in capital letters. From the words lettered A to D, choose the one that has the correct stress. collocation",
+      "options": {
+        "A": "COLL-o-ca-tion",
+        "B": "coll-O-ca-tion",
+        "C": "coll-o-CA-tion",
+        "D": "coll-o-ca-TION"
       },
       "answer": "C",
       "image": null
     },
     {
       "id": 39,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. The footballers have been practising __________.",
+      "question": "In each of the following questions, the main/ primary stress is indicated by writing the syllables on which it occurs in capital letters. From the words lettered A to D, choose the one that has the correct stress. dependable",
       "options": {
-        "A": "in the stadium hard all morning",
-        "B": "all morning in the stadium hard",
-        "C": "all morning hard in the stadium",
-        "D": "hard in the stadium all morning"
+        "A": "DE-pen-da-ble",
+        "B": "de-PEN-da-ble",
+        "C": "de-pen-DA-ble",
+        "D": "de-pen-da-BLE"
       },
-      "answer": "D",
+      "answer": "B",
       "image": null
     },
     {
       "id": 40,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. Professor John is the leader of the ....... committee to review the new book.",
+      "question": "In each of the following questions, the main/ primary stress is indicated by writing the syllables on which it occurs in capital letters. From the words lettered A to D, choose the one that has the correct stress. embodiment",
       "options": {
-        "A": "fifty-men",
-        "B": "fifty-men's",
-        "C": "fifty-man's",
-        "D": "fifty-man"
+        "A": "EM-bod-i-ment",
+        "B": "em-BOD-i-ment",
+        "C": "em-bod-I-ment",
+        "D": "em-bod-i-MENT"
       },
-      "answer": "D",
+      "answer": "B",
       "image": null
     },
     {
       "id": 41,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. James appears ............ wiser than his friends.",
+      "question": "In the following options lettered A to D, all the words except one have the same stress pattern. Identify the one with the different stress pattern.",
       "options": {
-        "A": "more",
-        "B": "much more",
-        "C": "most",
-        "D": "much"
+        "A": "couture",
+        "B": "cowshed",
+        "C": "forest",
+        "D": "gadget"
       },
-      "answer": "D",
+      "answer": "A",
       "image": null
     },
     {
       "id": 42,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. That world famous athlete is guilty.......... way you look at it.",
+      "question": "In the following options lettered A to D, all the words except one have the same stress pattern. Identify the one with the different stress pattern.",
       "options": {
-        "A": "whenever",
-        "B": "whatever",
-        "C": "however",
-        "D": "whichever"
+        "A": "galley",
+        "B": "hamlet",
+        "C": "hotel",
+        "D": "madam"
       },
       "answer": "C",
       "image": null
     },
     {
       "id": 43,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. We were all afraid when the alarm ________.",
+      "question": "In the following options lettered A to D, all the words except one have the same stress pattern. Identify the one with the different stress pattern.",
       "options": {
-        "A": "died off",
-        "B": "went off",
-        "C": "ran off",
-        "D": "rang up"
+        "A": "remember",
+        "B": "harmony",
+        "C": "percentage",
+        "D": "agreement"
       },
       "answer": "B",
       "image": null
     },
     {
       "id": 44,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. The material used for sewing my dress is _______to yours.",
+      "question": "In the following options lettered A to D, all the words except one have the same stress pattern. Identify the one with the different stress pattern.",
       "options": {
-        "A": "most superior",
-        "B": "superior",
-        "C": "very superior",
-        "D": "more superior"
+        "A": "blossom",
+        "B": "faucet",
+        "C": "gainsay",
+        "D": "bosom"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 45,
+      "question": "In the following options lettered A to D, all the words except one have the same stress pattern. Identify the one with the different stress pattern.",
+      "options": {
+        "A": "elephant",
+        "B": "ectopic",
+        "C": "ensemble",
+        "D": "enrolment"
       },
       "answer": "B",
       "image": null
     },
     {
-      "id": 45,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. The Chairman wasn't privy ..... that information.",
-      "options": {
-        "A": "with",
-        "B": "at",
-        "C": "on",
-        "D": "to"
-      },
-      "answer": "D",
-      "image": null
-    },
-    {
       "id": 46,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. We were lucky our driver didn't die in the accident, ........... ?",
+      "question": "In each of the following sentences, the word that receives the emphatic stress is written in capital letters. From the questions lettered A-D, choose the one to which the given sentence is the appropriate answer. The United States will host the next FIFA football competition.",
       "options": {
-        "A": "did we",
-        "B": "isn't it",
-        "C": "didn't we",
-        "D": "weren't we"
+        "A": "Will the United States host the next CAF football competition?",
+        "B": "Will Nigeria host the next FIFA football competition?",
+        "C": "Will the United States fund the next EIEA football competition?",
+        "D": "Will the United States fund the next FIFA basketball competition?"
       },
-      "answer": "D",
+      "answer": "A",
       "image": null
     },
     {
       "id": 47,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. The ............ were decorated with flowers.",
+      "question": "In each of the following sentences, the word that receives the emphatic stress is written in capital letters. From the questions lettered A-D, choose the one to which the given sentence is the appropriate answer. Bisi's mother ENJOYS cooking.",
       "options": {
-        "A": "girls shoes",
-        "B": "girls' shoes",
-        "C": "girls' shoes'",
-        "D": "girls shoes'"
+        "A": "Does Ayo's mother enjoy cooking?",
+        "B": "Does Bisi's mother hate cooking?",
+        "C": "Does Bisi's sister enjoy cooking?",
+        "D": "Does Bisi's mother enjoy washing?"
       },
       "answer": "B",
       "image": null
     },
     {
       "id": 48,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. Before the lecturer entered the hall, we .......... the board.",
+      "question": "In each of the following sentences, the word that receives the emphatic stress is written in capital letters. From the questions lettered A-D, choose the one to which the given sentence is the appropriate answer. We left for MAKURDI yesterday.",
       "options": {
-        "A": "are cleaning",
-        "B": "have cleaned",
-        "C": "clean",
-        "D": "had cleaned"
+        "A": "Did we leave for Lagos yesterday?",
+        "B": "Did we arrive from Markurdi yesterday?",
+        "C": "Did they leave for Markurdi yesterday?",
+        "D": "Did we leave for Markurdi today?"
       },
-      "answer": "D",
+      "answer": "A",
       "image": null
     },
     {
       "id": 49,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. .......... the hours of nine and ten, the surgeons completed the operation.",
+      "question": "In each of the following sentences, the word that receives the emphatic stress is written in capital letters. From the questions lettered A-D, choose the one to which the given sentence is the appropriate answer. Ahmed greeted AKIN at the party.",
       "options": {
-        "A": "before",
-        "B": "upon",
-        "C": "between",
-        "D": "in"
+        "A": "Did Ahmed ignore Akin at the party?",
+        "B": "Did Peter greet Akin at the party?",
+        "C": "Did Ahmed greet James at the party?",
+        "D": "Did Ahmed greet Akin at the park?"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 50,
+      "question": "In each of the following sentences, the word that receives the emphatic stress is written in capital letters. From the questions lettered A-D, choose the one to which the given sentence is the appropriate answer. Bimpe was the FIRST to submit the assignment.",
+      "options": {
+        "A": "Was Nneka the first to submit the assignment?",
+        "B": "Was Bimpe the first to leave the assignment?",
+        "C": "Was Bimpe the last to submit the assignment?",
+        "D": "Was Bimpe the first to submit the project?"
       },
       "answer": "C",
       "image": null
     },
     {
-      "id": 50,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. Mother bought ............. at the fair.",
-      "options": {
-        "A": "a red expensive Japanese car",
-        "B": "an expensive Japanese red car",
-        "C": "a Japanese red expensive car",
-        "D": "an expensive red Japanese car"
-      },
-      "answer": "D",
-      "image": null
-    },
-    {
       "id": 51,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. The duty of our teacher is to give instructions;.......... is to obey.",
+      "question": "From the words lettered A-D, choose the word that contains the sound represented by the given phonetic symbol. /\u028c/",
       "options": {
-        "A": "ours",
-        "B": "our",
-        "C": "ours'",
-        "D": "our's"
+        "A": "comfort",
+        "B": "music",
+        "C": "ozone",
+        "D": "food"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 52,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. The teacher has ......... with the principal.",
+      "question": "From the words lettered A-D, choose the word that contains the sound represented by the given phonetic symbol. /a\u028a/",
       "options": {
-        "A": "fallen apart",
-        "B": "fallen out",
-        "C": "fallen of",
-        "D": "fallen down"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 53,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. A meeting was called ..............the instance of the chairman.",
-      "options": {
-        "A": "by",
-        "B": "for",
-        "C": "on",
-        "D": "at"
-      },
-      "answer": "D",
-      "image": null
-    },
-    {
-      "id": 54,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. Business is poor these days ........... workers are on strike.",
-      "options": {
-        "A": "whereas",
-        "B": "because",
-        "C": "no matter",
-        "D": "so that"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 55,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. The test seemed ................. simple that we thought we would all pass.",
-      "options": {
-        "A": "over",
-        "B": "so",
-        "C": "very",
-        "D": "too"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 56,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. Tayo: I think I can now solve the problem. Essien:............",
-      "options": {
-        "A": "So I can",
-        "B": "Either do I",
-        "C": "Neither can I",
-        "D": "So do I"
-      },
-      "answer": "D",
-      "image": null
-    },
-    {
-      "id": 57,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. The .......scientist has discovered a cure for cancer.",
-      "options": {
-        "A": "brilliant young Nigerian",
-        "B": "Nigerian brilliant young",
-        "C": "young brilliant Nigerian",
-        "D": "young Nigerian brilliant"
+        "A": "howl",
+        "B": "law",
+        "C": "flow",
+        "D": "note"
       },
       "answer": "A",
       "image": null
     },
     {
-      "id": 58,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. The couple _______ their first child when I entered college.",
+      "id": 53,
+      "question": "From the words lettered A-D, choose the word that contains the sound represented by the given phonetic symbol. /v/",
       "options": {
-        "A": "hasn't had",
-        "B": "haven't had",
-        "C": "were not having",
-        "D": "hadn't had"
+        "A": "of",
+        "B": "few",
+        "C": "off",
+        "D": "photo"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 54,
+      "question": "From the words lettered A-D, choose the word that contains the sound represented by the given phonetic symbol. /\u0259/",
+      "options": {
+        "A": "age",
+        "B": "argue",
+        "C": "about",
+        "D": "active"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 55,
+      "question": "From the words lettered A-D, choose the word that contains the sound represented by the given phonetic symbol. /\u00f0/",
+      "options": {
+        "A": "these",
+        "B": "thanks",
+        "C": "moth",
+        "D": "thyme"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 56,
+      "question": "From the words lettered A-D, choose the word that contains the sound represented by the given phonetic symbol. /j/",
+      "options": {
+        "A": "jet",
+        "B": "flew",
+        "C": "few",
+        "D": "just"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 57,
+      "question": "From the words lettered A-D, choose the word that contains the sound represented by the given phonetic symbol. /\u025c\u02d0/",
+      "options": {
+        "A": "heart",
+        "B": "floor",
+        "C": "herb",
+        "D": "fork"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 58,
+      "question": "From the words lettered A-D, choose the word that contains the sound represented by the given phonetic symbol. /a\u026a/",
+      "options": {
+        "A": "freight",
+        "B": "faith",
+        "C": "said",
+        "D": "piety"
       },
       "answer": "D",
       "image": null
     },
     {
       "id": 59,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. The fire fighters worked hard to .......... the inferno.",
+      "question": "From the words lettered A-D, choose the word that contains the sound represented by the given phonetic symbol. /i:/",
       "options": {
-        "A": "put by",
-        "B": "put away",
-        "C": "put off",
-        "D": "put out"
+        "A": "pit",
+        "B": "exile",
+        "C": "regal",
+        "D": "serve"
       },
-      "answer": "D",
+      "answer": "C",
       "image": null
     },
     {
       "id": 60,
-      "question": "From the words or group of words lettered A to D, choose the word or group of words that best completes each of the following sentences. Those novels are interesting. I wonder if you can get me ................",
+      "question": "From the words lettered A-D, choose the word that contains the sound represented by the given phonetic symbol. /d\u0292/",
       "options": {
-        "A": "others such many",
-        "B": "many such others",
-        "C": "such many others",
-        "D": "many others such"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 61,
-      "question": "Identify the word with a different stress pattern",
-      "options": {
-        "A": "maintenance",
-        "B": "candidate",
-        "C": "enigma",
-        "D": "primacy"
-      },
-      "answer": "C",
-      "image": null
-    },
-    {
-      "id": 62,
-      "question": "Identify the word with a different stress pattern",
-      "options": {
-        "A": "mountain",
-        "B": "extrude",
-        "C": "caution",
-        "D": "creature"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 63,
-      "question": "Identify the word with a different stress pattern",
-      "options": {
-        "A": "believe",
-        "B": "radar",
-        "C": "declare",
-        "D": "annoy"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 64,
-      "question": "Identify the word with a different stress pattern",
-      "options": {
-        "A": "penitent",
-        "B": "penitence",
-        "C": "retrospect",
-        "D": "discover"
-      },
-      "answer": "C",
-      "image": null
-    },
-    {
-      "id": 65,
-      "question": "Identify the word with a different stress pattern",
-      "options": {
-        "A": "enjoy",
-        "B": "reason",
-        "C": "refer",
-        "D": "belief"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 66,
-      "question": "From the words lettered A to D below each of the following sentences, choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence. Parents encourage their children to exercise financial <u>prudence</u>.",
-      "options": {
-        "A": "precision",
-        "B": "caution",
-        "C": "credence",
-        "D": "sincerity"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 67,
-      "question": "From the words lettered A to D below each of the following sentences, choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence. Awa <u>deceived</u> Ahmed into handing over all his savings.",
-      "options": {
-        "A": "cooked",
-        "B": "fooled",
-        "C": "cheated",
-        "D": "betrayed"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 68,
-      "question": "From the words lettered A to D below each of the following sentences, choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence. It turned out that the plaintiff's <u>claim</u> was false.",
-      "options": {
-        "A": "surmise",
-        "B": "pronouncement",
-        "C": "allegation",
-        "D": "contention"
-      },
-      "answer": "C",
-      "image": null
-    },
-    {
-      "id": 69,
-      "question": "From the words lettered A to D below each of the following sentences, choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence. The aggrieved faction held a <u>clandestine</u> meeting.",
-      "options": {
-        "A": "secret",
-        "B": "quiet",
-        "C": "quick",
-        "D": "brief"
+        "A": "regime",
+        "B": "gutter",
+        "C": "gender",
+        "D": "design"
       },
       "answer": "A",
-      "image": null
-    },
-    {
-      "id": 70,
-      "question": "From the words lettered A to D below each of the following sentences, choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence. Morgan Pharmacy is the <u>sole</u> distributor of the antiviral drug.",
-      "options": {
-        "A": "only",
-        "B": "major",
-        "C": "creditable",
-        "D": "first"
-      },
-      "answer": "A",
-      "image": null
-    },
-    {
-      "id": 71,
-      "question": "From the words lettered A to D below each of the following sentences, choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence. Police officers holding batons <u>impounded</u> the banker's car.",
-      "options": {
-        "A": "collected",
-        "B": "banned",
-        "C": "banished",
-        "D": "seized"
-      },
-      "answer": "D",
-      "image": null
-    },
-    {
-      "id": 72,
-      "question": "From the words lettered A to D below each of the following sentences, choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence. The English teacher is always <u>cheerful</u>.",
-      "options": {
-        "A": "careful",
-        "B": "gleeful",
-        "C": "satisfied",
-        "D": "zealous"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 73,
-      "question": "From the words lettered A to D below each of the following sentences, choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence. The Chairman is of the opinion that laying off workers is <u>pernicious</u> to the growth of the company.",
-      "options": {
-        "A": "crucial",
-        "B": "irrelevant",
-        "C": "indispensible",
-        "D": "harmful"
-      },
-      "answer": "D",
-      "image": null
-    },
-    {
-      "id": 74,
-      "question": "From the words lettered A to D below each of the following sentences, choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence. It was she that <u>commanded</u> me to leave the room.",
-      "options": {
-        "A": "encouraged",
-        "B": "induced",
-        "C": "ordered",
-        "D": "persuaded"
-      },
-      "answer": "C",
-      "image": null
-    },
-    {
-      "id": 75,
-      "question": "From the words lettered A to D below each of the following sentences, choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence. The valedictorian was admired for her <u>perseverance</u> while at school.",
-      "options": {
-        "A": "patience",
-        "B": "tenacity",
-        "C": "enthusiasm",
-        "D": "humility"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 76,
-      "question": "In each of the following sentences, the word that receives the emphatic stress is written in Capital letters. Choose the option to which the given sentence is the appropriate answer. Ojo won the prize for the best TEACHER.",
-      "options": {
-        "A": "Did Ojo win the prize for the best dancer?",
-        "B": "Did Ojo win the award for the best teacher?",
-        "C": "Did Oke win the prize for the best teacher?",
-        "D": "Did Ojo lose the prize for the best teacher?"
-      },
-      "answer": "A",
-      "image": null
-    },
-    {
-      "id": 77,
-      "question": "In each of the following sentences, the word that receives the emphatic stress is written in Capital letters. Choose the option to which the given sentence is the appropriate answer. The president rewarded some of the OFFICERS.",
-      "options": {
-        "A": "Did the president reward all the officers?",
-        "B": "Did the senator reward some of the officers?",
-        "C": "Did the president reward some of the students?",
-        "D": "Did the president censure some of the officers?"
-      },
-      "answer": "C",
-      "image": null
-    },
-    {
-      "id": 78,
-      "question": "In each of the following sentences, the word that receives the emphatic stress is written in Capital letters. Choose the option to which the given sentence is the appropriate answer. The woman bought a CARTON of milk.",
-      "options": {
-        "A": "Did the woman buy a tin of milk?",
-        "B": "Did the woman sell a carton of milk?",
-        "C": "Did the man buy a carton of milk?",
-        "D": "Did the woman buy a carton of fish?"
-      },
-      "answer": "A",
-      "image": null
-    },
-    {
-      "id": 79,
-      "question": "In each of the following sentences, the word that receives the emphatic stress is written in Capital letters. Choose the option to which the given sentence is the appropriate answer. She will send a BAG to him today.",
-      "options": {
-        "A": "Will he send a bag to him today?",
-        "B": "Will she send a bag to her today?",
-        "C": "Will she send a shirt to him today?",
-        "D": "Will she send a bag to him tomorrow?"
-      },
-      "answer": "C",
-      "image": null
-    },
-    {
-      "id": 80,
-      "question": "In each of the following sentences, the word that receives the emphatic stress is written in Capital letters. Choose the option to which the given sentence is the appropriate answer. She slept on the BIG bed.",
-      "options": {
-        "A": "Did she sleep under the big bed?",
-        "B": "Did she sleep on the small bed?",
-        "C": "Did she sleep on the big couch?",
-        "D": "Did he sleep on the big bed?"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 81,
-      "question": "Choose the word that contains the sound represented by the given phonetic symbol /ɔɪ/",
-      "options": {
-        "A": "stock",
-        "B": "roam",
-        "C": "coin",
-        "D": "note"
-      },
-      "answer": "C",
-      "image": null
-    },
-    {
-      "id": 82,
-      "question": "Choose the word that contains the sound represented by the given phonetic symbol /ɜː/",
-      "options": {
-        "A": "scourge",
-        "B": "water",
-        "C": "heart",
-        "D": "shears"
-      },
-      "answer": "A",
-      "image": null
-    },
-    {
-      "id": 83,
-      "question": "Choose the word that contains the sound represented by the given phonetic symbol /ʃ/",
-      "options": {
-        "A": "charade",
-        "B": "fist",
-        "C": "charm",
-        "D": "measure"
-      },
-      "answer": "D",
-      "image": null
-    },
-    {
-      "id": 84,
-      "question": "Choose the word that contains the sound represented by the given phonetic symbol /ʊ/",
-      "options": {
-        "A": "hook",
-        "B": "juice",
-        "C": "cool",
-        "D": "souse"
-      },
-      "answer": "A",
-      "image": null
-    },
-    {
-      "id": 85,
-      "question": "Choose the word that contains the sound represented by the given phonetic symbol /æ/",
-      "options": {
-        "A": "snag",
-        "B": "around",
-        "C": "small",
-        "D": "also"
-      },
-      "answer": "A",
-      "image": null
-    },
-    {
-      "id": 86,
-      "question": "Choose the word that contains the sound represented by the given phonetic symbol /dʒ/",
-      "options": {
-        "A": "gear",
-        "B": "siege",
-        "C": "seizure",
-        "D": "suggest"
-      },
-      "answer": "D",
-      "image": null
-    },
-    {
-      "id": 87,
-      "question": "Choose the word that contains the sound represented by the given phonetic symbol /ŋ/",
-      "options": {
-        "A": "reign",
-        "B": "sink",
-        "C": "hinge",
-        "D": "thin"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 88,
-      "question": "Choose the word that contains the sound represented by the given phonetic symbol /θ/",
-      "options": {
-        "A": "feather",
-        "B": "wither",
-        "C": "breathe",
-        "D": "stealthy"
-      },
-      "answer": "D",
-      "image": null
-    },
-    {
-      "id": 89,
-      "question": "Choose the word that contains the sound represented by the given phonetic symbol /ei/",
-      "options": {
-        "A": "said",
-        "B": "seize",
-        "C": "gale",
-        "D": "nine"
-      },
-      "answer": "C",
-      "image": null
-    },
-    {
-      "id": 90,
-      "question": "Choose the word that contains the sound represented by the given phonetic symbol /j/",
-      "options": {
-        "A": "jest",
-        "B": "flew",
-        "C": "haste",
-        "D": "value"
-      },
-      "answer": "D",
-      "image": null
-    },
-    {
-      "id": 91,
-      "question": "After each of the following sentences, a list of possible interpretations is given. Choose the interpretation that is most appropriate for each sentence. Revealing that information will cut the ground from under my feet. This means that it will",
-      "options": {
-        "A": "ruin my plans",
-        "B": "support my plans",
-        "C": "promote my plans",
-        "D": "expose my plans"
-      },
-      "answer": "A",
-      "image": null
-    },
-    {
-      "id": 92,
-      "question": "After each of the following sentences, a list of possible interpretations is given. Choose the interpretation that is most appropriate for each sentence. Mother always tells me to keep my nose clean. This means that she tells me to",
-      "options": {
-        "A": "stay healthy",
-        "B": "be focused",
-        "C": "do what pleases me",
-        "D": "stay out of trouble"
-      },
-      "answer": "D",
-      "image": null
-    },
-    {
-      "id": 93,
-      "question": "After each of the following sentences, a list of possible interpretations is given. Choose the interpretation that is most appropriate for each sentence. This action effectively puts the mockers on the project. This means that the project.",
-      "options": {
-        "A": "take off soon",
-        "B": "be delayed",
-        "C": "not begin well",
-        "D": "not be executed"
-      },
-      "answer": "D",
-      "image": null
-    },
-    {
-      "id": 94,
-      "question": "After each of the following sentences, a list of possible interpretations is given. Choose the interpretation that is most appropriate for each sentence. You can see clearly that we are surpassed in numerical strength. This means that we are",
-      "options": {
-        "A": "more than they are",
-        "B": "by far stronger than they",
-        "C": "much weaker than they",
-        "D": "fewer than they are"
-      },
-      "answer": "D",
-      "image": null
-    },
-    {
-      "id": 95,
-      "question": "After each of the following sentences, a list of possible interpretations is given. Choose the interpretation that is most appropriate for each sentence. One of the athletes was disqualified because she jumped the gun. This means that she started",
-      "options": {
-        "A": "on time",
-        "B": "hurriedly",
-        "C": "without permission",
-        "D": "too soon"
-      },
-      "answer": "D",
-      "image": null
-    },
-    {
-      "id": 96,
-      "question": "After each of the following sentences, a list of possible interpretations is given. Choose the interpretation that is most appropriate for each sentence. Be careful of what you say; there are no flies on the boss. This means that the boss is",
-      "options": {
-        "A": "strict",
-        "B": "smart",
-        "C": "gullible",
-        "D": "neat"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 97,
-      "question": "After each of the following sentences, a list of possible interpretations is given. Choose the interpretation that is most appropriate for each sentence. The students cocked their ears at the principal's speech. This means that they listened with",
-      "options": {
-        "A": "no understanding",
-        "B": "rapt attention",
-        "C": "no interest",
-        "D": "little interest"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 98,
-      "question": "After each of the following sentences, a list of possible interpretations is given. Choose the interpretation that is most appropriate for each sentence. Your daughter will do very well in school. She has a good head on her shoulders. This means that she",
-      "options": {
-        "A": "thinks fast",
-        "B": "is sensible",
-        "C": "is very beautiful",
-        "D": "is well behaved and diligent"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 99,
-      "question": "After each of the following sentences, a list of possible interpretations is given. Choose the interpretation that is most appropriate for each sentence. The accountant has been under a cloud since the fraud scandal. This means that the accountant is",
-      "options": {
-        "A": "unhappy",
-        "B": "under suspicion",
-        "C": "worried",
-        "D": "under supervision"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 100,
-      "question": "After each of the following sentences, a list of possible interpretations is given. Choose the interpretation that is most appropriate for each sentence. Immediately the truth was revealed, Ngozi flew into a rage. This means that Ngozi",
-      "options": {
-        "A": "ran away",
-        "B": "became sad",
-        "C": "became desperate",
-        "D": "suddenly became very angry"
-      },
-      "answer": "D",
       "image": null
     }
-      
-
-
 
 ];
 
 
         const staticTheoryQuestions = [
-      {
-          "id": 1,
-          "question": "NO  QUESTION AVAILABLE YET",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 2,
-          "question": "NO  QUESTION AVAILABLE YET.",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 3,
-          "question": "NO  QUESTION AVAILABLE YET",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 4,
-          "question": "NO  QUESTION AVAILABLE YET",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 5,
-          "question": "NO  QUESTION AVAILABLE YET.",
-          "marks": 10,
-          "image": null
-        }
+     {
+    "id": 1,
+    "question": "NO QUESTIONS AVAILABLE YET",
+    "marks": null,
+    "image": null
+  },
+  {
+    "id": 2,
+    "question": "NO QUESTIONS AVAILABLE YET",
+    "marks": null,
+    "image": null
+  },
+  {
+    "id": 3,
+    "question": "NO QUESTIONS AVAILABLE YET",
+    "marks": null,
+    "image": null
+  }
 ];
-
-
-
-
-
-
         // ================== APPLICATION VARIABLES ==================
         let questions = [];
         let currentQuestion = 0;
