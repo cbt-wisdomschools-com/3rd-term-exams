@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.wisdom foundationschools.org - JSS1 MATHEMATICS  Exam</title>
+    <title>cbt.wisdom foundationschools.org - FRENCH JSS1 Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -581,13 +581,19 @@
         <div id="logout-container">
             <button id="logout" onclick="logout()">Logout</button>
                  <div class="marquee-container">
-        <span class="marquee-text">WISDOM FOUNDATION SCHOOLS  :  GATEWAY TO THE UNIVERSITY FOR YOUR CHILD </span>
+        <span class="marquee-text">WISDOM FOUNDATION SCHOOLS  :  GATEWAY TO THE UNIVERSITY</span>
     </div>
         </div>
         <div id="logo">
             <img src="img/wisdom_logo1.png" alt="image">
 
-           
+               <!--<div class="logo-left">
+                <img src="img/9ja1.png" alt="Nigeria Logo" >
+            </div>
+
+            <div class="logo-right">
+                <img src="img/nappps1.png" alt="NAPPS Logo" >
+            </div>-->
         </div>
 
            
@@ -609,7 +615,7 @@
 
     
         <center><h3>WISDOM FOUNDATION SCHOOLS EGBEWA  ADO EKITI </h3></center> 
-        <center><h3>SECOND TERM EXAMINATION 2025/2026 ACADEMIC SESSION</h3></center>
+        <center><h3>3RD TERM EXAMINATION 2025/2026 ACADEMIC SESSION</h3></center>
        
         <!-- SECTION TOGGLE BUTTONS -->
         <div class="section-toggle">
@@ -618,7 +624,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  JSS1 MATHEMATICS (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  FRENCH JSS1 - JSS1 (3RD TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -684,7 +690,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> JSS1 MATHEMATICS   FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION HAPPY EASTER HOLIDAY CELEBRATION </span>
+        <span class="marquee-text"> FRENCH JSS1  FOR 3RD TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION  </span>
     </div>
    
     <div class="windows-activate">
@@ -693,300 +699,288 @@
 
 
     <script>
-        
+           // Get stored username and image from sessionStorage
        
             
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-          {
+         {
           "id": 1,
-          "question": "(+16) + (+2) =",
+          "question": "Le tableau est …………",
           "options": {
-            "A": "12",
-            "B": "18",
-            "C": "-18",
-            "D": "-12"
+            "A": "board",
+            "B": "table",
+            "C": "bottle",
+            "D": "basket"
           },
-          "answer": "B",
+          "answer": "A",
           "image": null
         },
         {
           "id": 2,
-          "question": "(-19) – (-14) =",
+          "question": "L'ordinateur est ………..",
           "options": {
-            "A": "5",
-            "B": "-33",
-            "C": "-5",
-            "D": "33"
+            "A": "wastebin",
+            "B": "marker",
+            "C": "computer",
+            "D": "fan"
           },
           "answer": "C",
           "image": null
         },
         {
           "id": 3,
-          "question": "(+12) + (-40) =",
+          "question": "Le cahier est …………….",
           "options": {
-            "A": "52",
-            "B": "-28",
-            "C": "28",
-            "D": "-52"
+            "A": "notebook",
+            "B": "cashew",
+            "C": "textbook",
+            "D": "drawing book"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 4,
+          "question": "Le siglet est ……………..",
+          "options": {
+            "A": "market",
+            "B": "marker",
+            "C": "mango",
+            "D": "money"
           },
           "answer": "B",
           "image": null
         },
         {
-          "id": 4,
-          "question": "Convert 5000grams to kilograms",
+          "id": 5,
+          "question": "Le ventilateur est ………..",
           "options": {
-            "A": "5kg",
-            "B": "50kg",
-            "C": "500kg",
-            "D": "0.5kg"
+            "A": "fan",
+            "B": "food",
+            "C": "textbook",
+            "D": "desk"
           },
           "answer": "A",
-          "image": null
-        },
-        {
-          "id": 5,
-          "question": "What is the unit of measurement of a keg of kerosene",
-          "options": {
-            "A": "milliliters",
-            "B": "centiliters",
-            "C": "liter",
-            "D": "deciliter"
-          },
-          "answer": "C",
           "image": null
         },
         {
           "id": 6,
-          "question": "What unit of measurement car be used for a car",
+          "question": "Le Rideau est …………...",
           "options": {
-            "A": "tonne",
-            "B": "kilogram",
-            "C": "gram",
-            "D": "none of the above"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 7,
-          "question": "How many kilogram make up 1 tonne",
-          "options": {
-            "A": "1",
-            "B": "10",
-            "C": "100",
-            "D": "1000"
+            "A": "book",
+            "B": "chalk",
+            "C": "biro",
+            "D": "curtain"
           },
           "answer": "D",
           "image": null
         },
         {
-          "id": 8,
-          "question": "How many 50 grammes mass can be obtained from 250 grammes",
+          "id": 7,
+          "question": "Le torchon est ……………",
           "options": {
-            "A": "3",
-            "B": "4",
-            "C": "5",
-            "D": "6"
+            "A": "duster",
+            "B": "curtain",
+            "C": "window",
+            "D": "desk"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 8,
+          "question": "La fenêtre est …………….",
+          "options": {
+            "A": "food",
+            "B": "farm",
+            "C": "window",
+            "D": "door"
           },
           "answer": "C",
           "image": null
         },
         {
           "id": 9,
-          "question": "Solve 5% of #125",
+          "question": "La poubelle est …………...",
           "options": {
-            "A": "#6.25",
-            "B": "#7.4",
-            "C": "#8.3",
-            "D": "9.8"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 10,
-          "question": "Express 1/4 in percentage",
-          "options": {
-            "A": "30%",
-            "B": "25%",
-            "C": "40%",
-            "D": "50%"
+            "A": "pot",
+            "B": "wastebin",
+            "C": "wall",
+            "D": "wallet"
           },
           "answer": "B",
           "image": null
         },
         {
-          "id": 11,
-          "question": "Express 20% as fraction",
+          "id": 10,
+          "question": "Le livre est ………………..",
           "options": {
-            "A": "1/2",
-            "B": "1/4",
-            "C": "1/5",
-            "D": "1/10"
+            "A": "leaf",
+            "B": "bed",
+            "C": "textbook",
+            "D": "notebook"
           },
           "answer": "C",
           "image": null
         },
         {
-          "id": 12,
-          "question": "Simplify 1010₂ + 1101₂",
+          "id": 11,
+          "question": "La clé est ………………….",
           "options": {
-            "A": "10111₂",
-            "B": "1011₂",
-            "C": "1111₂",
-            "D": "01011₂"
+            "A": "kettle",
+            "B": "key",
+            "C": "cardboard",
+            "D": "fan"
           },
-          "answer": "A",
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 12,
+          "question": "La porte est ……………….",
+          "options": {
+            "A": "pot",
+            "B": "door",
+            "C": "bowl",
+            "D": "chalk"
+          },
+          "answer": "B",
           "image": null
         },
         {
           "id": 13,
-          "question": "Simplify 102₃ + 212₃",
+          "question": "Le Rideau est ……………..",
           "options": {
-            "A": "1021₃",
-            "B": "1102₃",
-            "C": "0112₃",
-            "D": "2110₃"
+            "A": "curtain",
+            "B": "cotton",
+            "C": "radio",
+            "D": "pillow"
           },
           "answer": "A",
           "image": null
         },
         {
           "id": 14,
-          "question": "Simplify 10011₂ – 1101₂",
+          "question": "Le fer a repasser est ………",
           "options": {
-            "A": "00110₂",
-            "B": "00101₂",
-            "C": "01010₂",
-            "D": "11000₂"
+            "A": "pressing iron",
+            "B": "bottle of water",
+            "C": "bottle of drinks",
+            "D": "clothing"
           },
           "answer": "A",
           "image": null
         },
         {
           "id": 15,
-          "question": "312₄ – 233₄",
+          "question": "L'oreiller est ……………...",
           "options": {
-            "A": "013₄",
-            "B": "130₄",
-            "C": "103₄",
-            "D": "1003₄"
+            "A": "wall",
+            "B": "pillow",
+            "C": "ceiling",
+            "D": "bottle"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 16,
+          "question": "Le tapis est ………………..",
+          "options": {
+            "A": "rug",
+            "B": "basket",
+            "C": "bowl",
+            "D": "bed"
           },
           "answer": "A",
           "image": null
         },
         {
-          "id": 16,
-          "question": "Approximate 49.567 to 2 decimal place",
-          "options": {
-            "A": "49.50",
-            "B": "49.57",
-            "C": "49",
-            "D": "49.56"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
           "id": 17,
-          "question": "Approximate 0.0457 to 2 decimal place",
+          "question": "La valise est ………………",
           "options": {
-            "A": "0.04",
-            "B": "0.05",
-            "C": "0.10",
-            "D": "0.11"
+            "A": "venue",
+            "B": "paper",
+            "C": "curtain",
+            "D": "briefcase"
           },
-          "answer": "B",
+          "answer": "D",
           "image": null
         },
         {
           "id": 18,
-          "question": "Approximate 813.1146 to 2 significant figures",
+          "question": "L'armoire est ………………",
           "options": {
-            "A": "813.12",
-            "B": "810",
-            "C": "820",
-            "D": "813.11"
+            "A": "money",
+            "B": "wardrobe",
+            "C": "calendar",
+            "D": "bag"
           },
           "answer": "B",
           "image": null
         },
         {
           "id": 19,
-          "question": "Approximate 237.46 to 2 significant figures",
+          "question": "Le lit est ……………………",
           "options": {
-            "A": "230",
-            "B": "240",
-            "C": "237.40",
-            "D": "237.50"
+            "A": "book",
+            "B": "basket",
+            "C": "leaf",
+            "D": "bed"
           },
-          "answer": "B",
+          "answer": "D",
           "image": null
         },
         {
           "id": 20,
-          "question": "Approximate 7.213659 to 2 significant figures",
+          "question": "Le calendrier est ……………",
           "options": {
-            "A": "7.20000",
-            "B": "7.21000",
-            "C": "7.3000",
-            "D": "7.2200"
+            "A": "car",
+            "B": "cattle",
+            "C": "carpet",
+            "D": "calendar"
           },
-          "answer": "A",
+          "answer": "D",
           "image": null
         }
 ];
 
 
         const staticTheoryQuestions = [
-    {
-          "id": 1,
-          "question": "State the unit of mass that you will use to measure the following: (i) a car (ii) a chair (iii) a lorry (iv) a bag of rice (v) a bag of beans (vi) an orange (vii) a boy/girl",
-          "marks": 10,
-          "image": null
-        },
         {
-          "id": 2,
-          "question": "How many 50 grammes mass can be obtained from 400 grammes",
+          "id": 1,
+          "question": "Présenter votre amie en cinq phrase en Français.\n(b)Mentionnez cinq (5) nourritures en Français.",
+          
           "marks": 10,
           "image": null
-        },
+        
+       },
+       {
+          "id": 2,
+          "question": "Mentionnez cinq (5) fruits en Français.\n(b)Ecrivez les professions de ces fonctions en francais:\ni. Soigne les malades –\nii. Contruire une maison –\niii. Plante des legumes –\niv. Defend les accuses –\nv. Conduire l'avion –",
+          
+          "marks": 10,
+          "image": null
+      },
+        
         {
           "id": 3,
-          "question": "Copy and complete the table in base 5\n+   0   1   2   3   4\n0   0\n1\n2                 11\n3\n4   4           13",
+          "question": "Mentionnez (5) professions en Français.\n(b)Ecrivez avec 'Combien'\nExemple:\ni. Il y a combien de batiments dans l'ecole.\n→ Combien de batiments y – a – t-il dans l'ecole.\nContinuez.\ni. Il y a combien de professeurs dans l'ecole.\nii. Il y a combien de bus dans l'ecole.\niii. Il y a combien de livres dans le sac.\niv. -------Il y a combien de filles dans la classe.\nv. Il y a combien de garcons dans la classe.",
+          
           "marks": 10,
-          "image": "img1/math_jss1_que3.png"
-        },
+          "image": null
+      },
+        
         {
           "id": 4,
-          "question": "If t=10 and e=11 in base twelve, simplify the following in base 12\n(i) 4e4e + 2e12\n(ii) e8et – 1ee2",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 5,
-          "question": "Express the following in common fraction (i) 26% (ii) 35% (iii) 200%",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 6,
-          "question": "Express the following as a percentage (i) 42/100 (ii) 17/100 (iii) 51/100",
-          "marks": 10,
+          "question": "Mentionnez cinq (5) pays qui Parle Français\n(b)Ecrivez au pluriel\ni. C'est un bic →\nii. C'est une chemise →\nc: Mentionnez trois (3) adjectives qui termine avec 'e' en francais.",
+          
+          "marks": 20,
           "image": null
         }
 ];
-
-
-
-
-
-
-
         // ================== APPLICATION VARIABLES ==================
         let questions = [];
         let currentQuestion = 0;
@@ -1007,7 +1001,7 @@
                 localStorage.setItem('examSubject', 'EXAM');
                 localStorage.setItem('examClass', 'RESULT');
             }
-            localStorage.setItem('examTerm', 'SECOND TERM 2025/2026');
+            localStorage.setItem('examTerm', 'THIRDD TERM 2025/2026');
       
              const username = sessionStorage.getItem('username');
                 const image = sessionStorage.getItem('image');

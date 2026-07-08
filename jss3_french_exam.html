@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.wisdom foundationschools.org - JSS1 MATHEMATICS  Exam</title>
+    <title>cbt.wisdom foundationschools.org - FRENCH JSS3 Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -581,13 +581,19 @@
         <div id="logout-container">
             <button id="logout" onclick="logout()">Logout</button>
                  <div class="marquee-container">
-        <span class="marquee-text">WISDOM FOUNDATION SCHOOLS  :  GATEWAY TO THE UNIVERSITY FOR YOUR CHILD </span>
+        <span class="marquee-text">WISDOM FOUNDATION SCHOOLS  :  GATEWAY TO THE UNIVERSITY</span>
     </div>
         </div>
         <div id="logo">
             <img src="img/wisdom_logo1.png" alt="image">
 
-           
+               <!--<div class="logo-left">
+                <img src="img/9ja1.png" alt="Nigeria Logo" >
+            </div>
+
+            <div class="logo-right">
+                <img src="img/nappps1.png" alt="NAPPS Logo" >
+            </div>-->
         </div>
 
            
@@ -609,7 +615,7 @@
 
     
         <center><h3>WISDOM FOUNDATION SCHOOLS EGBEWA  ADO EKITI </h3></center> 
-        <center><h3>SECOND TERM EXAMINATION 2025/2026 ACADEMIC SESSION</h3></center>
+        <center><h3>3RD TERM EXAMINATION 2025/2026 ACADEMIC SESSION</h3></center>
        
         <!-- SECTION TOGGLE BUTTONS -->
         <div class="section-toggle">
@@ -618,7 +624,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  JSS1 MATHEMATICS (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  FRENCH JSS3 (3RD TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -684,7 +690,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> JSS1 MATHEMATICS   FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION HAPPY EASTER HOLIDAY CELEBRATION </span>
+        <span class="marquee-text"> FRENCH JSS3  FOR 3RD TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION </span>
     </div>
    
     <div class="windows-activate">
@@ -693,248 +699,248 @@
 
 
     <script>
-        
+       
        
             
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-          {
+       {
           "id": 1,
-          "question": "(+16) + (+2) =",
+          "question": "Voisin est ------------------",
           "options": {
-            "A": "12",
-            "B": "18",
-            "C": "-18",
-            "D": "-12"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 2,
-          "question": "(-19) – (-14) =",
-          "options": {
-            "A": "5",
-            "B": "-33",
-            "C": "-5",
-            "D": "33"
+            "A": "vehicle",
+            "B": "village",
+            "C": "neighbour",
+            "D": "company"
           },
           "answer": "C",
           "image": null
         },
         {
-          "id": 3,
-          "question": "(+12) + (-40) =",
+          "id": 2,
+          "question": "Medecin est ----------------",
           "options": {
-            "A": "52",
-            "B": "-28",
-            "C": "28",
-            "D": "-52"
+            "A": "drug",
+            "B": "medical doctor",
+            "C": "movement",
+            "D": "many"
           },
           "answer": "B",
           "image": null
         },
         {
-          "id": 4,
-          "question": "Convert 5000grams to kilograms",
+          "id": 3,
+          "question": "Enchante est ----------------",
           "options": {
-            "A": "5kg",
-            "B": "50kg",
-            "C": "500kg",
-            "D": "0.5kg"
+            "A": "delighted",
+            "B": "equipment",
+            "C": "sharing",
+            "D": "share it"
           },
           "answer": "A",
           "image": null
         },
         {
-          "id": 5,
-          "question": "What is the unit of measurement of a keg of kerosene",
+          "id": 4,
+          "question": "D'accord est -----------------",
           "options": {
-            "A": "milliliters",
-            "B": "centiliters",
-            "C": "liter",
-            "D": "deciliter"
+            "A": "silent",
+            "B": "alright",
+            "C": "welldone",
+            "D": "thank you"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 5,
+          "question": "Quelqu'un est ----------------",
+          "options": {
+            "A": "somewhere",
+            "B": "someday",
+            "C": "someone",
+            "D": "look here"
           },
           "answer": "C",
           "image": null
         },
         {
           "id": 6,
-          "question": "What unit of measurement car be used for a car",
+          "question": "……………………. travaille a l’hôpital",
           "options": {
-            "A": "tonne",
-            "B": "kilogram",
-            "C": "gram",
-            "D": "none of the above"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 7,
-          "question": "How many kilogram make up 1 tonne",
-          "options": {
-            "A": "1",
-            "B": "10",
-            "C": "100",
-            "D": "1000"
+            "A": "cuitivateur",
+            "B": "fermier",
+            "C": "professeur",
+            "D": "docteur"
           },
           "answer": "D",
           "image": null
         },
         {
-          "id": 8,
-          "question": "How many 50 grammes mass can be obtained from 250 grammes",
+          "id": 7,
+          "question": "Malade est --------------------",
           "options": {
-            "A": "3",
-            "B": "4",
-            "C": "5",
-            "D": "6"
+            "A": "to be shouting",
+            "B": "to be sick",
+            "C": "to be quiet",
+            "D": "to look"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 8,
+          "question": "………………….travaile au champ",
+          "options": {
+            "A": "maçon",
+            "B": "infirmière",
+            "C": "fermier",
+            "D": "professeur"
           },
           "answer": "C",
           "image": null
         },
         {
           "id": 9,
-          "question": "Solve 5% of #125",
+          "question": "Fatigue est -------------------",
           "options": {
-            "A": "#6.25",
-            "B": "#7.4",
-            "C": "#8.3",
-            "D": "9.8"
+            "A": "tired",
+            "B": "work hard",
+            "C": "lazy",
+            "D": "make up"
           },
           "answer": "A",
           "image": null
         },
         {
           "id": 10,
-          "question": "Express 1/4 in percentage",
+          "question": "Depuis quand est -------------",
           "options": {
-            "A": "30%",
-            "B": "25%",
-            "C": "40%",
-            "D": "50%"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 11,
-          "question": "Express 20% as fraction",
-          "options": {
-            "A": "1/2",
-            "B": "1/4",
-            "C": "1/5",
-            "D": "1/10"
+            "A": "last year",
+            "B": "next year",
+            "C": "since when",
+            "D": "tomorrow"
           },
           "answer": "C",
           "image": null
         },
         {
-          "id": 12,
-          "question": "Simplify 1010₂ + 1101₂",
+          "id": 11,
+          "question": "Dormer est ----------------------",
           "options": {
-            "A": "10111₂",
-            "B": "1011₂",
-            "C": "1111₂",
-            "D": "01011₂"
+            "A": "to sleep",
+            "B": "to dull",
+            "C": "to change",
+            "D": "to manage"
           },
           "answer": "A",
+          "image": null
+        },
+        {
+          "id": 12,
+          "question": "Pas du tout est ------------------",
+          "options": {
+            "A": "not here",
+            "B": "go there",
+            "C": "over there",
+            "D": "not at all"
+          },
+          "answer": "D",
           "image": null
         },
         {
           "id": 13,
-          "question": "Simplify 102₃ + 212₃",
+          "question": "Perdu est -------------------------",
           "options": {
-            "A": "1021₃",
-            "B": "1102₃",
-            "C": "0112₃",
-            "D": "2110₃"
+            "A": "to think",
+            "B": "to waste",
+            "C": "to lost",
+            "D": "to move"
           },
-          "answer": "A",
+          "answer": "C",
           "image": null
         },
         {
           "id": 14,
-          "question": "Simplify 10011₂ – 1101₂",
+          "question": "La fièvre est ----------------------",
           "options": {
-            "A": "00110₂",
-            "B": "00101₂",
-            "C": "01010₂",
-            "D": "11000₂"
+            "A": "fever",
+            "B": "drug",
+            "C": "malaria",
+            "D": "stomach"
           },
           "answer": "A",
           "image": null
         },
         {
           "id": 15,
-          "question": "312₄ – 233₄",
+          "question": "Dans le soir on salue ------------",
           "options": {
-            "A": "013₄",
-            "B": "130₄",
-            "C": "103₄",
-            "D": "1003₄"
+            "A": "bon nuit",
+            "B": "bon rêve",
+            "C": "bon soir",
+            "D": "au revoir"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 16,
+          "question": "Les étudiants vont a l' -------------",
+          "options": {
+            "A": "champ",
+            "B": "hôpital",
+            "C": "hôtel",
+            "D": "école"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 17,
+          "question": "On achète au ----------------------",
+          "options": {
+            "A": "marche",
+            "B": "libraire",
+            "C": "école",
+            "D": "banquier"
           },
           "answer": "A",
           "image": null
         },
         {
-          "id": 16,
-          "question": "Approximate 49.567 to 2 decimal place",
-          "options": {
-            "A": "49.50",
-            "B": "49.57",
-            "C": "49",
-            "D": "49.56"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 17,
-          "question": "Approximate 0.0457 to 2 decimal place",
-          "options": {
-            "A": "0.04",
-            "B": "0.05",
-            "C": "0.10",
-            "D": "0.11"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
           "id": 18,
-          "question": "Approximate 813.1146 to 2 significant figures",
+          "question": "Comprime est ----------------------",
           "options": {
-            "A": "813.12",
-            "B": "810",
-            "C": "820",
-            "D": "813.11"
+            "A": "compound",
+            "B": "museum",
+            "C": "movement",
+            "D": "drug"
           },
-          "answer": "B",
+          "answer": "D",
           "image": null
         },
         {
           "id": 19,
-          "question": "Approximate 237.46 to 2 significant figures",
+          "question": "Il y a -------------------jour de la semaine",
           "options": {
-            "A": "230",
-            "B": "240",
-            "C": "237.40",
-            "D": "237.50"
+            "A": "huit",
+            "B": "soixante",
+            "C": "sept",
+            "D": "douze"
           },
-          "answer": "B",
+          "answer": "C",
           "image": null
         },
         {
           "id": 20,
-          "question": "Approximate 7.213659 to 2 significant figures",
+          "question": "Il y a -------------------mois de l’année",
           "options": {
-            "A": "7.20000",
-            "B": "7.21000",
-            "C": "7.3000",
-            "D": "7.2200"
+            "A": "douze",
+            "B": "dix-sept",
+            "C": "cinq",
+            "D": "vingt deux"
           },
           "answer": "A",
           "image": null
@@ -943,50 +949,31 @@
 
 
         const staticTheoryQuestions = [
-    {
+      {
           "id": 1,
-          "question": "State the unit of mass that you will use to measure the following: (i) a car (ii) a chair (iii) a lorry (iv) a bag of rice (v) a bag of beans (vi) an orange (vii) a boy/girl",
+          "question": "Mentionnez dix (10) fruits en français.\n(b)Utilisez ‘où’ pour demander des questions\ni. Le professeur est devant la classe.\n-----\nii. La voiture est dans la rue.\n-----\niii. La poste se trouve derrière la gare.\n-----\niv. Les pantalons sont ici.\n----\nv. Les cahiers se trouvent sur la table.",
           "marks": 10,
           "image": null
         },
         {
           "id": 2,
-          "question": "How many 50 grammes mass can be obtained from 400 grammes",
+          "question": "Utilisez Est-il nécessaire de + verbe\ni. Je vais au champ.\n---\nii. Elle invite tout le monde.\n----\niii. Tu parles en Yorouba\n---\niv. Madame Sade a deux maris\n---\n(b)Conjuguer le verbe ‘Avoir’ au présent l’indicatif",
           "marks": 10,
           "image": null
         },
         {
           "id": 3,
-          "question": "Copy and complete the table in base 5\n+   0   1   2   3   4\n0   0\n1\n2                 11\n3\n4   4           13",
+          "question": "Utilisez pas encore correctement.\ni. La maladie est déjà grave.\n---\nii. Tu pars déjà en vacances?\n---\niii. Le professeur est déjà en classe.\n---\n(b)Mentionnez sept {7} nourritures en Français",
           "marks": 10,
-          "image": "img1/math_jss1_que3.png"
+          "image": null
         },
         {
           "id": 4,
-          "question": "If t=10 and e=11 in base twelve, simplify the following in base 12\n(i) 4e4e + 2e12\n(ii) e8et – 1ee2",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 5,
-          "question": "Express the following in common fraction (i) 26% (ii) 35% (iii) 200%",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 6,
-          "question": "Express the following as a percentage (i) 42/100 (ii) 17/100 (iii) 51/100",
+          "question": "Utilisez depuis quand correctement\ni. Etes – vous dans cette ecole depuis quand\n→\nii. Apprenez-vous le francais depuis quand.\n→\niii. Depuis quand as tu mal a la tete\n→\niv. Tu habites ici depuis quand\n→\nv. Tu travailes depuis quand\n→\n(b)Mentionnez dix (10) mois de l’annee en francais.",
           "marks": 10,
           "image": null
         }
 ];
-
-
-
-
-
-
-
         // ================== APPLICATION VARIABLES ==================
         let questions = [];
         let currentQuestion = 0;
@@ -1007,7 +994,7 @@
                 localStorage.setItem('examSubject', 'EXAM');
                 localStorage.setItem('examClass', 'RESULT');
             }
-            localStorage.setItem('examTerm', 'SECOND TERM 2025/2026');
+            localStorage.setItem('examTerm', 'THIRD TERM 2025/2026');
       
              const username = sessionStorage.getItem('username');
                 const image = sessionStorage.getItem('image');

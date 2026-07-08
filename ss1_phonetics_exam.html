@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.wisdom foundationschools.org - JSS1 MATHEMATICS  Exam</title>
+    <title>cbt.wisdom foundationschools.org - PHONETICS SS1  Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -581,13 +581,19 @@
         <div id="logout-container">
             <button id="logout" onclick="logout()">Logout</button>
                  <div class="marquee-container">
-        <span class="marquee-text">WISDOM FOUNDATION SCHOOLS  :  GATEWAY TO THE UNIVERSITY FOR YOUR CHILD </span>
+        <span class="marquee-text">WISDOM FOUNDATION SCHOOLS  :  GATEWAY TO THE UNIVERSITY</span>
     </div>
         </div>
         <div id="logo">
             <img src="img/wisdom_logo1.png" alt="image">
 
-           
+               <!--<div class="logo-left">
+                <img src="img/9ja1.png" alt="Nigeria Logo" >
+            </div>
+
+            <div class="logo-right">
+                <img src="img/nappps1.png" alt="NAPPS Logo" >
+            </div>-->
         </div>
 
            
@@ -609,7 +615,7 @@
 
     
         <center><h3>WISDOM FOUNDATION SCHOOLS EGBEWA  ADO EKITI </h3></center> 
-        <center><h3>SECOND TERM EXAMINATION 2025/2026 ACADEMIC SESSION</h3></center>
+        <center><h3>THIRD TERM EXAMINATION 2025/2026 ACADEMIC SESSION</h3></center>
        
         <!-- SECTION TOGGLE BUTTONS -->
         <div class="section-toggle">
@@ -618,7 +624,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  JSS1 MATHEMATICS (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  PHONETICS SS1 (THIRD TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -684,7 +690,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> JSS1 MATHEMATICS   FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION HAPPY EASTER HOLIDAY CELEBRATION </span>
+        <span class="marquee-text"> PHONETICS SS1   FOR 3RD TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION </span>
     </div>
    
     <div class="windows-activate">
@@ -693,300 +699,757 @@
 
 
     <script>
-        
+           // Get stored username and image from sessionStorage
        
             
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-          {
-          "id": 1,
-          "question": "(+16) + (+2) =",
-          "options": {
-            "A": "12",
-            "B": "18",
-            "C": "-18",
-            "D": "-12"
-          },
-          "answer": "B",
-          "image": null
-        },
+        
         {
-          "id": 2,
-          "question": "(-19) – (-14) =",
-          "options": {
-            "A": "5",
-            "B": "-33",
-            "C": "-5",
-            "D": "33"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 3,
-          "question": "(+12) + (-40) =",
-          "options": {
-            "A": "52",
-            "B": "-28",
-            "C": "28",
-            "D": "-52"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 4,
-          "question": "Convert 5000grams to kilograms",
-          "options": {
-            "A": "5kg",
-            "B": "50kg",
-            "C": "500kg",
-            "D": "0.5kg"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 5,
-          "question": "What is the unit of measurement of a keg of kerosene",
-          "options": {
-            "A": "milliliters",
-            "B": "centiliters",
-            "C": "liter",
-            "D": "deciliter"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 6,
-          "question": "What unit of measurement car be used for a car",
-          "options": {
-            "A": "tonne",
-            "B": "kilogram",
-            "C": "gram",
-            "D": "none of the above"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 7,
-          "question": "How many kilogram make up 1 tonne",
-          "options": {
-            "A": "1",
-            "B": "10",
-            "C": "100",
-            "D": "1000"
-          },
-          "answer": "D",
-          "image": null
-        },
-        {
-          "id": 8,
-          "question": "How many 50 grammes mass can be obtained from 250 grammes",
-          "options": {
-            "A": "3",
-            "B": "4",
-            "C": "5",
-            "D": "6"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 9,
-          "question": "Solve 5% of #125",
-          "options": {
-            "A": "#6.25",
-            "B": "#7.4",
-            "C": "#8.3",
-            "D": "9.8"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 10,
-          "question": "Express 1/4 in percentage",
-          "options": {
-            "A": "30%",
-            "B": "25%",
-            "C": "40%",
-            "D": "50%"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 11,
-          "question": "Express 20% as fraction",
-          "options": {
-            "A": "1/2",
-            "B": "1/4",
-            "C": "1/5",
-            "D": "1/10"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 12,
-          "question": "Simplify 1010₂ + 1101₂",
-          "options": {
-            "A": "10111₂",
-            "B": "1011₂",
-            "C": "1111₂",
-            "D": "01011₂"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 13,
-          "question": "Simplify 102₃ + 212₃",
-          "options": {
-            "A": "1021₃",
-            "B": "1102₃",
-            "C": "0112₃",
-            "D": "2110₃"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 14,
-          "question": "Simplify 10011₂ – 1101₂",
-          "options": {
-            "A": "00110₂",
-            "B": "00101₂",
-            "C": "01010₂",
-            "D": "11000₂"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 15,
-          "question": "312₄ – 233₄",
-          "options": {
-            "A": "013₄",
-            "B": "130₄",
-            "C": "103₄",
-            "D": "1003₄"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 16,
-          "question": "Approximate 49.567 to 2 decimal place",
-          "options": {
-            "A": "49.50",
-            "B": "49.57",
-            "C": "49",
-            "D": "49.56"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 17,
-          "question": "Approximate 0.0457 to 2 decimal place",
-          "options": {
-            "A": "0.04",
-            "B": "0.05",
-            "C": "0.10",
-            "D": "0.11"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 18,
-          "question": "Approximate 813.1146 to 2 significant figures",
-          "options": {
-            "A": "813.12",
-            "B": "810",
-            "C": "820",
-            "D": "813.11"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 19,
-          "question": "Approximate 237.46 to 2 significant figures",
-          "options": {
-            "A": "230",
-            "B": "240",
-            "C": "237.40",
-            "D": "237.50"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 20,
-          "question": "Approximate 7.213659 to 2 significant figures",
-          "options": {
-            "A": "7.20000",
-            "B": "7.21000",
-            "C": "7.3000",
-            "D": "7.2200"
-          },
-          "answer": "A",
-          "image": null
-        }
+      "id": 1,
+      "question": "choose the word that has the same vowel sound as the one represented by the letter(s) underlined. W<u>o</u>mb",
+      "options": {
+        "A": "book",
+        "B": "fool",
+        "C": "comb",
+        "D": "bomb"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 2,
+      "question": "choose the word that has the same vowel sound as the one represented by the letter(s) underlined. D<u>ir</u>t",
+      "options": {
+        "A": "pet",
+        "B": "worth",
+        "C": "sword",
+        "D": "deed"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 3,
+      "question": "choose the word that has the same vowel sound as the one represented by the letter(s) underlined. W<u>or</u>st",
+      "options": {
+        "A": "fiery",
+        "B": "cord",
+        "C": "put",
+        "D": "worship"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 4,
+      "question": "choose the word that has the same vowel sound as the one represented by the letter(s) underlined. h<u>a</u>ll",
+      "options": {
+        "A": "shortage",
+        "B": "love",
+        "C": "courage",
+        "D": "country"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 5,
+      "question": "choose the word that has the same vowel sound as the one represented by the letter(s) underlined. p<u>i</u>t",
+      "options": {
+        "A": "blight",
+        "B": "pious",
+        "C": "hatred",
+        "D": "paint"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 6,
+      "question": "choose the word that has the same vowel sound as the one represented by the letter(s) underlined. p<u>ai</u>nt",
+      "options": {
+        "A": "plait",
+        "B": "lisp",
+        "C": "busy",
+        "D": "late"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 7,
+      "question": "choose the word that has the same vowel sound as the one represented by the letter(s) underlined. can<u>oe</u>",
+      "options": {
+        "A": "truce",
+        "B": "pull",
+        "C": "doe",
+        "D": "shore"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 8,
+      "question": "choose the word that has the same vowel sound as the one represented by the letter(s) underlined. f<u>a</u>tal",
+      "options": {
+        "A": "hard",
+        "B": "fat",
+        "C": "beard",
+        "D": "bail"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 9,
+      "question": "choose the word that has the same vowel sound as the one represented by the letter(s) underlined. <u>jeo</u>pardy",
+      "options": {
+        "A": "check",
+        "B": "people",
+        "C": "probe",
+        "D": "fired"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 10,
+      "question": "choose the word that has the same vowel sound as the one represented by the letter(s) underlined. st<u>u</u>ff",
+      "options": {
+        "A": "tune",
+        "B": "hoof",
+        "C": "tough",
+        "D": "doff"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 11,
+      "question": "choose the word that has the same vowel sound as the one represented by the letter(s) underlined. b<u>ear</u>",
+      "options": {
+        "A": "her",
+        "B": "year",
+        "C": "fare",
+        "D": "pie"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 12,
+      "question": "choose the word that has the same vowel sound as the one represented by the letter(s) underlined. b<u>oi</u>l",
+      "options": {
+        "A": "coy",
+        "B": "soul",
+        "C": "how",
+        "D": "mode"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 13,
+      "question": "choose the word that has the same vowel sound as the one represented by the letter(s) underlined. m<u>a</u>n",
+      "options": {
+        "A": "tape",
+        "B": "slash",
+        "C": "palm",
+        "D": "barn"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 14,
+      "question": "choose the word that has the same vowel sound as the one represented by the letter(s) underlined. h<u>ear</u>t",
+      "options": {
+        "A": "lust",
+        "B": "clear",
+        "C": "star",
+        "D": "heat"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 15,
+      "question": "choose the word that has the same vowel sound as the one represented by the letter(s) underlined. f<u>au</u>lt",
+      "options": {
+        "A": "brought",
+        "B": "bowl",
+        "C": "loan",
+        "D": "laugh"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 16,
+      "question": "choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. <u>g</u>irl",
+      "options": {
+        "A": "badge",
+        "B": "gist",
+        "C": "bringing",
+        "D": "examine"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 17,
+      "question": "choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. height",
+      "options": {
+        "A": "house",
+        "B": "heir",
+        "C": "honest",
+        "D": "hour"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 18,
+      "question": "choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. <u>p</u>ine",
+      "options": {
+        "A": "psalm",
+        "B": "push",
+        "C": "empty",
+        "D": "phone"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 19,
+      "question": "choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. mos<u>t</u>",
+      "options": {
+        "A": "sniffed",
+        "B": "though",
+        "C": "think",
+        "D": "listen"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 20,
+      "question": "choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. <u>z</u>oo",
+      "options": {
+        "A": "stature",
+        "B": "cease",
+        "C": "days",
+        "D": "leisure"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 21,
+      "question": "choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. ba<u>th</u>",
+      "options": {
+        "A": "heart",
+        "B": "those",
+        "C": "bathe",
+        "D": "thigh"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 22,
+      "question": "choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. ban<u>d</u>",
+      "options": {
+        "A": "breath",
+        "B": "asked",
+        "C": "handsome",
+        "D": "dream"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 23,
+      "question": "choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. ar<u>ch</u>ive",
+      "options": {
+        "A": "challenge",
+        "B": "match",
+        "C": "chimera",
+        "D": "chime"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 24,
+      "question": "choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. s<u>w</u>ine",
+      "options": {
+        "A": "one",
+        "B": "new",
+        "C": "know",
+        "D": "seen"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 25,
+      "question": "choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. ba<u>s</u>e",
+      "options": {
+        "A": "boys",
+        "B": "clash",
+        "C": "lace",
+        "D": "lazy"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 26,
+      "question": "Choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. we<u>pt</u>",
+      "options": {
+        "A": "castle",
+        "B": "apostle",
+        "C": "slapped",
+        "D": "passed"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 27,
+      "question": "choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. car<u>d</u>",
+      "options": {
+        "A": "sandwich",
+        "B": "hedge",
+        "C": "soldier",
+        "D": "maiden"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 28,
+      "question": "choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. <u>f</u>etch",
+      "options": {
+        "A": "approve",
+        "B": "tough",
+        "C": "thorough",
+        "D": "believe"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 29,
+      "question": "choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. a<u>rr</u>est",
+      "options": {
+        "A": "lure",
+        "B": "shirt",
+        "C": "rule",
+        "D": "spurn"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 30,
+      "question": "choose the word that has the same consonant sound(s) as the one represented by the letter(s) underlined. wri<u>tes</u>",
+      "options": {
+        "A": "wards",
+        "B": "costs",
+        "C": "wins",
+        "D": "dines"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 31,
+      "question": "choose the word that rhymes with the given word. suite",
+      "options": {
+        "A": "thrice",
+        "B": "suit",
+        "C": "sweet",
+        "D": "sweat"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 32,
+      "question": "choose the word that rhymes with the given word. incite",
+      "options": {
+        "A": "inside",
+        "B": "disquiet",
+        "C": "excite",
+        "D": "surmise"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 33,
+      "question": "choose the word that rhymes with the given word. flood",
+      "options": {
+        "A": "chord",
+        "B": "cud",
+        "C": "curd",
+        "D": "call"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 34,
+      "question": "choose the word that rhymes with the given word. receipt",
+      "options": {
+        "A": "unkempt",
+        "B": "dealt",
+        "C": "deceit",
+        "D": "leapt"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 35,
+      "question": "choose the word that rhymes with the given word. firm",
+      "options": {
+        "A": "born",
+        "B": "worm",
+        "C": "burn",
+        "D": "girl"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 36,
+      "question": "From the words lettered A to D, choose the one that has the correct stress. overwhelming",
+      "options": {
+        "A": "O-ver-whelm-ing",
+        "B": "o-VER-whelm-ing",
+        "C": "o-ver-WHELM-ing",
+        "D": "o-ver-whelm-ING"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 37,
+      "question": "From the words lettered A to D, choose the one that has the correct stress. melancholy",
+      "options": {
+        "A": "MEL-an-chol-y",
+        "B": "mel-AN-chol-y",
+        "C": "mel-an-CHOL-y",
+        "D": "mel-an-chol-Y"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 38,
+      "question": "From the words lettered A to D, choose the one that has the correct stress. inflammation",
+      "options": {
+        "A": "IN-flam-ma-tion",
+        "B": "in-FLAM-ma-tion",
+        "C": "in-flam-Ma-tion",
+        "D": "in-flam-ma-TION"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 39,
+      "question": "From the words lettered A to D, choose the one that has the correct stress. calculation",
+      "options": {
+        "A": "CAL-cu-la-tion",
+        "B": "cal-CU-la-tion",
+        "C": "cal-cu-LA-tion",
+        "D": "cal-cu-la-TION"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 40,
+      "question": "From the words lettered A to D, choose the one that has the correct stress. economic",
+      "options": {
+        "A": "EC-o-nom-ic",
+        "B": "ec-O-nom-ic",
+        "C": "ec-o-NOM-ic",
+        "D": "ec-o-nom-IC"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 41,
+      "question": "In the following options lettered A to D, all the words except one have the same stress pattern. Identify the one with the different stress pattern.",
+      "options": {
+        "A": "undo",
+        "B": "ado",
+        "C": "unless",
+        "D": "legal"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 42,
+      "question": "In the following options lettered A to D, all the words except one have the same stress pattern. Identify the one with the different stress pattern.",
+      "options": {
+        "A": "despite",
+        "B": "petrol",
+        "C": "wardrobe",
+        "D": "vomit"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 43,
+      "question": "In the following options lettered A to D, all the words except one have the same stress pattern. Identify the one with the different stress pattern.",
+      "options": {
+        "A": "typist",
+        "B": "orphan",
+        "C": "mattress",
+        "D": "cigar"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 44,
+      "question": "In the following options lettered A to D, all the words except one have the same stress pattern. Identify the one with the different stress pattern.",
+      "options": {
+        "A": "colleague",
+        "B": "acute",
+        "C": "extent",
+        "D": "success"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 45,
+      "question": "In the following options lettered A to D, all the words except one have the same stress pattern. Identify the one with the different stress pattern.",
+      "options": {
+        "A": "formative",
+        "B": "character",
+        "C": "designate",
+        "D": "continue"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 46,
+      "question": "the word that receives the emphatic stress is written in capital letters. From the questions lettered A to D, choose the one to which the given sentence is the appropriate answer. The man BROUGHT the newspaper.",
+      "options": {
+        "A": "Did the woman bring the newspaper?",
+        "B": "Did the man bring a newspaper?",
+        "C": "Did the man bring the magazine?",
+        "D": "Did the man read the newspaper?"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 47,
+      "question": "the word that receives the emphatic stress is written in capital letters. From the questions lettered A to D, choose the one to which the given sentence is the appropriate answer. The woman wants MY car.",
+      "options": {
+        "A": "Does the woman want my radio?",
+        "B": "Does the man want my car?",
+        "C": "Does the woman want his car?",
+        "D": "Does the woman need my car?"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 48,
+      "question": "the word that receives the emphatic stress is written in capital letters. From the questions lettered A to D, choose the one to which the given sentence is the appropriate answer. The president SPOKE to the press yesterday.",
+      "options": {
+        "A": "Did the minister speak to the press yesterday?",
+        "B": "Did the president speak to the lecturers yesterday?",
+        "C": "Did the president wave to the press yesterday?",
+        "D": "Did the president speak to the press today?"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 49,
+      "question": "the word that receives the emphatic stress is written in capital letters. From the questions lettered A to D, choose the one to which the given sentence is the appropriate answer. Comfort prepared a DELICIOUS meal.",
+      "options": {
+        "A": "Did Comfort prepare a delicious snack?",
+        "B": "Did Comfort prepare a tasteless meal?",
+        "C": "Did Jummy prepare a delicious meal?",
+        "D": "Did Comfort order a delicious meal?"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 50,
+      "question": "the word that receives the emphatic stress is written in capital letters. From the questions lettered A to D, choose the one to which the given sentence is the appropriate answer. OUR Mathematics teacher has been transferred.",
+      "options": {
+        "A": "Has their Mathematics teacher been transferred?",
+        "B": "Has our Physics teacher been transferred?",
+        "C": "Has our Mathematics teacher been promoted?",
+        "D": "Has our Mathematics supervisor been transferred?"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 51,
+      "question": "From the words lettered A to D, choose the word that contains the sound represented by the given phonetic symbol. /ai/",
+      "options": {
+        "A": "rare",
+        "B": "ice",
+        "C": "air",
+        "D": "fuel"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 52,
+      "question": "From the words lettered A to D, choose the word that contains the sound represented by the given phonetic symbol. /æl",
+      "options": {
+        "A": "bag",
+        "B": "park",
+        "C": "get",
+        "D": "class"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 53,
+      "question": "From the words lettered A to D, choose the word that contains the sound represented by the given phonetic symbol. /d/",
+      "options": {
+        "A": "handkerchief",
+        "B": "passed",
+        "C": "handsome",
+        "D": "bride"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 54,
+      "question": "From the words lettered A to D, choose the word that contains the sound represented by the given phonetic symbol. /e/",
+      "options": {
+        "A": "bite",
+        "B": "leave",
+        "C": "spare",
+        "D": "heaven"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 55,
+      "question": "From the words lettered A to D, choose the word that contains the sound represented by the given phonetic symbol. /boa/",
+      "options": {
+        "A": "bore",
+        "B": "warp",
+        "C": "wander",
+        "D": "wonder"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 56,
+      "question": "From the words lettered A to D, choose the word that contains the sound represented by the given phonetic symbol. /k/",
+      "options": {
+        "A": "civil",
+        "B": "choral",
+        "C": "chore",
+        "D": "choose"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 57,
+      "question": "From the words lettered A to D, choose the word that contains the sound represented by the given phonetic symbol. /g/",
+      "options": {
+        "A": "gnash",
+        "B": "target",
+        "C": "gnaw",
+        "D": "sing"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 58,
+      "question": "From the words lettered A to D, choose the word that contains the sound represented by the given phonetic symbol. /u:/",
+      "options": {
+        "A": "work",
+        "B": "grew",
+        "C": "teeth",
+        "D": "bull"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 59,
+      "question": "From the words lettered A to D, choose the word that contains the sound represented by the given phonetic symbol. /ʃ/",
+      "options": {
+        "A": "badge",
+        "B": "catch",
+        "C": "bastion",
+        "D": "edition"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 60,
+      "question": "From the words lettered A to D, choose the word that contains the sound represented by the given phonetic symbol. /ŋ/",
+      "options": {
+        "A": "know",
+        "B": "chance",
+        "C": "lean",
+        "D": "living"
+      },
+      "answer": "C",
+      "image": null
+    }
+
 ];
 
 
         const staticTheoryQuestions = [
-    {
-          "id": 1,
-          "question": "State the unit of mass that you will use to measure the following: (i) a car (ii) a chair (iii) a lorry (iv) a bag of rice (v) a bag of beans (vi) an orange (vii) a boy/girl",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 2,
-          "question": "How many 50 grammes mass can be obtained from 400 grammes",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 3,
-          "question": "Copy and complete the table in base 5\n+   0   1   2   3   4\n0   0\n1\n2                 11\n3\n4   4           13",
-          "marks": 10,
-          "image": "img1/math_jss1_que3.png"
-        },
-        {
-          "id": 4,
-          "question": "If t=10 and e=11 in base twelve, simplify the following in base 12\n(i) 4e4e + 2e12\n(ii) e8et – 1ee2",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 5,
-          "question": "Express the following in common fraction (i) 26% (ii) 35% (iii) 200%",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 6,
-          "question": "Express the following as a percentage (i) 42/100 (ii) 17/100 (iii) 51/100",
-          "marks": 10,
-          "image": null
-        }
+     {
+    "id": 1,
+    "question": "NO QUESTIONS AVAILABLE YET",
+    "marks": null,
+    "image": null
+  },
+  {
+    "id": 2,
+    "question": "NO QUESTIONS AVAILABLE YET",
+    "marks": null,
+    "image": null
+  },
+  {
+    "id": 3,
+    "question": "NO QUESTIONS AVAILABLE YET ",
+    "marks": null,
+    "image": null
+  }
 ];
-
-
-
-
-
-
-
         // ================== APPLICATION VARIABLES ==================
         let questions = [];
         let currentQuestion = 0;

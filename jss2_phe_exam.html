@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.wisdom foundationschools.org - JSS1 MATHEMATICS  Exam</title>
+    <title>cbt.wisdom foundationschools.org - PHE Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -609,7 +609,7 @@
 
     
         <center><h3>WISDOM FOUNDATION SCHOOLS EGBEWA  ADO EKITI </h3></center> 
-        <center><h3>SECOND TERM EXAMINATION 2025/2026 ACADEMIC SESSION</h3></center>
+        <center><h3>THIRD TERM EXAMINATION 2025/2026 ACADEMIC SESSION</h3></center>
        
         <!-- SECTION TOGGLE BUTTONS -->
         <div class="section-toggle">
@@ -618,7 +618,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  JSS1 MATHEMATICS (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  PHE - JSS2 (THIRD TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -684,7 +684,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> JSS1 MATHEMATICS   FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION HAPPY EASTER HOLIDAY CELEBRATION </span>
+        <span class="marquee-text"> PHE  FOR 3RD TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION </span>
     </div>
    
     <div class="windows-activate">
@@ -699,286 +699,280 @@
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-          {
-          "id": 1,
-          "question": "(+16) + (+2) =",
-          "options": {
-            "A": "12",
-            "B": "18",
-            "C": "-18",
-            "D": "-12"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 2,
-          "question": "(-19) – (-14) =",
-          "options": {
-            "A": "5",
-            "B": "-33",
-            "C": "-5",
-            "D": "33"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 3,
-          "question": "(+12) + (-40) =",
-          "options": {
-            "A": "52",
-            "B": "-28",
-            "C": "28",
-            "D": "-52"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 4,
-          "question": "Convert 5000grams to kilograms",
-          "options": {
-            "A": "5kg",
-            "B": "50kg",
-            "C": "500kg",
-            "D": "0.5kg"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 5,
-          "question": "What is the unit of measurement of a keg of kerosene",
-          "options": {
-            "A": "milliliters",
-            "B": "centiliters",
-            "C": "liter",
-            "D": "deciliter"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 6,
-          "question": "What unit of measurement car be used for a car",
-          "options": {
-            "A": "tonne",
-            "B": "kilogram",
-            "C": "gram",
-            "D": "none of the above"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 7,
-          "question": "How many kilogram make up 1 tonne",
-          "options": {
-            "A": "1",
-            "B": "10",
-            "C": "100",
-            "D": "1000"
-          },
-          "answer": "D",
-          "image": null
-        },
-        {
-          "id": 8,
-          "question": "How many 50 grammes mass can be obtained from 250 grammes",
-          "options": {
-            "A": "3",
-            "B": "4",
-            "C": "5",
-            "D": "6"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 9,
-          "question": "Solve 5% of #125",
-          "options": {
-            "A": "#6.25",
-            "B": "#7.4",
-            "C": "#8.3",
-            "D": "9.8"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 10,
-          "question": "Express 1/4 in percentage",
-          "options": {
-            "A": "30%",
-            "B": "25%",
-            "C": "40%",
-            "D": "50%"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 11,
-          "question": "Express 20% as fraction",
-          "options": {
-            "A": "1/2",
-            "B": "1/4",
-            "C": "1/5",
-            "D": "1/10"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 12,
-          "question": "Simplify 1010₂ + 1101₂",
-          "options": {
-            "A": "10111₂",
-            "B": "1011₂",
-            "C": "1111₂",
-            "D": "01011₂"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 13,
-          "question": "Simplify 102₃ + 212₃",
-          "options": {
-            "A": "1021₃",
-            "B": "1102₃",
-            "C": "0112₃",
-            "D": "2110₃"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 14,
-          "question": "Simplify 10011₂ – 1101₂",
-          "options": {
-            "A": "00110₂",
-            "B": "00101₂",
-            "C": "01010₂",
-            "D": "11000₂"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 15,
-          "question": "312₄ – 233₄",
-          "options": {
-            "A": "013₄",
-            "B": "130₄",
-            "C": "103₄",
-            "D": "1003₄"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 16,
-          "question": "Approximate 49.567 to 2 decimal place",
-          "options": {
-            "A": "49.50",
-            "B": "49.57",
-            "C": "49",
-            "D": "49.56"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 17,
-          "question": "Approximate 0.0457 to 2 decimal place",
-          "options": {
-            "A": "0.04",
-            "B": "0.05",
-            "C": "0.10",
-            "D": "0.11"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 18,
-          "question": "Approximate 813.1146 to 2 significant figures",
-          "options": {
-            "A": "813.12",
-            "B": "810",
-            "C": "820",
-            "D": "813.11"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 19,
-          "question": "Approximate 237.46 to 2 significant figures",
-          "options": {
-            "A": "230",
-            "B": "240",
-            "C": "237.40",
-            "D": "237.50"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 20,
-          "question": "Approximate 7.213659 to 2 significant figures",
-          "options": {
-            "A": "7.20000",
-            "B": "7.21000",
-            "C": "7.3000",
-            "D": "7.2200"
-          },
-          "answer": "A",
-          "image": null
-        }
+           {
+      "id": 1,
+      "question": "Which of the following is NOT a component of physical fitness?",
+      "options": {
+        "A": "Strength",
+        "B": "Speed",
+        "C": "Laziness",
+        "D": "Endurance"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 2,
+      "question": "The ability of the heart and lungs to supply oxygen to the body during exercise is called ______.",
+      "options": {
+        "A": "Cardiovascular endurance",
+        "B": "Flexibility",
+        "C": "Strength",
+        "D": "Speed"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is a game played with a bat and ball?",
+      "options": {
+        "A": "Football",
+        "B": "Volleyball",
+        "C": "Cricket",
+        "D": "Basketball"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 4,
+      "question": "The standard distance of a marathon race is ______.",
+      "options": {
+        "A": "42.195 km",
+        "B": "21.195 km",
+        "C": "50 km",
+        "D": "10 km"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 5,
+      "question": "Which of the following is NOT a type of food nutrient?",
+      "options": {
+        "A": "Carbohydrates",
+        "B": "Proteins",
+        "C": "Fats",
+        "D": "Plastics"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 6,
+      "question": "The game of volleyball requires ______ players on each side.",
+      "options": {
+        "A": "5",
+        "B": "6",
+        "C": "7",
+        "D": "11"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 7,
+      "question": "Which of these is a personal hygiene practice?",
+      "options": {
+        "A": "Eating junk food",
+        "B": "Bathing regularly",
+        "C": "Wearing dirty clothes",
+        "D": "Not brushing teeth"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 8,
+      "question": "The mineral that helps in the formation of red blood cells is ______.",
+      "options": {
+        "A": "Iron",
+        "B": "Calcium",
+        "C": "Magnesium",
+        "D": "Zinc"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 9,
+      "question": "Which of the following is NOT a way of preventing diseases?",
+      "options": {
+        "A": "Vaccination",
+        "B": "Good hygiene",
+        "C": "Eating balanced diet",
+        "D": "Exposure to dirt"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 10,
+      "question": "The organ responsible for filtering waste from the blood is the ______.",
+      "options": {
+        "A": "Liver",
+        "B": "Heart",
+        "C": "Kidney",
+        "D": "Lungs"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 11,
+      "question": "The ability to change direction quickly is called ______.",
+      "options": {
+        "A": "Speed",
+        "B": "Agility",
+        "C": "Balance",
+        "D": "Coordination"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 12,
+      "question": "Which of the following is a warm-up exercise?",
+      "options": {
+        "A": "Running at full speed",
+        "B": "Jogging in place",
+        "C": "Lifting heavy weights",
+        "D": "Sprinting immediately"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 13,
+      "question": "The disease caused by deficiency of Vitamin C is ______.",
+      "options": {
+        "A": "Rickets",
+        "B": "Scurvy",
+        "C": "Night blindness",
+        "D": "Beriberi"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 14,
+      "question": "Which of the following is a field event?",
+      "options": {
+        "A": "100m race",
+        "B": "Relay race",
+        "C": "Javelin throw",
+        "D": "400m race"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 15,
+      "question": "The use of drugs without a doctor's prescription is called ______.",
+      "options": {
+        "A": "Drug abuse",
+        "B": "Drug therapy",
+        "C": "Self-medication",
+        "D": "Drug prescription"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 16,
+      "question": "Which of the following is a benefit of regular exercise?",
+      "options": {
+        "A": "It increases body fat",
+        "B": "It weakens the heart",
+        "C": "It improves blood circulation",
+        "D": "It causes stress"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 17,
+      "question": "The game of basketball was invented by ______.",
+      "options": {
+        "A": "James Naismith",
+        "B": "William Morgan",
+        "C": "Michael Jordan",
+        "D": "Kobe Bryant"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 18,
+      "question": "Which of the following is a sign of drug abuse?",
+      "options": {
+        "A": "Good academic performance",
+        "B": "Constant happiness",
+        "C": "Drowsiness and confusion",
+        "D": "Increased appetite"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 19,
+      "question": "The type of food that provides protection against diseases is ______.",
+      "options": {
+        "A": "Carbohydrates",
+        "B": "Fats and oils",
+        "C": "Vitamins",
+        "D": "Proteins"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 20,
+      "question": "Which of the following is NOT a safety measure in sports?",
+      "options": {
+        "A": "Warming up before exercise",
+        "B": "Using proper equipment",
+        "C": "Ignoring injuries",
+        "D": "Cooling down after exercise"
+      },
+      "answer": "C",
+      "image": null
+    }
 ];
 
 
         const staticTheoryQuestions = [
     {
-          "id": 1,
-          "question": "State the unit of mass that you will use to measure the following: (i) a car (ii) a chair (iii) a lorry (iv) a bag of rice (v) a bag of beans (vi) an orange (vii) a boy/girl",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 2,
-          "question": "How many 50 grammes mass can be obtained from 400 grammes",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 3,
-          "question": "Copy and complete the table in base 5\n+   0   1   2   3   4\n0   0\n1\n2                 11\n3\n4   4           13",
-          "marks": 10,
-          "image": "img1/math_jss1_que3.png"
-        },
-        {
-          "id": 4,
-          "question": "If t=10 and e=11 in base twelve, simplify the following in base 12\n(i) 4e4e + 2e12\n(ii) e8et – 1ee2",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 5,
-          "question": "Express the following in common fraction (i) 26% (ii) 35% (iii) 200%",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 6,
-          "question": "Express the following as a percentage (i) 42/100 (ii) 17/100 (iii) 51/100",
-          "marks": 10,
-          "image": null
-        }
+        "id": 1,
+        "question": "(a) Define Physical Fitness.\n(b) List and explain five components of Physical Fitness.",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 2,
+        "question": "(a) What is Drug Abuse?\n(b) State five effects of drug abuse on an individual and society.",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 3,
+        "question": "(a) Explain the importance of Warm-up and Cool-down exercises.\n(b) List four warm-up exercises and four cool-down exercises.",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 4,
+        "question": "(a) What is the difference between Track and Field events?\n(b) List five track events and five field events.",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 5,
+        "question": "(a) Define Communicable Diseases.\n(b) Explain five ways of preventing communicable diseases in the school environment.",
+        "marks": 10,
+        "image": null
+      }
 ];
 
 

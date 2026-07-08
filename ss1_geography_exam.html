@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.wisdom foundationschools.org - JSS1 MATHEMATICS  Exam</title>
+    <title>cbt.wisdom foundationschools.org - GEOGRAPHY SS1 Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -609,7 +609,7 @@
 
     
         <center><h3>WISDOM FOUNDATION SCHOOLS EGBEWA  ADO EKITI </h3></center> 
-        <center><h3>SECOND TERM EXAMINATION 2025/2026 ACADEMIC SESSION</h3></center>
+        <center><h3>THIRD TERM EXAMINATION 2025/2026 ACADEMIC SESSION</h3></center>
        
         <!-- SECTION TOGGLE BUTTONS -->
         <div class="section-toggle">
@@ -618,7 +618,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  JSS1 MATHEMATICS (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  GEOGRAPHY SS1  (THIRD TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -684,7 +684,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> JSS1 MATHEMATICS   FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION HAPPY EASTER HOLIDAY CELEBRATION </span>
+        <span class="marquee-text"> GEOGRAPHY SS1  FOR 3RD TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION  </span>
     </div>
    
     <div class="windows-activate">
@@ -699,286 +699,526 @@
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-          {
-          "id": 1,
-          "question": "(+16) + (+2) =",
-          "options": {
-            "A": "12",
-            "B": "18",
-            "C": "-18",
-            "D": "-12"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 2,
-          "question": "(-19) – (-14) =",
-          "options": {
-            "A": "5",
-            "B": "-33",
-            "C": "-5",
-            "D": "33"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 3,
-          "question": "(+12) + (-40) =",
-          "options": {
-            "A": "52",
-            "B": "-28",
-            "C": "28",
-            "D": "-52"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 4,
-          "question": "Convert 5000grams to kilograms",
-          "options": {
-            "A": "5kg",
-            "B": "50kg",
-            "C": "500kg",
-            "D": "0.5kg"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 5,
-          "question": "What is the unit of measurement of a keg of kerosene",
-          "options": {
-            "A": "milliliters",
-            "B": "centiliters",
-            "C": "liter",
-            "D": "deciliter"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 6,
-          "question": "What unit of measurement car be used for a car",
-          "options": {
-            "A": "tonne",
-            "B": "kilogram",
-            "C": "gram",
-            "D": "none of the above"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 7,
-          "question": "How many kilogram make up 1 tonne",
-          "options": {
-            "A": "1",
-            "B": "10",
-            "C": "100",
-            "D": "1000"
-          },
-          "answer": "D",
-          "image": null
-        },
-        {
-          "id": 8,
-          "question": "How many 50 grammes mass can be obtained from 250 grammes",
-          "options": {
-            "A": "3",
-            "B": "4",
-            "C": "5",
-            "D": "6"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 9,
-          "question": "Solve 5% of #125",
-          "options": {
-            "A": "#6.25",
-            "B": "#7.4",
-            "C": "#8.3",
-            "D": "9.8"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 10,
-          "question": "Express 1/4 in percentage",
-          "options": {
-            "A": "30%",
-            "B": "25%",
-            "C": "40%",
-            "D": "50%"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 11,
-          "question": "Express 20% as fraction",
-          "options": {
-            "A": "1/2",
-            "B": "1/4",
-            "C": "1/5",
-            "D": "1/10"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 12,
-          "question": "Simplify 1010₂ + 1101₂",
-          "options": {
-            "A": "10111₂",
-            "B": "1011₂",
-            "C": "1111₂",
-            "D": "01011₂"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 13,
-          "question": "Simplify 102₃ + 212₃",
-          "options": {
-            "A": "1021₃",
-            "B": "1102₃",
-            "C": "0112₃",
-            "D": "2110₃"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 14,
-          "question": "Simplify 10011₂ – 1101₂",
-          "options": {
-            "A": "00110₂",
-            "B": "00101₂",
-            "C": "01010₂",
-            "D": "11000₂"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 15,
-          "question": "312₄ – 233₄",
-          "options": {
-            "A": "013₄",
-            "B": "130₄",
-            "C": "103₄",
-            "D": "1003₄"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 16,
-          "question": "Approximate 49.567 to 2 decimal place",
-          "options": {
-            "A": "49.50",
-            "B": "49.57",
-            "C": "49",
-            "D": "49.56"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 17,
-          "question": "Approximate 0.0457 to 2 decimal place",
-          "options": {
-            "A": "0.04",
-            "B": "0.05",
-            "C": "0.10",
-            "D": "0.11"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 18,
-          "question": "Approximate 813.1146 to 2 significant figures",
-          "options": {
-            "A": "813.12",
-            "B": "810",
-            "C": "820",
-            "D": "813.11"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 19,
-          "question": "Approximate 237.46 to 2 significant figures",
-          "options": {
-            "A": "230",
-            "B": "240",
-            "C": "237.40",
-            "D": "237.50"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 20,
-          "question": "Approximate 7.213659 to 2 significant figures",
-          "options": {
-            "A": "7.20000",
-            "B": "7.21000",
-            "C": "7.3000",
-            "D": "7.2200"
-          },
-          "answer": "A",
-          "image": null
-        }
+       {
+      "id": 1,
+      "question": "Geography is the study of _______",
+      "options": {
+        "A": "Marriage",
+        "B": "Earth",
+        "C": "Planet",
+        "D": "Sun"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 2,
+      "question": "Geography is a ______ subject",
+      "options": {
+        "A": "Human",
+        "B": "Social science",
+        "C": "Earth",
+        "D": "Planet"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is not among the four (4) major cardinal points?",
+      "options": {
+        "A": "North",
+        "B": "South",
+        "C": "East",
+        "D": "Wing"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 4,
+      "question": "There are major cardinal points",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 5,
+      "question": "There are ______ local government areas in Ekiti State",
+      "options": {
+        "A": "10",
+        "B": "16",
+        "C": "20",
+        "D": "774"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 6,
+      "question": "______ consists of the sun and its planets",
+      "options": {
+        "A": "Mercury",
+        "B": "Solar system",
+        "C": "Solar light",
+        "D": "Moon"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 7,
+      "question": "The first planet in the solar system is _____",
+      "options": {
+        "A": "Earth",
+        "B": "Moon",
+        "C": "Mercury",
+        "D": "Plants"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 8,
+      "question": "The closest planet to the sun is _____",
+      "options": {
+        "A": "Pluto",
+        "B": "Earth",
+        "C": "Jupiter",
+        "D": "Mercury"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 9,
+      "question": "The largest planet is called ________",
+      "options": {
+        "A": "Earth",
+        "B": "Jupiter",
+        "C": "Saturn",
+        "D": "Pluto"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 10,
+      "question": "The natural satellite of the earth is called _____",
+      "options": {
+        "A": "Ring",
+        "B": "Moon",
+        "C": "Solar",
+        "D": "Lunar"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 11,
+      "question": "Which of the following is not among the evidence of the earth's spherical shape?",
+      "options": {
+        "A": "Circumnavigation of earth",
+        "B": "Lunar Eclipse",
+        "C": "Sunrise and sunset",
+        "D": "Essential Landscape"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 12,
+      "question": "Ekiti State is located in ____",
+      "options": {
+        "A": "North East",
+        "B": "South West",
+        "C": "North Central",
+        "D": "South East"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 13,
+      "question": "When the sun, moon, stars, and their planetary bodies are viewed from any angle, they are all circular in outline. Which evidence of the earth's proof supports this?",
+      "options": {
+        "A": "Sunrise and sunset",
+        "B": "Lunar Eclipse",
+        "C": "Planetary bodies",
+        "D": "Ship's visibility"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 14,
+      "question": "The earth moves in space in _____ different ways",
+      "options": {
+        "A": "4",
+        "B": "2",
+        "C": "3",
+        "D": "6"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 15,
+      "question": "_____ occurs when the three bodies: the sun, moon and the earth are in a straight line during rotation of the earth",
+      "options": {
+        "A": "Planet",
+        "B": "Darkness",
+        "C": "Eclipse",
+        "D": "Geography"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 16,
+      "question": "______ is the hardest part of the Earth",
+      "options": {
+        "A": "Rock",
+        "B": "Moon",
+        "C": "Sun",
+        "D": "Planet"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 17,
+      "question": "Which of the following is not among the importance of rocks?",
+      "options": {
+        "A": "Weapon for destruction",
+        "B": "Source of rivers",
+        "C": "Source of Minerals",
+        "D": "Construction materials"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 18,
+      "question": "_____ is between Venus and Mars",
+      "options": {
+        "A": "Mercury",
+        "B": "Earth",
+        "C": "Pluto",
+        "D": "Saturn"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 19,
+      "question": "The planet with the highest number of satellites is called ______",
+      "options": {
+        "A": "Earth",
+        "B": "Mercury",
+        "C": "Mars",
+        "D": "Jupiter"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 20,
+      "question": "The earth rotates on its ______ round the sun",
+      "options": {
+        "A": "Orbit",
+        "B": "Axis",
+        "C": "Road",
+        "D": "Path"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 21,
+      "question": "The path along which the earth revolves round the sun is known as ______",
+      "options": {
+        "A": "Road",
+        "B": "Path",
+        "C": "Orbit",
+        "D": "Map"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 22,
+      "question": "______ is the movement of the earth on its axis",
+      "options": {
+        "A": "Rotation",
+        "B": "Revolution",
+        "C": "Planetary",
+        "D": "Elliptical"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 23,
+      "question": "Sunrise and sunset is an evidence of the earth's ______",
+      "options": {
+        "A": "Flatness",
+        "B": "Sphericity",
+        "C": "Elliptical",
+        "D": "Hotness"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 24,
+      "question": "There are ______ major types of Rocks",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 25,
+      "question": "______ refers to the situation where we have equal day and equal night",
+      "options": {
+        "A": "Equinoxes",
+        "B": "Eclipse",
+        "C": "Magma",
+        "D": "Solstice"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 26,
+      "question": "It takes the earth ______ to complete its rotation round the sun",
+      "options": {
+        "A": "24 hours or 1 day",
+        "B": "4 weeks",
+        "C": "52 days",
+        "D": "5 years"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 27,
+      "question": "______ refers to the best description of the earth",
+      "options": {
+        "A": "Social studies",
+        "B": "Economics",
+        "C": "Geography",
+        "D": "Physics"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 28,
+      "question": "______ is the ultimate source of light and energy to all the planets",
+      "options": {
+        "A": "Moon",
+        "B": "Earth",
+        "C": "Sun",
+        "D": "Star"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 29,
+      "question": "The hottest planet is the ______",
+      "options": {
+        "A": "Moon",
+        "B": "Earth",
+        "C": "Mars",
+        "D": "Mercury"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 30,
+      "question": "Effects of rotation of the earth include the following except ______",
+      "options": {
+        "A": "Day and night",
+        "B": "Apparent sunrise and sunset",
+        "C": "Dawn and twilight",
+        "D": "Planetary bodies"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 31,
+      "question": "______ is the zone of the earth occupied by the living things",
+      "options": {
+        "A": "Biosphere",
+        "B": "Rock",
+        "C": "Water",
+        "D": "Mountain"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 32,
+      "question": "The shape of the earth is best described as ______",
+      "options": {
+        "A": "Ball",
+        "B": "Geoid",
+        "C": "Flat",
+        "D": "Oval"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 33,
+      "question": "______ is known as the earth's twin",
+      "options": {
+        "A": "Mercury",
+        "B": "Pluto",
+        "C": "Venus",
+        "D": "Jupiter"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 34,
+      "question": "Effects of the revolution of the earth include the following except ______",
+      "options": {
+        "A": "It determines a year",
+        "B": "Varying the length of day and night",
+        "C": "It causes season",
+        "D": "It causes fruitfulness"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 35,
+      "question": "Latitude 0° is known as ______",
+      "options": {
+        "A": "Equator",
+        "B": "Greenwich meridian",
+        "C": "Atmosphere",
+        "D": "Geoid"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 36,
+      "question": "Longitude 0° is called ______",
+      "options": {
+        "A": "Jupiter",
+        "B": "Equator",
+        "C": "Greenwich meridian",
+        "D": "Planetary bodies"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 37,
+      "question": "Which of the following is not one of the importance of rivers?",
+      "options": {
+        "A": "Means of transportation",
+        "B": "Source of income",
+        "C": "Source of drowning",
+        "D": "Source of water"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 38,
+      "question": "Nigeria is located in ______",
+      "options": {
+        "A": "Africa",
+        "B": "Europe",
+        "C": "Asia",
+        "D": "North America"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 39,
+      "question": "Which of the following is not among the inner planets?",
+      "options": {
+        "A": "Mercury",
+        "B": "Venus",
+        "C": "Earth",
+        "D": "Pluto"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 40,
+      "question": "Sailing round the earth and coming back to the same point is a proof of the earth's sphericity known as ______",
+      "options": {
+        "A": "Aerial photography",
+        "B": "Sunrise and sunset",
+        "C": "Circumnavigation of the earth",
+        "D": "Lunar eclipse"
+      },
+      "answer": "C",
+      "image": null
+    }
 ];
 
 
         const staticTheoryQuestions = [
-    {
-          "id": 1,
-          "question": "State the unit of mass that you will use to measure the following: (i) a car (ii) a chair (iii) a lorry (iv) a bag of rice (v) a bag of beans (vi) an orange (vii) a boy/girl",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 2,
-          "question": "How many 50 grammes mass can be obtained from 400 grammes",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 3,
-          "question": "Copy and complete the table in base 5\n+   0   1   2   3   4\n0   0\n1\n2                 11\n3\n4   4           13",
-          "marks": 10,
-          "image": "img1/math_jss1_que3.png"
-        },
-        {
-          "id": 4,
-          "question": "If t=10 and e=11 in base twelve, simplify the following in base 12\n(i) 4e4e + 2e12\n(ii) e8et – 1ee2",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 5,
-          "question": "Express the following in common fraction (i) 26% (ii) 35% (iii) 200%",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 6,
-          "question": "Express the following as a percentage (i) 42/100 (ii) 17/100 (iii) 51/100",
-          "marks": 10,
-          "image": null
-        }
+     {
+        "id": 1,
+        "question": "Define Geography and list three (3) importance of Geography",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 2,
+        "question": "Define Solar system and list all the planets accordingly",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 3,
+        "question": "List three (3) characteristics of three of the following Planets:\n(i) Mercury\n(ii) Venus\n(iii) Earth\n(iv) Mars\n(v) Jupiter",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 4,
+        "question": "List any four (4) evidence of earth's sphericity and explain any two of the proof",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 5,
+        "question": "Differentiate between earth's rotation and revolution",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 6,
+        "question": "Define Eclipse and list the two types",
+        "marks": 10,
+        "image": null
+      }
 ];
 
 
@@ -1007,7 +1247,7 @@
                 localStorage.setItem('examSubject', 'EXAM');
                 localStorage.setItem('examClass', 'RESULT');
             }
-            localStorage.setItem('examTerm', 'SECOND TERM 2025/2026');
+            localStorage.setItem('examTerm', 'THIRD TERM 2025/2026');
       
              const username = sessionStorage.getItem('username');
                 const image = sessionStorage.getItem('image');

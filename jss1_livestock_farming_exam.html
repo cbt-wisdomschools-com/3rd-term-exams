@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.wisdom foundationschools.org - JSS1 MATHEMATICS  Exam</title>
+    <title>cbt.wisdom foundationschools.org - JSS1 LIVESTOCK FARMING Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -581,7 +581,7 @@
         <div id="logout-container">
             <button id="logout" onclick="logout()">Logout</button>
                  <div class="marquee-container">
-        <span class="marquee-text">WISDOM FOUNDATION SCHOOLS  :  GATEWAY TO THE UNIVERSITY FOR YOUR CHILD </span>
+        <span class="marquee-text">WISDOM FOUNDATION SCHOOLS  :  GATEWAY TO THE UNIVERSITY  2026/2027 ADMISSION IN PROGRESS </span>
     </div>
         </div>
         <div id="logo">
@@ -609,7 +609,7 @@
 
     
         <center><h3>WISDOM FOUNDATION SCHOOLS EGBEWA  ADO EKITI </h3></center> 
-        <center><h3>SECOND TERM EXAMINATION 2025/2026 ACADEMIC SESSION</h3></center>
+        <center><h3>3RD TERM EXAMINATION 2025/2026 ACADEMIC SESSION</h3></center>
        
         <!-- SECTION TOGGLE BUTTONS -->
         <div class="section-toggle">
@@ -618,7 +618,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  JSS1 MATHEMATICS (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  JSS1 LIVESTOCK FARMING  (3RD TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -684,7 +684,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> JSS1 MATHEMATICS   FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION HAPPY EASTER HOLIDAY CELEBRATION </span>
+        <span class="marquee-text"> JSS1 LIVESTOCK FARMING  FOR 3RD TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION  </span>
     </div>
    
     <div class="windows-activate">
@@ -699,286 +699,400 @@
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-          {
-          "id": 1,
-          "question": "(+16) + (+2) =",
-          "options": {
-            "A": "12",
-            "B": "18",
-            "C": "-18",
-            "D": "-12"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 2,
-          "question": "(-19) – (-14) =",
-          "options": {
-            "A": "5",
-            "B": "-33",
-            "C": "-5",
-            "D": "33"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 3,
-          "question": "(+12) + (-40) =",
-          "options": {
-            "A": "52",
-            "B": "-28",
-            "C": "28",
-            "D": "-52"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 4,
-          "question": "Convert 5000grams to kilograms",
-          "options": {
-            "A": "5kg",
-            "B": "50kg",
-            "C": "500kg",
-            "D": "0.5kg"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 5,
-          "question": "What is the unit of measurement of a keg of kerosene",
-          "options": {
-            "A": "milliliters",
-            "B": "centiliters",
-            "C": "liter",
-            "D": "deciliter"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 6,
-          "question": "What unit of measurement car be used for a car",
-          "options": {
-            "A": "tonne",
-            "B": "kilogram",
-            "C": "gram",
-            "D": "none of the above"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 7,
-          "question": "How many kilogram make up 1 tonne",
-          "options": {
-            "A": "1",
-            "B": "10",
-            "C": "100",
-            "D": "1000"
-          },
-          "answer": "D",
-          "image": null
-        },
-        {
-          "id": 8,
-          "question": "How many 50 grammes mass can be obtained from 250 grammes",
-          "options": {
-            "A": "3",
-            "B": "4",
-            "C": "5",
-            "D": "6"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 9,
-          "question": "Solve 5% of #125",
-          "options": {
-            "A": "#6.25",
-            "B": "#7.4",
-            "C": "#8.3",
-            "D": "9.8"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 10,
-          "question": "Express 1/4 in percentage",
-          "options": {
-            "A": "30%",
-            "B": "25%",
-            "C": "40%",
-            "D": "50%"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 11,
-          "question": "Express 20% as fraction",
-          "options": {
-            "A": "1/2",
-            "B": "1/4",
-            "C": "1/5",
-            "D": "1/10"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 12,
-          "question": "Simplify 1010₂ + 1101₂",
-          "options": {
-            "A": "10111₂",
-            "B": "1011₂",
-            "C": "1111₂",
-            "D": "01011₂"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 13,
-          "question": "Simplify 102₃ + 212₃",
-          "options": {
-            "A": "1021₃",
-            "B": "1102₃",
-            "C": "0112₃",
-            "D": "2110₃"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 14,
-          "question": "Simplify 10011₂ – 1101₂",
-          "options": {
-            "A": "00110₂",
-            "B": "00101₂",
-            "C": "01010₂",
-            "D": "11000₂"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 15,
-          "question": "312₄ – 233₄",
-          "options": {
-            "A": "013₄",
-            "B": "130₄",
-            "C": "103₄",
-            "D": "1003₄"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 16,
-          "question": "Approximate 49.567 to 2 decimal place",
-          "options": {
-            "A": "49.50",
-            "B": "49.57",
-            "C": "49",
-            "D": "49.56"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 17,
-          "question": "Approximate 0.0457 to 2 decimal place",
-          "options": {
-            "A": "0.04",
-            "B": "0.05",
-            "C": "0.10",
-            "D": "0.11"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 18,
-          "question": "Approximate 813.1146 to 2 significant figures",
-          "options": {
-            "A": "813.12",
-            "B": "810",
-            "C": "820",
-            "D": "813.11"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 19,
-          "question": "Approximate 237.46 to 2 significant figures",
-          "options": {
-            "A": "230",
-            "B": "240",
-            "C": "237.40",
-            "D": "237.50"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 20,
-          "question": "Approximate 7.213659 to 2 significant figures",
-          "options": {
-            "A": "7.20000",
-            "B": "7.21000",
-            "C": "7.3000",
-            "D": "7.2200"
-          },
-          "answer": "A",
-          "image": null
-        }
+      {
+      "id": 1,
+      "question": "Any animal capable of eating and destroying our farm crop is known as",
+      "options": {
+        "A": "pests",
+        "B": "animal",
+        "C": "man",
+        "D": "plant"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 2,
+      "question": "Which of the following is not a pest",
+      "options": {
+        "A": "insects",
+        "B": "weeds",
+        "C": "rodents",
+        "D": "birds"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 3,
+      "question": "Among the crop pests which of the following exist in large numbers and most widely spread",
+      "options": {
+        "A": "bees",
+        "B": "fowls",
+        "C": "insects",
+        "D": "grass cutters"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 4,
+      "question": "Which of the following pest, produces honey",
+      "options": {
+        "A": "cockroach",
+        "B": "grasshopper",
+        "C": "aphids",
+        "D": "bees"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 5,
+      "question": "The mouth parts specifically meant for piercing and sucking is called",
+      "options": {
+        "A": "files",
+        "B": "scales",
+        "C": "iron",
+        "D": "proboscis"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 6,
+      "question": "The material suck by insects in plants or crops is known as",
+      "options": {
+        "A": "juice",
+        "B": "liquid",
+        "C": "alkaline",
+        "D": "kerosene"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 7,
+      "question": "Insect pests eat all the following except",
+      "options": {
+        "A": "leaves",
+        "B": "soil",
+        "C": "fruits",
+        "D": "buds and flowers"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 8,
+      "question": "Crop pests does all the following harms to growing crops except",
+      "options": {
+        "A": "reduce the quality",
+        "B": "reduce the quantity",
+        "C": "helps in pollination",
+        "D": "eats crops at tender age"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 9,
+      "question": "Any animal capable of carrying and distributing diseases from one plant to another is called",
+      "options": {
+        "A": "carrier",
+        "B": "agent",
+        "C": "representative",
+        "D": "vectors"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 10,
+      "question": "The general name for a chemical developed for the destruction of pests is",
+      "options": {
+        "A": "herbicide",
+        "B": "insecticide",
+        "C": "weedicide",
+        "D": "pesticide"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 11,
+      "question": "Which of the following pest control methods is odd in the group",
+      "options": {
+        "A": "careful selection of planting dates",
+        "B": "tillage",
+        "C": "planting insect resistance varieties",
+        "D": "use of insecticide"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 12,
+      "question": "The method which aims at preventing the introduction of foreign pests and diseases organisms from one country to another is known as",
+      "options": {
+        "A": "quarantine",
+        "B": "irrigation",
+        "C": "fumigation",
+        "D": "sterilization"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 13,
+      "question": "As a group, the most destructive pests to agriculture are",
+      "options": {
+        "A": "insects",
+        "B": "birds",
+        "C": "reptiles",
+        "D": "ruminants"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 14,
+      "question": "Which of the following insects take part in pollination",
+      "options": {
+        "A": "bees",
+        "B": "cricket",
+        "C": "grasshopper",
+        "D": "cockroaches"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 15,
+      "question": "An insect which preys or eating other lower insects of a different kind is called",
+      "options": {
+        "A": "predator",
+        "B": "killer",
+        "C": "assassin",
+        "D": "armed robber"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 16,
+      "question": "Which of the following is not in the group",
+      "options": {
+        "A": "diamond",
+        "B": "cereal",
+        "C": "legumes",
+        "D": "root and tubers"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 17,
+      "question": "Cereals generally are",
+      "options": {
+        "A": "grasses",
+        "B": "seeds",
+        "C": "leaves",
+        "D": "stems"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 18,
+      "question": "All the following are the examples of cereals except",
+      "options": {
+        "A": "mangoes",
+        "B": "maize",
+        "C": "rice",
+        "D": "wheat"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 19,
+      "question": "Another name for the cereal is",
+      "options": {
+        "A": "grains",
+        "B": "juice",
+        "C": "sap",
+        "D": "starch"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 20,
+      "question": "Protein can be obtained from which of the following",
+      "options": {
+        "A": "legumes",
+        "B": "vegetables",
+        "C": "root and tubers",
+        "D": "cereals"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 21,
+      "question": "Another alternative to groundnut is",
+      "options": {
+        "A": "shear-butter",
+        "B": "red-oil",
+        "C": "melon oil",
+        "D": "orange juice"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 22,
+      "question": "Which of the following is not an example of root and tuber crop",
+      "options": {
+        "A": "yam",
+        "B": "rice",
+        "C": "cassava",
+        "D": "sweet potatoes"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 23,
+      "question": "In the olden days, which of the following crops is mostly found in Ekiti state",
+      "options": {
+        "A": "rice",
+        "B": "yam",
+        "C": "ginger",
+        "D": "garlic"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 24,
+      "question": "Which of the following is not an example of annual crop",
+      "options": {
+        "A": "maize",
+        "B": "pawpaw",
+        "C": "rice",
+        "D": "guinea corn"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 25,
+      "question": "Which of the following is required for the germination of crops",
+      "options": {
+        "A": "stone",
+        "B": "rainfall",
+        "C": "cement",
+        "D": "metal"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 26,
+      "question": "Which of the following is not a method of controlling insect pests",
+      "options": {
+        "A": "cultural methods",
+        "B": "civilization method",
+        "C": "chemical method",
+        "D": "biological method"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 27,
+      "question": "Which of the following is odd among the group",
+      "options": {
+        "A": "centipedes",
+        "B": "lion",
+        "C": "millipedes",
+        "D": "earthworm"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 28,
+      "question": "All the following are examples of storage pests of major crops except",
+      "options": {
+        "A": "maize weevils",
+        "B": "grass cutter",
+        "C": "cowpea weevils",
+        "D": "rice weevils"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 29,
+      "question": "All the following are regarded as wastes except",
+      "options": {
+        "A": "livestock manure",
+        "B": "cocoa beans",
+        "C": "green manure",
+        "D": "bones and feathers"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 30,
+      "question": "All the necessary activities involved in the production to the marketing of",
+      "options": {
+        "A": "market",
+        "B": "marketing",
+        "C": "demand",
+        "D": "supply"
+      },
+      "answer": "B",
+      "image": null
+    }
 ];
 
 
         const staticTheoryQuestions = [
     {
-          "id": 1,
-          "question": "State the unit of mass that you will use to measure the following: (i) a car (ii) a chair (iii) a lorry (iv) a bag of rice (v) a bag of beans (vi) an orange (vii) a boy/girl",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 2,
-          "question": "How many 50 grammes mass can be obtained from 400 grammes",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 3,
-          "question": "Copy and complete the table in base 5\n+   0   1   2   3   4\n0   0\n1\n2                 11\n3\n4   4           13",
-          "marks": 10,
-          "image": "img1/math_jss1_que3.png"
-        },
-        {
-          "id": 4,
-          "question": "If t=10 and e=11 in base twelve, simplify the following in base 12\n(i) 4e4e + 2e12\n(ii) e8et – 1ee2",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 5,
-          "question": "Express the following in common fraction (i) 26% (ii) 35% (iii) 200%",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 6,
-          "question": "Express the following as a percentage (i) 42/100 (ii) 17/100 (iii) 51/100",
-          "marks": 10,
-          "image": null
-        }
+      "id": 1,
+      "question": "(a) What is economic empowerment?\n(b) List three ways of economic empowerment.",
+      "marks": 10,
+      "image": null
+    },
+    {
+      "id": 2,
+      "question": "Distinguish between the following pairs:\n(i) market and marketing\n(ii) Wholesaler and retailer",
+      "marks": 10,
+      "image": null
+    },
+    {
+      "id": 3,
+      "question": "Differentiate between field and storage pests.",
+      "marks": 10,
+      "image": null
+    },
+    {
+      "id": 4,
+      "question": "(a) Describe insects.\n(b) Why are insects difficult to control?",
+      "marks": 10,
+      "image": null
+    },
+    {
+      "id": 5,
+      "question": "What do you understand by the term agricultural pests?",
+      "marks": 10,
+      "image": null
+    }
 ];
 
 
@@ -1007,7 +1121,7 @@
                 localStorage.setItem('examSubject', 'EXAM');
                 localStorage.setItem('examClass', 'RESULT');
             }
-            localStorage.setItem('examTerm', 'SECOND TERM 2025/2026');
+            localStorage.setItem('examTerm', 'THIRD TERM 2025/2026');
       
              const username = sessionStorage.getItem('username');
                 const image = sessionStorage.getItem('image');

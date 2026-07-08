@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.wisdom foundationschools.org - JSS1 MATHEMATICS  Exam</title>
+    <title>cbt.wisdom foundationschools.org -CHEMISTRY SS1 Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -581,13 +581,19 @@
         <div id="logout-container">
             <button id="logout" onclick="logout()">Logout</button>
                  <div class="marquee-container">
-        <span class="marquee-text">WISDOM FOUNDATION SCHOOLS  :  GATEWAY TO THE UNIVERSITY FOR YOUR CHILD </span>
+        <span class="marquee-text">WISDOM FOUNDATION SCHOOLS  :  GATEWAY TO THE UNIVERSITY</span>
     </div>
         </div>
         <div id="logo">
             <img src="img/wisdom_logo1.png" alt="image">
 
-           
+               <!--<div class="logo-left">
+                <img src="img/9ja1.png" alt="Nigeria Logo" >
+            </div>
+
+            <div class="logo-right">
+                <img src="img/nappps1.png" alt="NAPPS Logo" >
+            </div>-->
         </div>
 
            
@@ -609,7 +615,7 @@
 
     
         <center><h3>WISDOM FOUNDATION SCHOOLS EGBEWA  ADO EKITI </h3></center> 
-        <center><h3>SECOND TERM EXAMINATION 2025/2026 ACADEMIC SESSION</h3></center>
+        <center><h3>THIRD TERM EXAMINATION 2025/2026 ACADEMIC SESSION</h3></center>
        
         <!-- SECTION TOGGLE BUTTONS -->
         <div class="section-toggle">
@@ -618,7 +624,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  JSS1 MATHEMATICS (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;"> CHEMISTRY SS1 (THIRD TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -684,7 +690,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> JSS1 MATHEMATICS   FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION HAPPY EASTER HOLIDAY CELEBRATION </span>
+        <span class="marquee-text">CHEMISTRY SS1  FOR 3RD TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION  </span>
     </div>
    
     <div class="windows-activate">
@@ -693,299 +699,429 @@
 
 
     <script>
-        
+           // Get stored username and image from sessionStorage
        
             
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-          {
-          "id": 1,
-          "question": "(+16) + (+2) =",
-          "options": {
-            "A": "12",
-            "B": "18",
-            "C": "-18",
-            "D": "-12"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 2,
-          "question": "(-19) – (-14) =",
-          "options": {
-            "A": "5",
-            "B": "-33",
-            "C": "-5",
-            "D": "33"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 3,
-          "question": "(+12) + (-40) =",
-          "options": {
-            "A": "52",
-            "B": "-28",
-            "C": "28",
-            "D": "-52"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 4,
-          "question": "Convert 5000grams to kilograms",
-          "options": {
-            "A": "5kg",
-            "B": "50kg",
-            "C": "500kg",
-            "D": "0.5kg"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 5,
-          "question": "What is the unit of measurement of a keg of kerosene",
-          "options": {
-            "A": "milliliters",
-            "B": "centiliters",
-            "C": "liter",
-            "D": "deciliter"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 6,
-          "question": "What unit of measurement car be used for a car",
-          "options": {
-            "A": "tonne",
-            "B": "kilogram",
-            "C": "gram",
-            "D": "none of the above"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 7,
-          "question": "How many kilogram make up 1 tonne",
-          "options": {
-            "A": "1",
-            "B": "10",
-            "C": "100",
-            "D": "1000"
-          },
-          "answer": "D",
-          "image": null
-        },
-        {
-          "id": 8,
-          "question": "How many 50 grammes mass can be obtained from 250 grammes",
-          "options": {
-            "A": "3",
-            "B": "4",
-            "C": "5",
-            "D": "6"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 9,
-          "question": "Solve 5% of #125",
-          "options": {
-            "A": "#6.25",
-            "B": "#7.4",
-            "C": "#8.3",
-            "D": "9.8"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 10,
-          "question": "Express 1/4 in percentage",
-          "options": {
-            "A": "30%",
-            "B": "25%",
-            "C": "40%",
-            "D": "50%"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 11,
-          "question": "Express 20% as fraction",
-          "options": {
-            "A": "1/2",
-            "B": "1/4",
-            "C": "1/5",
-            "D": "1/10"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 12,
-          "question": "Simplify 1010₂ + 1101₂",
-          "options": {
-            "A": "10111₂",
-            "B": "1011₂",
-            "C": "1111₂",
-            "D": "01011₂"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 13,
-          "question": "Simplify 102₃ + 212₃",
-          "options": {
-            "A": "1021₃",
-            "B": "1102₃",
-            "C": "0112₃",
-            "D": "2110₃"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 14,
-          "question": "Simplify 10011₂ – 1101₂",
-          "options": {
-            "A": "00110₂",
-            "B": "00101₂",
-            "C": "01010₂",
-            "D": "11000₂"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 15,
-          "question": "312₄ – 233₄",
-          "options": {
-            "A": "013₄",
-            "B": "130₄",
-            "C": "103₄",
-            "D": "1003₄"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 16,
-          "question": "Approximate 49.567 to 2 decimal place",
-          "options": {
-            "A": "49.50",
-            "B": "49.57",
-            "C": "49",
-            "D": "49.56"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 17,
-          "question": "Approximate 0.0457 to 2 decimal place",
-          "options": {
-            "A": "0.04",
-            "B": "0.05",
-            "C": "0.10",
-            "D": "0.11"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 18,
-          "question": "Approximate 813.1146 to 2 significant figures",
-          "options": {
-            "A": "813.12",
-            "B": "810",
-            "C": "820",
-            "D": "813.11"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 19,
-          "question": "Approximate 237.46 to 2 significant figures",
-          "options": {
-            "A": "230",
-            "B": "240",
-            "C": "237.40",
-            "D": "237.50"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 20,
-          "question": "Approximate 7.213659 to 2 significant figures",
-          "options": {
-            "A": "7.20000",
-            "B": "7.21000",
-            "C": "7.3000",
-            "D": "7.2200"
-          },
-          "answer": "A",
-          "image": null
-        }
+         
+         {
+      "id": 1,
+      "question": "…….. is a scientific study that deals with the properties of substances and the transformation they undergo",
+      "options": {
+        "A": "Biology",
+        "B": "Geography",
+        "C": "Chemistry",
+        "D": "Economics"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 2,
+      "question": "Some of the importance of Chemistry include the following except ………..",
+      "options": {
+        "A": "Provision of food",
+        "B": "Provision of shelter",
+        "C": "Transportation",
+        "D": "Weapon for destruction"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 3,
+      "question": "…….. is the one which is easily reversible and in which no new substance is formed",
+      "options": {
+        "A": "Physical Change",
+        "B": "Chemical change",
+        "C": "Matter change",
+        "D": "Chemistry change"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 4,
+      "question": "Wood (burning) → Ash + Gases. This reaction is an example of",
+      "options": {
+        "A": "Physical change",
+        "B": "Chemical change",
+        "C": "Atmospheric change",
+        "D": "Burning change"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 5,
+      "question": "Zn + 2HCl → ZnCl₂ + H₂. This equation represents the production of ………..",
+      "options": {
+        "A": "Oxygen",
+        "B": "Hydrogen",
+        "C": "Magnesium",
+        "D": "Aluminium"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 6,
+      "question": "Is a substance which cannot be split into simpler unit by an ordinary chemical process",
+      "options": {
+        "A": "Compound",
+        "B": "Mixture",
+        "C": "Element",
+        "D": "Matter"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 7,
+      "question": "All the following are separation techniques except ………",
+      "options": {
+        "A": "Sublimation",
+        "B": "Fractional distillation",
+        "C": "Filtration",
+        "D": "Pollination"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 8,
+      "question": "…….. is a method which can be used to separate a mixture which contains a substance that can sublime",
+      "options": {
+        "A": "Sublimation",
+        "B": "Distillation",
+        "C": "Filtration",
+        "D": "Precipitation"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 9,
+      "question": "…….. in an atom or group of atoms which possess electrical charge.",
+      "options": {
+        "A": "Atom",
+        "B": "Element",
+        "C": "Ion",
+        "D": "Matter"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 10,
+      "question": "There are ……… types of ions",
+      "options": {
+        "A": "4",
+        "B": "3",
+        "C": "2",
+        "D": "5"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 11,
+      "question": "The positively charged ions are called ………",
+      "options": {
+        "A": "Anions",
+        "B": "Cations",
+        "C": "Sublimation",
+        "D": "Chemistry"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 12,
+      "question": "2,8,8,2 is an electronic configuration for ………",
+      "options": {
+        "A": "Magnesium",
+        "B": "Aluminium",
+        "C": "Sodium",
+        "D": "Calcium"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 13,
+      "question": "The electronic configuration for Silicon is ………",
+      "options": {
+        "A": "2,8,4",
+        "B": "2,8,1",
+        "C": "2,8,5",
+        "D": "2,8,6"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 14,
+      "question": "All the following elements are in group 1 of the periodic table except ………",
+      "options": {
+        "A": "Sodium",
+        "B": "Magnesium",
+        "C": "Lithium",
+        "D": "Potassium"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 15,
+      "question": "Calculate the relative atomic mass of Limestone, CaCO₃ {Ca=40, C=12, O=16}",
+      "options": {
+        "A": "68",
+        "B": "100",
+        "C": "28",
+        "D": "108"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 16,
+      "question": "A compound was found by analysis to contain 65.45% Carbon, 9.09% Hydrogen and 25.40% Nitrogen, calculate its empirical formula {C=12, H=1, N=14}",
+      "options": {
+        "A": "C₃H₅N",
+        "B": "C₂H₅N₂",
+        "C": "CHN",
+        "D": "CHN₅"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 17,
+      "question": "There are ……… laws of chemical combination",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 18,
+      "question": "H₂SO₄ + NaCl → Na₂SO₄ + HCl. This equation is ………",
+      "options": {
+        "A": "Partially balanced",
+        "B": "Completely balanced",
+        "C": "Not balanced",
+        "D": "Not sure"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 19,
+      "question": "Calculate the oxidation number of Sulphur, S in Na₂SO₄",
+      "options": {
+        "A": "+2",
+        "B": "+4",
+        "C": "+6",
+        "D": "-6"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 20,
+      "question": "The IUPAC name for Na₂SO₄ is",
+      "options": {
+        "A": "Sodium tetraoxosulphate (VI)",
+        "B": "Trioxonitrate (V)",
+        "C": "Tetraoxosulphate (IV)",
+        "D": "Tetraoxosulphate (VI) ion"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 21,
+      "question": "All the following elements can lose electrons and become positively charged except………",
+      "options": {
+        "A": "Sodium",
+        "B": "Magnesium",
+        "C": "Calcium",
+        "D": "Chlorine"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 22,
+      "question": "All the following elements can gain electrons and become negatively charged except………",
+      "options": {
+        "A": "Aluminium",
+        "B": "Chlorine",
+        "C": "Fluorine",
+        "D": "Oxygen"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 23,
+      "question": "Find the empirical formula of the following compound from their respective composition by mass: Nitrogen=20.17%, Hydrogen=7.8%, Chlorine=66.35% (N=14, H=1, Cl=35.5)",
+      "options": {
+        "A": "NH₄Cl",
+        "B": "NH₃Cl",
+        "C": "NHCl",
+        "D": "NHCl₄"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 24,
+      "question": "Calculate the relative molecular mass of Tetraoxosulphate (VI) acid, H₂SO₄",
+      "options": {
+        "A": "100g",
+        "B": "89g",
+        "C": "98g",
+        "D": "108g"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 25,
+      "question": "Mathematically, Boyle's law states that……",
+      "options": {
+        "A": "P α V",
+        "B": "P ∝ 1/V",
+        "C": "P α T",
+        "D": "P α K"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 26,
+      "question": "Some of the gas laws include the following except………",
+      "options": {
+        "A": "Boyle's law",
+        "B": "Charles' law",
+        "C": "General gas law",
+        "D": "Wisdom law"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 27,
+      "question": "200cm³ of a gas has a pressure of 510mmHg. What will be its volume if its pressure is increased to 780mmHg?",
+      "options": {
+        "A": "131cm³",
+        "B": "113cm³",
+        "C": "311cm³",
+        "D": "133cm³"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 28,
+      "question": "What pressure will be required to compress 350cm³ of Hydrogen at 700mmHg to 300cm³",
+      "options": {
+        "A": "187mmHg",
+        "B": "817mmHg",
+        "C": "718mmHg",
+        "D": "1178mmHg"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 29,
+      "question": "Mathematically, Charles' law states that……",
+      "options": {
+        "A": "V α T",
+        "B": "P ∝ 1/V",
+        "C": "P α T",
+        "D": "T α K"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 30,
+      "question": "Convert 0°C to Kelvin (K)",
+      "options": {
+        "A": "100K",
+        "B": "273K",
+        "C": "372K",
+        "D": "127K"
+      },
+      "answer": "B",
+       "image": null 
+   }
+        
+        
 ];
 
 
         const staticTheoryQuestions = [
-    {
-          "id": 1,
-          "question": "State the unit of mass that you will use to measure the following: (i) a car (ii) a chair (iii) a lorry (iv) a bag of rice (v) a bag of beans (vi) an orange (vii) a boy/girl",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 2,
-          "question": "How many 50 grammes mass can be obtained from 400 grammes",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 3,
-          "question": "Copy and complete the table in base 5\n+   0   1   2   3   4\n0   0\n1\n2                 11\n3\n4   4           13",
-          "marks": 10,
-          "image": "img1/math_jss1_que3.png"
-        },
-        {
-          "id": 4,
-          "question": "If t=10 and e=11 in base twelve, simplify the following in base 12\n(i) 4e4e + 2e12\n(ii) e8et – 1ee2",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 5,
-          "question": "Express the following in common fraction (i) 26% (ii) 35% (iii) 200%",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 6,
-          "question": "Express the following as a percentage (i) 42/100 (ii) 17/100 (iii) 51/100",
-          "marks": 10,
-          "image": null
-        }
+      {
+        "id": 1,
+        "question": "Define Element and in a tabular form, list the first twenty (20) elements and their chemical symbols",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 2,
+        "question": "Write the Electronic configuration of the following elements in (i) KLMN Shell (ii) spdf:\n(a) Sodium\n(b) Calcium\n(c) Boron\n(d) Potassium\n(e) Aluminium",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 3,
+        "question": "From the analysis: Carbon 2.0g, Hydrogen 0.34g, Oxygen 2.67g. Calculate:\n(i) The Empirical formula\n(ii) The Molecular formula of the compound if the molecular mass is 60 (C=12, H=1, O=16)",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 4,
+        "question": "State:\n(i) Boyle's law\n(ii) Charles' law",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 5,
+        "question": "What pressure will be required to compress 460cm³ of Hydrogen at 500mmHg to 400cm³, provided that temperature remains constant.",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 6,
+        "question": "475cm³ of a gas has a pressure of 870mmHg. Find the volume if it is reduced to 850mmHg.",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 7,
+        "question": "A sample of gas has a volume of 500cm³, at 45°C. What volume will the gas occupy at 0°C, when the pressure is constant.",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 8,
+        "question": "List any three (3) Separation techniques",
+        "marks": 10,
+        "image": null
+      }
 ];
-
-
-
-
-
-
+      
 
         // ================== APPLICATION VARIABLES ==================
         let questions = [];

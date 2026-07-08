@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.wisdom foundationschools.org - JSS1 MATHEMATICS  Exam</title>
+    <title>cbt.wisdom foundationschools.org - BUSINESS STUDIES JSS2  Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -581,13 +581,19 @@
         <div id="logout-container">
             <button id="logout" onclick="logout()">Logout</button>
                  <div class="marquee-container">
-        <span class="marquee-text">WISDOM FOUNDATION SCHOOLS  :  GATEWAY TO THE UNIVERSITY FOR YOUR CHILD </span>
+        <span class="marquee-text">WISDOM FOUNDATION SCHOOLS  :  GATEWAY TO THE UNIVERSITY</span>
     </div>
         </div>
         <div id="logo">
             <img src="img/wisdom_logo1.png" alt="image">
 
-           
+               <!--<div class="logo-left">
+                <img src="img/9ja1.png" alt="Nigeria Logo" >
+            </div>
+
+            <div class="logo-right">
+                <img src="img/nappps1.png" alt="NAPPS Logo" >
+            </div>-->
         </div>
 
            
@@ -609,7 +615,7 @@
 
     
         <center><h3>WISDOM FOUNDATION SCHOOLS EGBEWA  ADO EKITI </h3></center> 
-        <center><h3>SECOND TERM EXAMINATION 2025/2026 ACADEMIC SESSION</h3></center>
+        <center><h3>3RD TERM EXAMINATION 2025/2026 ACADEMIC SESSION</h3></center>
        
         <!-- SECTION TOGGLE BUTTONS -->
         <div class="section-toggle">
@@ -618,7 +624,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  JSS1 MATHEMATICS (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  BUSINESS STUDIES JSS2 (3RD TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -684,7 +690,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> JSS1 MATHEMATICS   FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION HAPPY EASTER HOLIDAY CELEBRATION </span>
+        <span class="marquee-text"> BUSINESS STUDIES JSS2   FOR 3RD TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION </span>
     </div>
    
     <div class="windows-activate">
@@ -693,300 +699,647 @@
 
 
     <script>
-        
+           // Get stored username and image from sessionStorage
        
             
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-          {
-          "id": 1,
-          "question": "(+16) + (+2) =",
-          "options": {
-            "A": "12",
-            "B": "18",
-            "C": "-18",
-            "D": "-12"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 2,
-          "question": "(-19) – (-14) =",
-          "options": {
-            "A": "5",
-            "B": "-33",
-            "C": "-5",
-            "D": "33"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 3,
-          "question": "(+12) + (-40) =",
-          "options": {
-            "A": "52",
-            "B": "-28",
-            "C": "28",
-            "D": "-52"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 4,
-          "question": "Convert 5000grams to kilograms",
-          "options": {
-            "A": "5kg",
-            "B": "50kg",
-            "C": "500kg",
-            "D": "0.5kg"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 5,
-          "question": "What is the unit of measurement of a keg of kerosene",
-          "options": {
-            "A": "milliliters",
-            "B": "centiliters",
-            "C": "liter",
-            "D": "deciliter"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 6,
-          "question": "What unit of measurement car be used for a car",
-          "options": {
-            "A": "tonne",
-            "B": "kilogram",
-            "C": "gram",
-            "D": "none of the above"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 7,
-          "question": "How many kilogram make up 1 tonne",
-          "options": {
-            "A": "1",
-            "B": "10",
-            "C": "100",
-            "D": "1000"
-          },
-          "answer": "D",
-          "image": null
-        },
-        {
-          "id": 8,
-          "question": "How many 50 grammes mass can be obtained from 250 grammes",
-          "options": {
-            "A": "3",
-            "B": "4",
-            "C": "5",
-            "D": "6"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 9,
-          "question": "Solve 5% of #125",
-          "options": {
-            "A": "#6.25",
-            "B": "#7.4",
-            "C": "#8.3",
-            "D": "9.8"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 10,
-          "question": "Express 1/4 in percentage",
-          "options": {
-            "A": "30%",
-            "B": "25%",
-            "C": "40%",
-            "D": "50%"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 11,
-          "question": "Express 20% as fraction",
-          "options": {
-            "A": "1/2",
-            "B": "1/4",
-            "C": "1/5",
-            "D": "1/10"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 12,
-          "question": "Simplify 1010₂ + 1101₂",
-          "options": {
-            "A": "10111₂",
-            "B": "1011₂",
-            "C": "1111₂",
-            "D": "01011₂"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 13,
-          "question": "Simplify 102₃ + 212₃",
-          "options": {
-            "A": "1021₃",
-            "B": "1102₃",
-            "C": "0112₃",
-            "D": "2110₃"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 14,
-          "question": "Simplify 10011₂ – 1101₂",
-          "options": {
-            "A": "00110₂",
-            "B": "00101₂",
-            "C": "01010₂",
-            "D": "11000₂"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 15,
-          "question": "312₄ – 233₄",
-          "options": {
-            "A": "013₄",
-            "B": "130₄",
-            "C": "103₄",
-            "D": "1003₄"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 16,
-          "question": "Approximate 49.567 to 2 decimal place",
-          "options": {
-            "A": "49.50",
-            "B": "49.57",
-            "C": "49",
-            "D": "49.56"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 17,
-          "question": "Approximate 0.0457 to 2 decimal place",
-          "options": {
-            "A": "0.04",
-            "B": "0.05",
-            "C": "0.10",
-            "D": "0.11"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 18,
-          "question": "Approximate 813.1146 to 2 significant figures",
-          "options": {
-            "A": "813.12",
-            "B": "810",
-            "C": "820",
-            "D": "813.11"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 19,
-          "question": "Approximate 237.46 to 2 significant figures",
-          "options": {
-            "A": "230",
-            "B": "240",
-            "C": "237.40",
-            "D": "237.50"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 20,
-          "question": "Approximate 7.213659 to 2 significant figures",
-          "options": {
-            "A": "7.20000",
-            "B": "7.21000",
-            "C": "7.3000",
-            "D": "7.2200"
-          },
-          "answer": "A",
-          "image": null
-        }
+                 {
+      "id": 1,
+      "question": "A consumer is a person who ______.",
+      "options": {
+        "A": "Manufactures goods",
+        "B": "Buys goods and services",
+        "C": "Sells goods",
+        "D": "Advertises goods"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 2,
+      "question": "Consumer rights are meant to ______ consumers.",
+      "options": {
+        "A": "Punish",
+        "B": "Protect",
+        "C": "Confuse",
+        "D": "Tax"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is a consumer right?",
+      "options": {
+        "A": "Right to Safety",
+        "B": "Right to Steal",
+        "C": "Right to Fight",
+        "D": "Right to Cheat"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 4,
+      "question": "The right to be informed means consumers should receive ______.",
+      "options": {
+        "A": "False information",
+        "B": "Correct information",
+        "C": "Secret information",
+        "D": "Personal information"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 5,
+      "question": "Which of these is NOT a consumer right?",
+      "options": {
+        "A": "Right to Choose",
+        "B": "Right to Safety",
+        "C": "Right to Information",
+        "D": "Right to Smuggle"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 6,
+      "question": "A consumer has the responsibility to ______.",
+      "options": {
+        "A": "Buy stolen goods",
+        "B": "Read product labels",
+        "C": "Destroy goods",
+        "D": "Cheat sellers"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 7,
+      "question": "Which of these is a shopping tip?",
+      "options": {
+        "A": "Buy without checking",
+        "B": "Compare prices",
+        "C": "Ignore expiry dates",
+        "D": "Spend all your money"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 8,
+      "question": "Before buying packaged food, a consumer should check the ______.",
+      "options": {
+        "A": "Colour",
+        "B": "Expiry date",
+        "C": "Owner's name",
+        "D": "Weight of the seller"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 9,
+      "question": "A receipt serves as ______.",
+      "options": {
+        "A": "Proof of payment",
+        "B": "A greeting card",
+        "C": "A licence",
+        "D": "A permit"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 10,
+      "question": "Shopping with a list helps to ______.",
+      "options": {
+        "A": "Waste money",
+        "B": "Save money",
+        "C": "Borrow money",
+        "D": "Spend carelessly"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 11,
+      "question": "Book-keeping is the recording of ______.",
+      "options": {
+        "A": "Family history",
+        "B": "Business transactions",
+        "C": "School attendance",
+        "D": "Songs"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 12,
+      "question": "Book-keeping ethics promote ______.",
+      "options": {
+        "A": "Dishonesty",
+        "B": "Accuracy",
+        "C": "Fraud",
+        "D": "Laziness"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 13,
+      "question": "Which of these is an ethical principle?",
+      "options": {
+        "A": "Honesty",
+        "B": "Theft",
+        "C": "Bribery",
+        "D": "Cheating"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 14,
+      "question": "Confidentiality means keeping business information ______.",
+      "options": {
+        "A": "Secret",
+        "B": "Public",
+        "C": "Funny",
+        "D": "Useless"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 15,
+      "question": "Consumer education helps consumers make ______ decisions.",
+      "options": {
+        "A": "Wrong",
+        "B": "Wise",
+        "C": "Illegal",
+        "D": "Poor"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 16,
+      "question": "Which of these is a responsibility of a consumer?",
+      "options": {
+        "A": "Paying for goods bought",
+        "B": "Selling fake goods",
+        "C": "Smuggling",
+        "D": "Hoarding"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 17,
+      "question": "The right to choose gives consumers the freedom to ______.",
+      "options": {
+        "A": "Select from different products",
+        "B": "Fight sellers",
+        "C": "Print money",
+        "D": "Avoid payment"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 18,
+      "question": "Which of these should be checked before buying electrical appliances?",
+      "options": {
+        "A": "Warranty",
+        "B": "Colour only",
+        "C": "Seller's age",
+        "D": "Shop size"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 19,
+      "question": "A careful consumer should always ______ prices.",
+      "options": {
+        "A": "Increase",
+        "B": "Compare",
+        "C": "Ignore",
+        "D": "Hide"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 20,
+      "question": "One importance of consumer rights is to ______.",
+      "options": {
+        "A": "Encourage fake goods",
+        "B": "Protect consumers",
+        "C": "Reduce production",
+        "D": "Stop shopping"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 21,
+      "question": "Ethical book-keeping requires ______.",
+      "options": {
+        "A": "Carelessness",
+        "B": "Accuracy",
+        "C": "Fraud",
+        "D": "Delay"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 22,
+      "question": "Which of the following is NOT a shopping tip?",
+      "options": {
+        "A": "Compare prices",
+        "B": "Check expiry dates",
+        "C": "Buy in a hurry",
+        "D": "Ask for a receipt"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 23,
+      "question": "Consumers should report ______ goods.",
+      "options": {
+        "A": "Defective",
+        "B": "Cheap",
+        "C": "Imported",
+        "D": "New"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 24,
+      "question": "Which of these is a consumer responsibility?",
+      "options": {
+        "A": "Reading instructions",
+        "B": "Damaging goods",
+        "C": "Fighting sellers",
+        "D": "Smuggling"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 25,
+      "question": "Consumer protection is achieved through ______.",
+      "options": {
+        "A": "Rights and responsibilities",
+        "B": "Fighting",
+        "C": "Smuggling",
+        "D": "Hoarding"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 26,
+      "question": "The right to safety protects consumers from ______.",
+      "options": {
+        "A": "Dangerous products",
+        "B": "Advertisements",
+        "C": "Discounts",
+        "D": "Shopping lists"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 27,
+      "question": "Which document shows that payment has been made?",
+      "options": {
+        "A": "Receipt",
+        "B": "Newspaper",
+        "C": "Letter",
+        "D": "Identity card"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 28,
+      "question": "One quality of a good book-keeper is ______.",
+      "options": {
+        "A": "Honesty",
+        "B": "Laziness",
+        "C": "Carelessness",
+        "D": "Pride"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 29,
+      "question": "Shopping wisely helps to ______.",
+      "options": {
+        "A": "Save money",
+        "B": "Waste time",
+        "C": "Increase debts",
+        "D": "Encourage fraud"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 30,
+      "question": "Consumers should buy goods from ______ sellers.",
+      "options": {
+        "A": "Reliable",
+        "B": "Unknown",
+        "C": "Dishonest",
+        "D": "Careless"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 31,
+      "question": "Which of these is an example of consumer education?",
+      "options": {
+        "A": "Learning how to shop wisely",
+        "B": "Fighting traders",
+        "C": "Smuggling goods",
+        "D": "Gambling"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 32,
+      "question": "Book-keeping ethics help to build ______.",
+      "options": {
+        "A": "Trust",
+        "B": "Quarrels",
+        "C": "Corruption",
+        "D": "Theft"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 33,
+      "question": "Which of these is NOT an ethical behaviour?",
+      "options": {
+        "A": "Honesty",
+        "B": "Integrity",
+        "C": "Falsifying records",
+        "D": "Accuracy"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 34,
+      "question": "Reading labels helps consumers know the ______.",
+      "options": {
+        "A": "Product information",
+        "B": "Family of the seller",
+        "C": "Colour of the shop",
+        "D": "Shop address"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 35,
+      "question": "Which consumer right allows complaints about bad products?",
+      "options": {
+        "A": "Right to Redress",
+        "B": "Right to Cheat",
+        "C": "Right to Fight",
+        "D": "Right to Borrow"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 36,
+      "question": "A shopping budget helps to control ______.",
+      "options": {
+        "A": "Spending",
+        "B": "Singing",
+        "C": "Dancing",
+        "D": "Running"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 37,
+      "question": "Which of these is a wise shopping habit?",
+      "options": {
+        "A": "Buying only what is needed",
+        "B": "Buying everything seen",
+        "C": "Ignoring prices",
+        "D": "Borrowing unnecessarily"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 38,
+      "question": "Business records should be ______.",
+      "options": {
+        "A": "Accurate",
+        "B": "False",
+        "C": "Incomplete",
+        "D": "Untidy"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 39,
+      "question": "Consumer rights encourage ______ trade.",
+      "options": {
+        "A": "Fair",
+        "B": "Illegal",
+        "C": "Secret",
+        "D": "Forced"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 40,
+      "question": "The right to information helps consumers make ______ choices.",
+      "options": {
+        "A": "Poor",
+        "B": "Wise",
+        "C": "Wrong",
+        "D": "Careless"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 41,
+      "question": "A dishonest book-keeper may ______.",
+      "options": {
+        "A": "Falsify records",
+        "B": "Keep accurate records",
+        "C": "Protect business information",
+        "D": "Obey ethical principles"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 42,
+      "question": "Which of these is a shopping tip?",
+      "options": {
+        "A": "Check product quality",
+        "B": "Ignore labels",
+        "C": "Buy expired goods",
+        "D": "Refuse receipts"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 43,
+      "question": "Consumers should inspect goods before ______.",
+      "options": {
+        "A": "Payment",
+        "B": "Sleeping",
+        "C": "Cooking",
+        "D": "Travelling"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 44,
+      "question": "Honesty is important in ______.",
+      "options": {
+        "A": "Book-keeping",
+        "B": "Smuggling",
+        "C": "Gambling",
+        "D": "Fighting"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 45,
+      "question": "A consumer has the right to ______ among different brands.",
+      "options": {
+        "A": "Choose",
+        "B": "Destroy",
+        "C": "Hide",
+        "D": "Reject payment"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 46,
+      "question": "One benefit of consumer responsibilities is ______.",
+      "options": {
+        "A": "A fair marketplace",
+        "B": "More fake goods",
+        "C": "Poor services",
+        "D": "High prices"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 47,
+      "question": "The purpose of shopping tips is to help consumers ______.",
+      "options": {
+        "A": "Buy wisely",
+        "B": "Waste money",
+        "C": "Borrow always",
+        "D": "Buy fake goods"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 48,
+      "question": "Ethical principles guide a book-keeper to act ______.",
+      "options": {
+        "A": "Professionally",
+        "B": "Carelessly",
+        "C": "Dishonestly",
+        "D": "Illegally"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 49,
+      "question": "Consumers should always keep their ______ after shopping.",
+      "options": {
+        "A": "Receipt",
+        "B": "Basket",
+        "C": "Uniform",
+        "D": "Shoes"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 50,
+      "question": "Which of the following best describes a responsible consumer?",
+      "options": {
+        "A": "One who knows and performs his or her duties",
+        "B": "One who cheats sellers",
+        "C": "One who buys stolen goods",
+        "D": "One who ignores product information"
+      },
+      "answer": "A",
+      "image": null
+    }
 ];
 
 
         const staticTheoryQuestions = [
+      {
+      "id": 1,
+      "question": "1a. Define the term \"Consumer Rights\" and list four examples of consumer rights.\n1b. Explain any three of the consumer rights you listed in 1a.",
+      "marks": 10,
+      "image": null
+    },
     {
-          "id": 1,
-          "question": "State the unit of mass that you will use to measure the following: (i) a car (ii) a chair (iii) a lorry (iv) a bag of rice (v) a bag of beans (vi) an orange (vii) a boy/girl",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 2,
-          "question": "How many 50 grammes mass can be obtained from 400 grammes",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 3,
-          "question": "Copy and complete the table in base 5\n+   0   1   2   3   4\n0   0\n1\n2                 11\n3\n4   4           13",
-          "marks": 10,
-          "image": "img1/math_jss1_que3.png"
-        },
-        {
-          "id": 4,
-          "question": "If t=10 and e=11 in base twelve, simplify the following in base 12\n(i) 4e4e + 2e12\n(ii) e8et – 1ee2",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 5,
-          "question": "Express the following in common fraction (i) 26% (ii) 35% (iii) 200%",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 6,
-          "question": "Express the following as a percentage (i) 42/100 (ii) 17/100 (iii) 51/100",
-          "marks": 10,
-          "image": null
-        }
+      "id": 2,
+      "question": "2a. What are the responsibilities of a consumer?\n2b. Discuss four major responsibilities of a consumer in the marketplace.",
+      "marks": 10,
+      "image": null
+    },
+    {
+      "id": 3,
+      "question": "Outline and explain five important shopping tips that can help a consumer make wise purchasing decisions.",
+      "marks": 10,
+      "image": null
+    },
+    {
+      "id": 4,
+      "question": "4a. What is meant by \"Book-keeping Ethics\"?\n4b. State and explain four ethical principles that a book-keeper should observe in the practice of book-keeping.",
+      "marks": 10,
+      "image": null
+    },
+    {
+      "id": 5,
+      "question": "(a) Differentiate between Consumer Rights and Consumer Responsibilities.\n(b) Explain why both rights and responsibilities are important for effective consumer protection in Nigeria.",
+      "marks": 10,
+      "image": null
+    }
 ];
-
-
-
-
-
-
-
         // ================== APPLICATION VARIABLES ==================
         let questions = [];
         let currentQuestion = 0;

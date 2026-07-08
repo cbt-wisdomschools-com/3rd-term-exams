@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.wisdom foundationschools.org - JSS1 MATHEMATICS  Exam</title>
+    <title>cbt.wisdom foundationschools.org - YORUBA Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -609,7 +609,7 @@
 
     
         <center><h3>WISDOM FOUNDATION SCHOOLS EGBEWA  ADO EKITI </h3></center> 
-        <center><h3>SECOND TERM EXAMINATION 2025/2026 ACADEMIC SESSION</h3></center>
+        <center><h3>THIRD TERM EXAMINATION 2025/2026 ACADEMIC SESSION</h3></center>
        
         <!-- SECTION TOGGLE BUTTONS -->
         <div class="section-toggle">
@@ -618,7 +618,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  JSS1 MATHEMATICS (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  YORUBA - JSS1 (THIRD TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -684,7 +684,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> JSS1 MATHEMATICS   FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION HAPPY EASTER HOLIDAY CELEBRATION </span>
+        <span class="marquee-text"> YORUBA  FOR 3RD TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION </span>
     </div>
    
     <div class="windows-activate">
@@ -699,286 +699,514 @@
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-          {
-          "id": 1,
-          "question": "(+16) + (+2) =",
-          "options": {
-            "A": "12",
-            "B": "18",
-            "C": "-18",
-            "D": "-12"
-          },
-          "answer": "B",
-          "image": null
-        },
         {
-          "id": 2,
-          "question": "(-19) – (-14) =",
-          "options": {
-            "A": "5",
-            "B": "-33",
-            "C": "-5",
-            "D": "33"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 3,
-          "question": "(+12) + (-40) =",
-          "options": {
-            "A": "52",
-            "B": "-28",
-            "C": "28",
-            "D": "-52"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 4,
-          "question": "Convert 5000grams to kilograms",
-          "options": {
-            "A": "5kg",
-            "B": "50kg",
-            "C": "500kg",
-            "D": "0.5kg"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 5,
-          "question": "What is the unit of measurement of a keg of kerosene",
-          "options": {
-            "A": "milliliters",
-            "B": "centiliters",
-            "C": "liter",
-            "D": "deciliter"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 6,
-          "question": "What unit of measurement car be used for a car",
-          "options": {
-            "A": "tonne",
-            "B": "kilogram",
-            "C": "gram",
-            "D": "none of the above"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 7,
-          "question": "How many kilogram make up 1 tonne",
-          "options": {
-            "A": "1",
-            "B": "10",
-            "C": "100",
-            "D": "1000"
-          },
-          "answer": "D",
-          "image": null
-        },
-        {
-          "id": 8,
-          "question": "How many 50 grammes mass can be obtained from 250 grammes",
-          "options": {
-            "A": "3",
-            "B": "4",
-            "C": "5",
-            "D": "6"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 9,
-          "question": "Solve 5% of #125",
-          "options": {
-            "A": "#6.25",
-            "B": "#7.4",
-            "C": "#8.3",
-            "D": "9.8"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 10,
-          "question": "Express 1/4 in percentage",
-          "options": {
-            "A": "30%",
-            "B": "25%",
-            "C": "40%",
-            "D": "50%"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 11,
-          "question": "Express 20% as fraction",
-          "options": {
-            "A": "1/2",
-            "B": "1/4",
-            "C": "1/5",
-            "D": "1/10"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 12,
-          "question": "Simplify 1010₂ + 1101₂",
-          "options": {
-            "A": "10111₂",
-            "B": "1011₂",
-            "C": "1111₂",
-            "D": "01011₂"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 13,
-          "question": "Simplify 102₃ + 212₃",
-          "options": {
-            "A": "1021₃",
-            "B": "1102₃",
-            "C": "0112₃",
-            "D": "2110₃"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 14,
-          "question": "Simplify 10011₂ – 1101₂",
-          "options": {
-            "A": "00110₂",
-            "B": "00101₂",
-            "C": "01010₂",
-            "D": "11000₂"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 15,
-          "question": "312₄ – 233₄",
-          "options": {
-            "A": "013₄",
-            "B": "130₄",
-            "C": "103₄",
-            "D": "1003₄"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 16,
-          "question": "Approximate 49.567 to 2 decimal place",
-          "options": {
-            "A": "49.50",
-            "B": "49.57",
-            "C": "49",
-            "D": "49.56"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 17,
-          "question": "Approximate 0.0457 to 2 decimal place",
-          "options": {
-            "A": "0.04",
-            "B": "0.05",
-            "C": "0.10",
-            "D": "0.11"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 18,
-          "question": "Approximate 813.1146 to 2 significant figures",
-          "options": {
-            "A": "813.12",
-            "B": "810",
-            "C": "820",
-            "D": "813.11"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 19,
-          "question": "Approximate 237.46 to 2 significant figures",
-          "options": {
-            "A": "230",
-            "B": "240",
-            "C": "237.40",
-            "D": "237.50"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 20,
-          "question": "Approximate 7.213659 to 2 significant figures",
-          "options": {
-            "A": "7.20000",
-            "B": "7.21000",
-            "C": "7.3000",
-            "D": "7.2200"
-          },
-          "answer": "A",
-          "image": null
-        }
+      "id": 1,
+      "question": "_______ ni ohun ti a ro, ki a to se akoole re.",
+      "options": {
+        "A": "akole",
+        "B": "awoko",
+        "C": "Aroko",
+        "D": "aropo"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 2,
+      "question": "Ise oluko dara ju ise agbe lo je apeere aroko___________",
+      "options": {
+        "A": "oniroyin",
+        "B": "alariyanjiyan",
+        "C": "alaye",
+        "D": "alapejuwe"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 3,
+      "question": "_______ kii se orisirisi apeere aroko ti o wa.",
+      "options": {
+        "A": "aroko oniroyin",
+        "B": "aroko alariyanjiyan",
+        "C": "Aroko alalaye",
+        "D": "Aroko pipa"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 4,
+      "question": "Leta kiko pin si ona _________",
+      "options": {
+        "A": "meji",
+        "B": "meta",
+        "C": "marun-un",
+        "D": "meje"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 5,
+      "question": "Ewo ni kii se apeere ise iseda ipese eran?",
+      "options": {
+        "A": "ise eja pipa",
+        "B": "ise ode igbo",
+        "C": "ise alapata",
+        "D": "ise irin wiwa ati sisun"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 6,
+      "question": "A le pin awon ise isenbaye Yoruba si ona___________",
+      "options": {
+        "A": "marun-un",
+        "B": "mewaa",
+        "C": "meje",
+        "D": "meji"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 7,
+      "question": "Ise epo fifo je ise ipese___________",
+      "options": {
+        "A": "eran",
+        "B": "ohun elo",
+        "C": "Ounje",
+        "D": "fun ayeye"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 8,
+      "question": "______ ni eni ti a bi, ti o si tun ara re bi pelu iwa rere.",
+      "options": {
+        "A": "omoluabi",
+        "B": "omode",
+        "C": "agbalagba",
+        "D": "aro"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 9,
+      "question": "Omoluabi a maa ki eniyan pelu_______",
+      "options": {
+        "A": "inu buburu",
+        "B": "oyaya",
+        "C": "ibanuje",
+        "D": "ija"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 10,
+      "question": "Ewo ni ko si lara abuda iwa omoluabi.?",
+      "options": {
+        "A": "iwa rere",
+        "B": "iberu olorun lokan",
+        "C": "iwa jegudujera",
+        "D": "ibowo fun agbalagba"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 11,
+      "question": "Aini iwa omoluabi a maa mu ki eniyan ni opolopo_______",
+      "options": {
+        "A": "owo",
+        "B": "ile",
+        "C": "isoro",
+        "D": "ibukun"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 12,
+      "question": "______ a maa ni oruko rere ni awujo awon eniyan.",
+      "options": {
+        "A": "omoluabi",
+        "B": "Gbewiri",
+        "C": "Eranko",
+        "D": "jaguda"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 13,
+      "question": "Ona ti Yoruba maa n gba ran ara won lowo ni aye atijo ni________",
+      "options": {
+        "A": "ole jija",
+        "B": "iwa igberaga",
+        "C": "arokodoko",
+        "D": "ija jija"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 14,
+      "question": "_______kii se asa iran-ra-eni-lowo ni Ile Yoruba.",
+      "options": {
+        "A": "Ebese",
+        "B": "Aaro",
+        "C": "arokodoko",
+        "D": "ole jija"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 15,
+      "question": "Awon wo ni o maa n gba Aaro?",
+      "options": {
+        "A": "Tokunrin tobinrin",
+        "B": "oluko",
+        "C": "alakowe",
+        "D": "olowo"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 16,
+      "question": "Tani a maa n be ni owe sise ni Ile Yoruba?",
+      "options": {
+        "A": "Baba",
+        "B": "ore ati ebi",
+        "C": "ota",
+        "D": "omo"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 17,
+      "question": "Ewo ni kii se anfaani asa iran-ra-eni-lowo awon wonyii?",
+      "options": {
+        "A": "O n mu ki ise won ya",
+        "B": "O n din iwa ole ku",
+        "C": "O n mu ki ife gbile",
+        "D": "O n mu ki iwa ole po sii"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 18,
+      "question": "_______ni ki a roko lati inu oko kan lo si oko keji.",
+      "options": {
+        "A": "Esusu",
+        "B": "Aaro",
+        "C": "arokodoko",
+        "D": "Ajo"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 19,
+      "question": "Asa iran-ra-eni-lowo ti ko wopo lode oni mo ni_________",
+      "options": {
+        "A": "Egbe Alasowopo",
+        "B": "Ajo",
+        "C": "Aaro",
+        "D": "Arokodoko"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 20,
+      "question": "Ile_________ eni ni a maa n be owe lo.",
+      "options": {
+        "A": "ana",
+        "B": "egbon",
+        "C": "eko",
+        "D": "iwe"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 21,
+      "question": "______ ni ege oro ti eemi gbe jade leekan soso.",
+      "options": {
+        "A": "Ohun",
+        "B": "Ede",
+        "C": "Silebu",
+        "D": "Oro"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 22,
+      "question": "________ni oro to sise koko gbolohun.",
+      "options": {
+        "A": "Oro-oruko",
+        "B": "Oro-ise",
+        "C": "Oro-aponle",
+        "D": "Oro-asopo"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 23,
+      "question": "Silebu meloo ni n be ninu oro ORONBO?",
+      "options": {
+        "A": "meta",
+        "B": "meji",
+        "C": "mefa",
+        "D": "merin"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 24,
+      "question": "Silebu meloo ni n be ninu oro ALEJO?",
+      "options": {
+        "A": "meji",
+        "B": "meta",
+        "C": "marun-un",
+        "D": "mefa"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 25,
+      "question": "Silebu meloo ni n be ninu oro OROGODOGANYIN?",
+      "options": {
+        "A": "mefa",
+        "B": "mejo",
+        "C": "mesan-an",
+        "D": "meji"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 26,
+      "question": "Silebu meloo ni n be ninu oro AJOMOLE?",
+      "options": {
+        "A": "meta",
+        "B": "meji",
+        "C": "merin",
+        "D": "mewaa"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 27,
+      "question": "Ewo ni Oro-ise ninu gbolohun: Olu ra aso tuntun.",
+      "options": {
+        "A": "ra",
+        "B": "olu",
+        "C": "aso",
+        "D": "tuntun"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 28,
+      "question": "Ewo ni Oro-ise ninu gbolohun: Mo ri yin lanaa.",
+      "options": {
+        "A": "yin",
+        "B": "mo",
+        "C": "ri",
+        "D": "lanaa"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 29,
+      "question": "Ewo ni Oro-ise ninu gbolohun: Akuko ko ni idaji.",
+      "options": {
+        "A": "idaji",
+        "B": "ni",
+        "C": "akuko",
+        "D": "ko"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 30,
+      "question": "Ewo ni Oro-ise ninu gbolohun: Aafin oba tobi pupo.",
+      "options": {
+        "A": "tobi",
+        "B": "oba",
+        "C": "Aafin",
+        "D": "pupo"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 31,
+      "question": "_________ ni iro ti a pe ti ko si idiwo fun afefe tabi eemi.",
+      "options": {
+        "A": "Silebu",
+        "B": "Faweli",
+        "C": "Gbolohun",
+        "D": "Konsonanti"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 32,
+      "question": "Faweli ede Yoruba pin si ona _______",
+      "options": {
+        "A": "merin",
+        "B": "mejo",
+        "C": "meji",
+        "D": "meta"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 33,
+      "question": "Iro faweli airanmupe je__________",
+      "options": {
+        "A": "marun-un",
+        "B": "meje",
+        "C": "merin",
+        "D": "mejila"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 34,
+      "question": "Gbogbo iro faweli ede Yoruba lo je iro ________",
+      "options": {
+        "A": "akunyun",
+        "B": "konsonanti",
+        "C": "aikunyun",
+        "D": "ibon"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 35,
+      "question": "Faweli oke ni________",
+      "options": {
+        "A": "i ati u",
+        "B": "a ati e",
+        "C": "O ati I",
+        "D": "r ati w"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 36,
+      "question": "Faweli odo ni______",
+      "options": {
+        "A": "a",
+        "B": "I",
+        "C": "u",
+        "D": "o"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 37,
+      "question": "Faweli airanmupe, oke, eyin, ahanupe roboto ni________",
+      "options": {
+        "A": "[u]",
+        "B": "[ i]",
+        "C": "[a]",
+        "D": "[o]"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 38,
+      "question": "________ ni awon eya ara amupero to le gbera lo si oke tabi lo si isale ti a ba n pe iro.",
+      "options": {
+        "A": "afipe asunsi",
+        "B": "afipe akanmole",
+        "C": "afipe elebe",
+        "D": "Ihun gbolohun"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 39,
+      "question": "Ewo ni kii se apeere eya ara afipe asunsi?",
+      "options": {
+        "A": "olele",
+        "B": "eyin ahon",
+        "C": "tan-an-na",
+        "D": "ete oke"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 40,
+      "question": "Bawo ni a se n ki awon agbe ni Ile Yoruba?",
+      "options": {
+        "A": "igba a ro o",
+        "B": "aroko bodunde",
+        "C": "aredu o",
+        "D": "oko a refo o"
+      },
+      "answer": "A",
+      "image": null
+    }
 ];
 
 
         const staticTheoryQuestions = [
+   {
+      "id": 1,
+      "question": "Ya ate faweli Yoruba, ki o si se apejuwe won lekunrere.",
+      "marks": 10,
+      "image": null
+    },
     {
-          "id": 1,
-          "question": "State the unit of mass that you will use to measure the following: (i) a car (ii) a chair (iii) a lorry (iv) a bag of rice (v) a bag of beans (vi) an orange (vii) a boy/girl",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 2,
-          "question": "How many 50 grammes mass can be obtained from 400 grammes",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 3,
-          "question": "Copy and complete the table in base 5\n+   0   1   2   3   4\n0   0\n1\n2                 11\n3\n4   4           13",
-          "marks": 10,
-          "image": "img1/math_jss1_que3.png"
-        },
-        {
-          "id": 4,
-          "question": "If t=10 and e=11 in base twelve, simplify the following in base 12\n(i) 4e4e + 2e12\n(ii) e8et – 1ee2",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 5,
-          "question": "Express the following in common fraction (i) 26% (ii) 35% (iii) 200%",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 6,
-          "question": "Express the following as a percentage (i) 42/100 (ii) 17/100 (iii) 51/100",
-          "marks": 10,
-          "image": null
-        }
+      "id": 2,
+      "question": "2a. Daruko merin lara afipe asunsi\n2b. So merin lara afipe akanmole.",
+      "marks": 10,
+      "image": null
+    },
+    {
+      "id": 3,
+      "question": "3a. kini faweli ede Yoruba?\n3b. Daruko ona meji ti faweli pin si.",
+      "marks": 10,
+      "image": null
+    },
+    {
+      "id": 4,
+      "question": "4a. Kini ohun mimo tumo si ninu esin ibile Yoruba?\n4b. Ko apeere marun-un lara awon ohun mimo ninu esin ibile Yoruba.",
+      "marks": 10,
+      "image": null
+    }
 ];
 
 

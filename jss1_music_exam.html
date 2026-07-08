@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.wisdom foundationschools.org - JSS1 MATHEMATICS  Exam</title>
+    <title>cbt.wisdom foundationschools.org - JSS1 MUSIC Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -581,13 +581,19 @@
         <div id="logout-container">
             <button id="logout" onclick="logout()">Logout</button>
                  <div class="marquee-container">
-        <span class="marquee-text">WISDOM FOUNDATION SCHOOLS  :  GATEWAY TO THE UNIVERSITY FOR YOUR CHILD </span>
+        <span class="marquee-text">WISDOM FOUNDATION SCHOOLS  :  GATEWAY TO THE UNIVERSITY</span>
     </div>
         </div>
         <div id="logo">
             <img src="img/wisdom_logo1.png" alt="image">
 
-           
+               <!--<div class="logo-left">
+                <img src="img/9ja1.png" alt="Nigeria Logo" >
+            </div>
+
+            <div class="logo-right">
+                <img src="img/nappps1.png" alt="NAPPS Logo" >
+            </div>-->
         </div>
 
            
@@ -609,7 +615,7 @@
 
     
         <center><h3>WISDOM FOUNDATION SCHOOLS EGBEWA  ADO EKITI </h3></center> 
-        <center><h3>SECOND TERM EXAMINATION 2025/2026 ACADEMIC SESSION</h3></center>
+        <center><h3>3RD TERM EXAMINATION 2025/2026 ACADEMIC SESSION</h3></center>
        
         <!-- SECTION TOGGLE BUTTONS -->
         <div class="section-toggle">
@@ -618,7 +624,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  JSS1 MATHEMATICS (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  JSS1 MUSIC  (3RD TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -684,7 +690,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> JSS1 MATHEMATICS   FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION HAPPY EASTER HOLIDAY CELEBRATION </span>
+        <span class="marquee-text"> JSS1 MUSIC  FOR 3RD TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION </span>
     </div>
    
     <div class="windows-activate">
@@ -693,300 +699,73 @@
 
 
     <script>
-        
+           // Get stored username and image from sessionStorage
        
             
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-          {
-          "id": 1,
-          "question": "(+16) + (+2) =",
-          "options": {
-            "A": "12",
-            "B": "18",
-            "C": "-18",
-            "D": "-12"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 2,
-          "question": "(-19) – (-14) =",
-          "options": {
-            "A": "5",
-            "B": "-33",
-            "C": "-5",
-            "D": "33"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 3,
-          "question": "(+12) + (-40) =",
-          "options": {
-            "A": "52",
-            "B": "-28",
-            "C": "28",
-            "D": "-52"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 4,
-          "question": "Convert 5000grams to kilograms",
-          "options": {
-            "A": "5kg",
-            "B": "50kg",
-            "C": "500kg",
-            "D": "0.5kg"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 5,
-          "question": "What is the unit of measurement of a keg of kerosene",
-          "options": {
-            "A": "milliliters",
-            "B": "centiliters",
-            "C": "liter",
-            "D": "deciliter"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 6,
-          "question": "What unit of measurement car be used for a car",
-          "options": {
-            "A": "tonne",
-            "B": "kilogram",
-            "C": "gram",
-            "D": "none of the above"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 7,
-          "question": "How many kilogram make up 1 tonne",
-          "options": {
-            "A": "1",
-            "B": "10",
-            "C": "100",
-            "D": "1000"
-          },
-          "answer": "D",
-          "image": null
-        },
-        {
-          "id": 8,
-          "question": "How many 50 grammes mass can be obtained from 250 grammes",
-          "options": {
-            "A": "3",
-            "B": "4",
-            "C": "5",
-            "D": "6"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 9,
-          "question": "Solve 5% of #125",
-          "options": {
-            "A": "#6.25",
-            "B": "#7.4",
-            "C": "#8.3",
-            "D": "9.8"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 10,
-          "question": "Express 1/4 in percentage",
-          "options": {
-            "A": "30%",
-            "B": "25%",
-            "C": "40%",
-            "D": "50%"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 11,
-          "question": "Express 20% as fraction",
-          "options": {
-            "A": "1/2",
-            "B": "1/4",
-            "C": "1/5",
-            "D": "1/10"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 12,
-          "question": "Simplify 1010₂ + 1101₂",
-          "options": {
-            "A": "10111₂",
-            "B": "1011₂",
-            "C": "1111₂",
-            "D": "01011₂"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 13,
-          "question": "Simplify 102₃ + 212₃",
-          "options": {
-            "A": "1021₃",
-            "B": "1102₃",
-            "C": "0112₃",
-            "D": "2110₃"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 14,
-          "question": "Simplify 10011₂ – 1101₂",
-          "options": {
-            "A": "00110₂",
-            "B": "00101₂",
-            "C": "01010₂",
-            "D": "11000₂"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 15,
-          "question": "312₄ – 233₄",
-          "options": {
-            "A": "013₄",
-            "B": "130₄",
-            "C": "103₄",
-            "D": "1003₄"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 16,
-          "question": "Approximate 49.567 to 2 decimal place",
-          "options": {
-            "A": "49.50",
-            "B": "49.57",
-            "C": "49",
-            "D": "49.56"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 17,
-          "question": "Approximate 0.0457 to 2 decimal place",
-          "options": {
-            "A": "0.04",
-            "B": "0.05",
-            "C": "0.10",
-            "D": "0.11"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 18,
-          "question": "Approximate 813.1146 to 2 significant figures",
-          "options": {
-            "A": "813.12",
-            "B": "810",
-            "C": "820",
-            "D": "813.11"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 19,
-          "question": "Approximate 237.46 to 2 significant figures",
-          "options": {
-            "A": "230",
-            "B": "240",
-            "C": "237.40",
-            "D": "237.50"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 20,
-          "question": "Approximate 7.213659 to 2 significant figures",
-          "options": {
-            "A": "7.20000",
-            "B": "7.21000",
-            "C": "7.3000",
-            "D": "7.2200"
-          },
-          "answer": "A",
-          "image": null
-        }
+      { "id": 1, "question": "Major scale has --- notes.", "options": { "A": "5", "B": "8", "C": "9", "D": "6" }, "answer": "B", "image": null },
+          { "id": 2, "question": "Interval is the distance between ---", "options": { "A": "1 notes", "B": "2 notes", "C": "3 notes", "D": "4 notes" }, "answer": "B", "image": null },
+          { "id": 3, "question": "A minim note counts how many beats", "options": { "A": "3", "B": "2", "C": "4", "D": "5" }, "answer": "B", "image": null },
+          { "id": 4, "question": "CDEFGABC is the scale of –", "options": { "A": "A major", "B": "B major", "C": "C major", "D": "D major" }, "answer": "C", "image": null },
+          { "id": 5, "question": "This sign ♯ is – key signature", "options": { "A": "sharp", "B": "flat", "C": "treble", "D": "bass" }, "answer": "A", "image": null },
+          { "id": 6, "question": "Tonic solfa are how many?", "options": { "A": "6", "B": "4", "C": "8", "D": "5" }, "answer": "D", "image": null },
+          { "id": 7, "question": "The primary importance of music is ---", "options": { "A": "sport", "B": "career", "C": "game", "D": "entertainment" }, "answer": "D", "image": null },
+          { "id": 8, "question": "Which of these is not a musical sound?", "options": { "A": "Trumpet sound", "B": "Rain fall Sound", "C": "Car sound", "D": "Generator sound" }, "answer": "D", "image": "img1/jss1_music_que_8.png" },
+          { "id": 9, "question": "The symbol 𝄞 is also called ----", "options": { "A": "Clef", "B": "Bass clef", "C": "D clef", "D": "G clef" }, "answer": "D", "image": null },
+          { "id": 10, "question": "Recorder is played by -----", "options": { "A": "touching it", "B": "blowing it", "C": "pressing it", "D": "shaking it" }, "answer": "B", "image": null },
+          { "id": 11, "question": "Musical alphabets are how many?", "options": { "A": "5", "B": "4", "C": "7", "D": "6" }, "answer": "C", "image": null },
+          { "id": 12, "question": "Tetrachord consists of how many notes?", "options": { "A": "3", "B": "4", "C": "5", "D": "6" }, "answer": "B", "image": null },
+          { "id": 13, "question": "A staff has how many spaces?", "options": { "A": "1", "B": "2", "C": "3", "D": "4" }, "answer": "D", "image": null },
+          { "id": 14, "question": "----- is a natural sound.", "options": { "A": "drum set", "B": "gangan", "C": "rain fall", "D": "piano" }, "answer": "C", "image": null },
+          { "id": 15, "question": "The type of music used in telling moonlight story is -----", "options": { "A": "popular music", "B": "military music", "C": "folk music", "D": "traditional music" }, "answer": "C", "image": null },
+          { "id": 16, "question": "The word tetrachord is a--------word", "options": { "A": "Nigerian", "B": "Greece", "C": "British", "D": "Spanish" }, "answer": "B", "image": null },
+          { "id": 17, "question": "Sound has how many origins?", "options": { "A": "2", "B": "3", "C": "4", "D": "5" }, "answer": "A", "image": null },
+          { "id": 18, "question": "-----is not an origin of sound", "options": { "A": "natural", "B": "Artificial", "C": "Musical", "D": "Rhythmic" }, "answer": "D", "image": null },
+          { "id": 19, "question": "What is the last musical alphabet?", "options": { "A": "C", "B": "A", "C": "F", "D": "G" }, "answer": "D", "image": null },
+          { "id": 20, "question": "Sound can be -----", "options": { "A": "touched", "B": "heard", "C": "smell", "D": "seen" }, "answer": "B", "image": null },
+          { "id": 21, "question": "What is the name of this note 𝅝", "options": { "A": "Crotchet", "B": "Semibreve", "C": "Breve", "D": "Minim" }, "answer": "B", "image": null },
+          { "id": 22, "question": "Nathaniel Bassey is --- musician.", "options": { "A": "Gospel", "B": "Fuji", "C": "Hip Hop", "D": "Reggae" }, "answer": "A", "image": null },
+          { "id": 23, "question": "Which of these is not a use of music", "options": { "A": "serves as career", "B": "use for advertisement", "C": "use to pet baby", "D": "Use to fetch water" }, "answer": "D", "image": null },
+          { "id": 24, "question": "Combination of two or more note in music is called ----", "options": { "A": "Harmony", "B": "Melody", "C": "Pitch", "D": "Timbre" }, "answer": "A", "image": null },
+          { "id": 25, "question": "----- is not a type of bar line", "options": { "A": "Single", "B": "Double", "C": "Thick", "D": "Work" }, "answer": "D", "image": null },
+          { "id": 26, "question": "A recorder has ----- parts", "options": { "A": "3", "B": "2", "C": "4", "D": "5" }, "answer": "A", "image": null },
+          { "id": 27, "question": "How would you play a trumpet", "options": { "A": "By Blowing", "B": "By pressing", "C": "By Stamping", "D": "By Bowing" }, "answer": "A", "image": null },
+          { "id": 28, "question": "A tetrachord has how many types", "options": { "A": "4", "B": "5", "C": "2", "D": "3" }, "answer": "C", "image": null, "note": "Two main types: diatonic and chromatic." },
+          { "id": 29, "question": "How many tetrachord is found in a scale", "options": { "A": "1", "B": "2", "C": "3", "D": "4" }, "answer": "B", "image": null },
+          { "id": 30, "question": "Which of these is not a music alphabet", "options": { "A": "Q", "B": "A", "C": "G", "D": "F" }, "answer": "A", "image": null }
+        
 ];
 
 
         const staticTheoryQuestions = [
-    {
-          "id": 1,
-          "question": "State the unit of mass that you will use to measure the following: (i) a car (ii) a chair (iii) a lorry (iv) a bag of rice (v) a bag of beans (vi) an orange (vii) a boy/girl",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 2,
-          "question": "How many 50 grammes mass can be obtained from 400 grammes",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 3,
-          "question": "Copy and complete the table in base 5\n+   0   1   2   3   4\n0   0\n1\n2                 11\n3\n4   4           13",
-          "marks": 10,
-          "image": "img1/math_jss1_que3.png"
-        },
-        {
-          "id": 4,
-          "question": "If t=10 and e=11 in base twelve, simplify the following in base 12\n(i) 4e4e + 2e12\n(ii) e8et – 1ee2",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 5,
-          "question": "Express the following in common fraction (i) 26% (ii) 35% (iii) 200%",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 6,
-          "question": "Express the following as a percentage (i) 42/100 (ii) 17/100 (iii) 51/100",
-          "marks": 10,
-          "image": null
-        }
+     {
+            "id": 1,
+            "question": "a. Define a scale.\nb. List 5 types of scale.",
+            "marks": 10,
+            "image": null
+          },
+          {
+            "id": 2,
+            "question": "a. Define music.\nb. Name five types of music.",
+            "marks": 10,
+            "image": null
+          },
+          {
+            "id": 3,
+            "question": "a. Draw five treble clef on a staff.\nb. Draw five bass clef on staff.",
+            "marks": 10,
+            "image": null,
+            "note": "Drawing questions require graphical representation."
+          },
+          {
+            "id": 4,
+            "question": "a. Define sound.\nb. Name three origin/sources of sound with examples.",
+            "marks": 10,
+            "image": null
+          }
 ];
-
-
-
-
-
-
-
         // ================== APPLICATION VARIABLES ==================
         let questions = [];
         let currentQuestion = 0;
@@ -1007,7 +786,7 @@
                 localStorage.setItem('examSubject', 'EXAM');
                 localStorage.setItem('examClass', 'RESULT');
             }
-            localStorage.setItem('examTerm', 'SECOND TERM 2025/2026');
+            localStorage.setItem('examTerm', 'THIRD TERM 2025/2026');
       
              const username = sessionStorage.getItem('username');
                 const image = sessionStorage.getItem('image');
