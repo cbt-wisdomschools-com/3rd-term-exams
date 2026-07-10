@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.wisdom foundationschools.org - BIOLOGY SS1 Exam</title>
+    <title>cbt.wisdom foundationschools.org - FOOD AND NUTRITION  JSS1 Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -624,7 +624,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  BIOLOGY SS1 (THIRD TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  FOOD AND NUTRITION  JSS1  (THIRD TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -690,7 +690,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> BIOLOGY SS1  FOR 3RD TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION </span>
+        <span class="marquee-text"> FOOD AND NUTRITION  JSS1  FOR 3RD TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION  </span>
     </div>
    
     <div class="windows-activate">
@@ -699,657 +699,650 @@
 
 
     <script>
-        
+           // Get stored username and image from sessionStorage
        
             
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-         
-  
-
-    {
+        {
       "id": 1,
-      "question": "Mushroom is an example of ________",
+      "question": "A family is a group of people related by ______.",
       "options": {
-        "A": "Photosynthetic plant",
-        "B": "Chemosynthetic plant",
-        "C": "Auto-photosynthetic",
-        "D": "All of the above"
+        "A": "Trade",
+        "B": "Blood, marriage or adoption",
+        "C": "Friendship",
+        "D": "Religion"
       },
       "answer": "B",
       "image": null
     },
     {
       "id": 2,
-      "question": "A food chain always begins with a?",
+      "question": "Which of the following is a type of family?",
       "options": {
-        "A": "Consumer",
-        "B": "Decomposer",
-        "C": "Producer",
-        "D": "Primary consumer"
-      },
-      "answer": "C",
-      "image": null
-    },
-    {
-      "id": 3,
-      "question": "Which of the following would form the base of a food chain in a pond?",
-      "options": {
-        "A": "Fish",
-        "B": "Algae",
-        "C": "Tadpole",
-        "D": "Frog"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 4,
-      "question": "A complex feeding relationship between organisms in a habitat that involves transfer of energy in the form of food is ?",
-      "options": {
-        "A": "Food web",
-        "B": "Pyramid of number",
-        "C": "Pyramid of energy",
-        "D": "Food chain"
+        "A": "Nuclear family",
+        "B": "School family",
+        "C": "Market family",
+        "D": "Football family"
       },
       "answer": "A",
       "image": null
     },
     {
-      "id": 5,
-      "question": "Which of the following best describes the concept of trophic level in functioning ecosystem?",
+      "id": 3,
+      "question": "A nuclear family consists of ______.",
       "options": {
-        "A": "The level of ecological interaction within an ecosystem",
-        "B": "The level of energy flow in an ecosystem",
-        "C": "The level of nutrient cycling in an ecosystem",
-        "D": "The level of biological diversity in an ecosystem"
+        "A": "Father, mother and children",
+        "B": "Grandparents only",
+        "C": "Uncles and aunts",
+        "D": "Cousins only"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 4,
+      "question": "An extended family includes ______.",
+      "options": {
+        "A": "Parents only",
+        "B": "Parents and relatives",
+        "C": "Friends only",
+        "D": "Teachers only"
       },
       "answer": "B",
       "image": null
     },
     {
-      "id": 6,
-      "question": "In a food chain involving a primary producer, primary consumer, and secondary consumer, the sharing of trophic energy is in the form that the;",
+      "id": 5,
+      "question": "A home is a place where a family ______.",
       "options": {
-        "A": "Secondary consumers take up all the energy content of the primary consumers",
-        "B": "Primary consumer has more energy than the primary producers",
-        "C": "Energy is shared equally by the three groups",
-        "D": "Secondary consumers gets only a small portion of the food contained in the primary producers"
+        "A": "Lives",
+        "B": "Works",
+        "C": "Trades",
+        "D": "Travels"
       },
-      "answer": "D",
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 6,
+      "question": "One importance of a home is that it provides ______.",
+      "options": {
+        "A": "Shelter",
+        "B": "Punishment",
+        "C": "Gambling",
+        "D": "Competition"
+      },
+      "answer": "A",
       "image": null
     },
     {
       "id": 7,
-      "question": "The highest percentage of energy in an ecosystem occurs at the level of the ______",
+      "question": "A happy home promotes ______.",
       "options": {
-        "A": "Producers",
-        "B": "Primary consumers",
-        "C": "Secondary consumers",
-        "D": "Decomposers"
+        "A": "Peace",
+        "B": "Quarrels",
+        "C": "Hatred",
+        "D": "Fear"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 8,
-      "question": "Rhizopus obtained its food from dead organic matters extracellularly. It is said to be",
+      "question": "Family needs are things that are ______.",
       "options": {
-        "A": "An autotroph",
-        "B": "A saprophyte",
-        "C": "A photosynthetic plant",
-        "D": "None of the above"
+        "A": "Necessary for living",
+        "B": "Expensive",
+        "C": "Luxurious",
+        "D": "Beautiful"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 9,
-      "question": "Plants that have special devices for trapping and digesting insects are called",
+      "question": "Which of these is a family need?",
       "options": {
-        "A": "Carnivorous",
-        "B": "Symbiotic",
-        "C": "Parasite",
-        "D": "Saprophytic"
+        "A": "Food",
+        "B": "Gold chain",
+        "C": "Video game",
+        "D": "Expensive phone"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 10,
-      "question": "Study the diagram of a food chain: P → Q → R → S → T. The organism designated P in the food chain above is normally sustained by energy from",
+      "question": "Which of these is a family want?",
       "options": {
-        "A": "Sunlight",
-        "B": "Carbohydrate",
-        "C": "Green plant",
-        "D": "Mineral salt"
+        "A": "Designer shoes",
+        "B": "Water",
+        "C": "Shelter",
+        "D": "Food"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 11,
-      "question": "Which of the following statement best describe the organism designated R in the food chain P → Q → R → S → T?",
+      "question": "Needs are more ______ than wants.",
       "options": {
-        "A": "It feeds on S",
-        "B": "It is a primary consumer",
-        "C": "It is a producer as well as a consumer",
-        "D": "It is a secondary consumer"
+        "A": "Important",
+        "B": "Beautiful",
+        "C": "Expensive",
+        "D": "Attractive"
       },
-      "answer": "D",
+      "answer": "A",
       "image": null
     },
     {
       "id": 12,
-      "question": "Soil fertility can be caused and renewed by",
+      "question": "Food, clothing and shelter are examples of ______.",
       "options": {
-        "A": "Yearly mono cropping",
-        "B": "Crop rotation and cover crop",
-        "C": "Bush burning to remove unwanted debris",
-        "D": "Avoiding artificial measures"
+        "A": "Family needs",
+        "B": "Family wants",
+        "C": "Hobbies",
+        "D": "Entertainment"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 13,
-      "question": "A farm practice that results in the loss of soil fertility is",
+      "question": "Family wants are things that make life more ______.",
       "options": {
-        "A": "Bush fallowing",
-        "B": "Mixed farming",
-        "C": "Continuous cropping",
-        "D": "Shifting cultivation"
+        "A": "Comfortable",
+        "B": "Difficult",
+        "C": "Painful",
+        "D": "Dangerous"
       },
-      "answer": "C",
+      "answer": "A",
       "image": null
     },
     {
       "id": 14,
-      "question": "Tsetse fly is harmful to man because it is associated with the spread of",
+      "question": "Family goals help a family to ______.",
       "options": {
-        "A": "River blindness",
-        "B": "Malaria",
-        "C": "Sleeping sickness",
-        "D": "Dysentery"
+        "A": "Plan for the future",
+        "B": "Waste money",
+        "C": "Fight often",
+        "D": "Borrow always"
       },
-      "answer": "C",
+      "answer": "A",
       "image": null
     },
     {
       "id": 15,
-      "question": "Poliomyelitis is an infection disease caused by",
+      "question": "Which of these can influence family goals?",
       "options": {
-        "A": "Virus",
-        "B": "Protozoan",
-        "C": "Bacterium",
-        "D": "Fungus"
+        "A": "Income",
+        "B": "Hair style",
+        "C": "Shoe size",
+        "D": "Weather"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 16,
-      "question": "The interaction between living organisms and their physical environment is known as ______.",
+      "question": "Family size can influence family ______.",
       "options": {
-        "A": "Habitat",
-        "B": "Ecosystem",
-        "C": "Population",
-        "D": "Community"
+        "A": "Goals",
+        "B": "Songs",
+        "C": "Games",
+        "D": "Stories"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 17,
-      "question": "Green plants are called producers because they ______.",
+      "question": "Standards are the level of living a family ______.",
       "options": {
-        "A": "Consume other organisms",
-        "B": "Manufacture their own food",
-        "C": "Decompose dead materials",
-        "D": "Feed on animals"
+        "A": "Maintains",
+        "B": "Destroys",
+        "C": "Avoids",
+        "D": "Hides"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 18,
-      "question": "Which of the following is an abiotic component of an ecosystem?",
+      "question": "Clothing refers to materials worn to cover the ______.",
       "options": {
-        "A": "Fungi",
-        "B": "Bacteria",
-        "C": "Water",
-        "D": "Grass"
+        "A": "Body",
+        "B": "House",
+        "C": "Table",
+        "D": "Wall"
       },
-      "answer": "C",
+      "answer": "A",
       "image": null
     },
     {
       "id": 19,
-      "question": "Organisms that feed on both plants and animals are known as ______.",
+      "question": "One importance of clothing is to provide ______.",
       "options": {
-        "A": "Herbivores",
-        "B": "Carnivores",
-        "C": "Omnivores",
-        "D": "Decomposers"
+        "A": "Protection",
+        "B": "Hunger",
+        "C": "Punishment",
+        "D": "Noise"
       },
-      "answer": "C",
+      "answer": "A",
       "image": null
     },
     {
       "id": 20,
-      "question": "Which group recycles nutrients in an ecosystem?",
+      "question": "Clothing also helps to improve a person's ______.",
       "options": {
-        "A": "Producers",
-        "B": "Consumers",
-        "C": "Decomposers",
-        "D": "Parasites"
+        "A": "Appearance",
+        "B": "Height",
+        "C": "Age",
+        "D": "Voice"
       },
-      "answer": "C",
+      "answer": "A",
       "image": null
     },
     {
       "id": 21,
-      "question": "A food web is more stable than a food chain because it ______.",
+      "question": "School uniform is a type of ______.",
       "options": {
-        "A": "Contains only producers",
-        "B": "Has many feeding relationships",
-        "C": "Contains only consumers",
-        "D": "Has fewer organisms"
+        "A": "Clothing",
+        "B": "Food",
+        "C": "Furniture",
+        "D": "Toy"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 22,
-      "question": "The original source of energy in most ecosystems is ______.",
+      "question": "Which of these is NOT a reason for wearing clothes?",
       "options": {
-        "A": "Water",
-        "B": "The Sun",
-        "C": "Soil",
-        "D": "Wind"
+        "A": "Protection",
+        "B": "Decoration",
+        "C": "Identification",
+        "D": "Laziness"
       },
-      "answer": "B",
+      "answer": "D",
       "image": null
     },
     {
       "id": 23,
-      "question": "During photosynthesis, solar energy is converted into ______.",
+      "question": "Clothing protects the body from ______.",
       "options": {
-        "A": "Sound energy",
-        "B": "Chemical energy",
-        "C": "Electrical energy",
-        "D": "Heat energy"
+        "A": "Heat and cold",
+        "B": "Hunger",
+        "C": "Sleep",
+        "D": "Noise"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 24,
-      "question": "Which process releases energy stored in food?",
+      "question": "Household crafts are items made ______.",
       "options": {
-        "A": "Photosynthesis",
-        "B": "Respiration",
-        "C": "Pollination",
-        "D": "Germination"
+        "A": "At home",
+        "B": "In the market",
+        "C": "In school",
+        "D": "In the bank"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 25,
-      "question": "As energy moves from one trophic level to another, it ______.",
+      "question": "Which of these is a household craft?",
       "options": {
-        "A": "Increases",
-        "B": "Remains constant",
-        "C": "Decreases",
-        "D": "Doubles"
+        "A": "Doormat",
+        "B": "Motor car",
+        "C": "Television",
+        "D": "Refrigerator"
       },
-      "answer": "C",
+      "answer": "A",
       "image": null
     },
     {
       "id": 26,
-      "question": "The greatest amount of energy in a food chain is found in the ______.",
+      "question": "Knitting is an example of a ______.",
       "options": {
-        "A": "Producers",
-        "B": "Primary consumers",
-        "C": "Secondary consumers",
-        "D": "Tertiary consumers"
+        "A": "Household craft",
+        "B": "Sport",
+        "C": "Dance",
+        "D": "Business"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 27,
-      "question": "Heat loss during energy transfer occurs mainly through ______.",
+      "question": "Weaving can be used to produce ______.",
       "options": {
-        "A": "Respiration",
-        "B": "Reproduction",
-        "C": "Pollination",
-        "D": "Transpiration"
+        "A": "Mats",
+        "B": "Cars",
+        "C": "Cement",
+        "D": "Glass"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 28,
-      "question": "Which of the following is the correct food chain?",
+      "question": "One family need is ______.",
       "options": {
-        "A": "Grass → Goat → Lion",
-        "B": "Lion → Goat → Grass",
-        "C": "Goat → Grass → Lion",
-        "D": "Grass → Lion → Goat"
+        "A": "Clothing",
+        "B": "Necklace",
+        "C": "Wristwatch",
+        "D": "Perfume"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 29,
-      "question": "The transfer of energy from one feeding level to another is called ______.",
+      "question": "Which of these is a family want?",
       "options": {
-        "A": "Nutrient cycling",
-        "B": "Energy flow",
-        "C": "Respiration",
-        "D": "Succession"
+        "A": "Expensive jewellery",
+        "B": "Shelter",
+        "C": "Water",
+        "D": "Food"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 30,
-      "question": "Which of the following is NOT a microorganism?",
+      "question": "A home should provide ______ for family members.",
       "options": {
-        "A": "Amoeba",
-        "B": "Mushroom",
-        "C": "Virus",
-        "D": "Bacterium"
+        "A": "Security",
+        "B": "Fear",
+        "C": "Hatred",
+        "D": "Confusion"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 31,
-      "question": "Microorganisms can be seen clearly only with the aid of a ______.",
+      "question": "A family shares ______.",
       "options": {
-        "A": "Telescope",
-        "B": "Microscope",
-        "C": "Periscope",
-        "D": "Binocular"
+        "A": "Love and care",
+        "B": "Hatred only",
+        "C": "Anger only",
+        "D": "Competition"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 32,
-      "question": "Which microorganism is used in bread production?",
+      "question": "A responsible family plans according to its ______.",
       "options": {
-        "A": "Bacteria",
-        "B": "Yeast",
-        "C": "Virus",
-        "D": "Algae"
+        "A": "Income",
+        "B": "Colour",
+        "C": "Height",
+        "D": "Name"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 33,
-      "question": "Diseases caused by bacteria include ______.",
+      "question": "The basic needs of man include food, clothing and ______.",
       "options": {
-        "A": "Cholera",
-        "B": "Malaria",
-        "C": "Measles",
-        "D": "AIDS"
+        "A": "Shelter",
+        "B": "Television",
+        "C": "Bicycle",
+        "D": "Computer"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 34,
-      "question": "Malaria is caused by ______.",
+      "question": "Which of these is NOT a basic family need?",
       "options": {
-        "A": "Virus",
-        "B": "Bacterium",
-        "C": "Protozoan",
-        "D": "Fungus"
+        "A": "Food",
+        "B": "Shelter",
+        "C": "Designer bag",
+        "D": "Clothing"
       },
       "answer": "C",
       "image": null
     },
     {
       "id": 35,
-      "question": "Which of the following is a harmful effect of microorganisms?",
+      "question": "Family wants can be satisfied after meeting ______.",
       "options": {
-        "A": "Cheese production",
-        "B": "Food spoilage",
-        "C": "Nitrogen fixation",
-        "D": "Bread making"
+        "A": "Family needs",
+        "B": "Entertainment",
+        "C": "Games",
+        "D": "Fashion"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 36,
-      "question": "Vaccines help to protect the body against ______.",
+      "question": "Clothing helps to maintain good ______.",
       "options": {
-        "A": "Infections",
+        "A": "Appearance",
         "B": "Hunger",
-        "C": "Fatigue",
-        "D": "Injuries"
+        "C": "Anger",
+        "D": "Weakness"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 37,
-      "question": "A balanced diet contains ______.",
+      "question": "Raincoat is worn mainly for ______.",
       "options": {
-        "A": "Only carbohydrates",
-        "B": "All nutrients in the correct proportions",
-        "C": "Only proteins",
-        "D": "Only vitamins"
+        "A": "Protection from rain",
+        "B": "Fashion only",
+        "C": "Sleeping",
+        "D": "Swimming"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 38,
-      "question": "Which nutrient is mainly responsible for body building?",
+      "question": "One factor affecting family standards is ______.",
       "options": {
-        "A": "Protein",
-        "B": "Fat",
-        "C": "Vitamin",
-        "D": "Water"
+        "A": "Occupation",
+        "B": "Shoe colour",
+        "C": "Hair length",
+        "D": "Favourite food"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 39,
-      "question": "Deficiency of vitamin C causes ______.",
+      "question": "A family's income affects its ______.",
       "options": {
-        "A": "Rickets",
-        "B": "Scurvy",
-        "C": "Kwashiorkor",
-        "D": "Night blindness"
+        "A": "Standard of living",
+        "B": "Age",
+        "C": "Name",
+        "D": "Language"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 40,
-      "question": "Personal hygiene helps to prevent ______.",
+      "question": "Household crafts can help families to ______.",
       "options": {
-        "A": "Infectious diseases",
-        "B": "Rainfall",
-        "C": "Earthquakes",
-        "D": "Erosion"
+        "A": "Earn income",
+        "B": "Lose money",
+        "C": "Fight neighbours",
+        "D": "Waste time"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 41,
-      "question": "Which of the following is a communicable disease?",
+      "question": "Family members should work together to achieve family ______.",
       "options": {
-        "A": "Diabetes",
-        "B": "Hypertension",
-        "C": "Tuberculosis",
-        "D": "Cancer"
+        "A": "Goals",
+        "B": "Quarrels",
+        "C": "Arguments",
+        "D": "Games"
       },
-      "answer": "C",
+      "answer": "A",
       "image": null
     },
     {
       "id": 42,
-      "question": "Immunization protects people by ______.",
+      "question": "Which type of family includes grandparents?",
       "options": {
-        "A": "Curing all diseases",
-        "B": "Stimulating immunity against diseases",
-        "C": "Increasing body weight",
-        "D": "Preventing injuries"
+        "A": "Extended family",
+        "B": "Nuclear family",
+        "C": "Single-parent family",
+        "D": "School family"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 43,
-      "question": "Which practice promotes good health?",
+      "question": "Clothing can help to identify a person's ______.",
       "options": {
-        "A": "Regular exercise",
-        "B": "Smoking",
-        "C": "Drug abuse",
-        "D": "Poor sanitation"
+        "A": "Occupation",
+        "B": "Favourite food",
+        "C": "Age",
+        "D": "Hobby"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 44,
-      "question": "Asexual reproduction involves ______.",
+      "question": "Nurses wear uniforms mainly for ______.",
       "options": {
-        "A": "One parent",
-        "B": "Two parents",
-        "C": "Fertilization only",
-        "D": "Pollination"
+        "A": "Identification",
+        "B": "Decoration only",
+        "C": "Fashion only",
+        "D": "Entertainment"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 45,
-      "question": "Hydra reproduces asexually by ______.",
+      "question": "One example of household articles made at home is a ______.",
       "options": {
-        "A": "Budding",
-        "B": "Binary fission",
-        "C": "Conjugation",
-        "D": "Pollination"
+        "A": "Cushion",
+        "B": "Airplane",
+        "C": "Tractor",
+        "D": "Television"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 46,
-      "question": "Binary fission is common in ______.",
+      "question": "Family needs should be met before family ______.",
       "options": {
-        "A": "Amoeba",
-        "B": "Goat",
-        "C": "Bird",
-        "D": "Fish"
+        "A": "Wants",
+        "B": "Games",
+        "C": "Sports",
+        "D": "Vacations"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 47,
-      "question": "Which of the following is an advantage of asexual reproduction?",
+      "question": "Good family planning helps to prevent ______.",
       "options": {
-        "A": "Rapid multiplication",
-        "B": "Greater genetic variation",
-        "C": "Requires two parents",
-        "D": "Slow reproduction"
+        "A": "Waste of resources",
+        "B": "Happiness",
+        "C": "Unity",
+        "D": "Love"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 48,
-      "question": "Which organism reproduces by regeneration?",
+      "question": "Clothing should always be ______.",
       "options": {
-        "A": "Starfish",
-        "B": "Goat",
-        "C": "Fowl",
-        "D": "Rabbit"
+        "A": "Clean",
+        "B": "Torn",
+        "C": "Dirty",
+        "D": "Wet"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 49,
-      "question": "Offspring produced by asexual reproduction are usually ______.",
+      "question": "The head of a family should encourage ______.",
       "options": {
-        "A": "Genetically identical to the parent",
-        "B": "Completely different from the parent",
-        "C": "Always stronger than the parent",
-        "D": "Always weaker than the parent"
+        "A": "Cooperation",
+        "B": "Hatred",
+        "C": "Fighting",
+        "D": "Laziness"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 50,
-      "question": "Which of the following is NOT a form of asexual reproduction?",
+      "question": "A good home is built on ______.",
       "options": {
-        "A": "Budding",
-        "B": "Binary fission",
-        "C": "Regeneration",
-        "D": "Fertilization"
+        "A": "Love and understanding",
+        "B": "Quarrels",
+        "C": "Jealousy",
+        "D": "Disobedience"
       },
-      "answer": "D",
+      "answer": "A",
       "image": null
     }
-
-  ];
-
-
-
-        const staticTheoryQuestions = [
-     {
-                "id": 1,
-                "question": "ANSWER QUESTION 1 AND ANY OTHER TWO FROM THIS THEORY SECTION\n\n(1a ) Identify the above diseases (Specimen A and B) and write the native name (Yoruba), English name and the biological name.\n(b) What's the microorganism that's responsible for the cause of specimen A & B?\n(ii) Enumerate the panaceas and control measures for the above diseases.\n\n1.c.\n(i) Draw and label a human kidney.\n(ii) Draw and label a fish.\n(iii) Write short note on the following with at least one example:\na. bilateral symmetrical\nb. radial symmetrical\nc. multilateral symmetrical\nd. triploblastic\ne. diploblastic\n\n1.d.\nCarry out an experiment to show test for protein and starch using beans seeds and bread.\n(i) In a tabular form, report your test, observation and inference of the experiment.\n(ii) Enumerate all the apparatus used.",
-                "marks": 20,
-                "image": "img1/specimen_AB.png"
-            },
-            {
-                "id": 2,
-                "question": "a. What are microorganisms?\nb. Enumerate the types of microorganisms and list at least 3 diseases caused by each together with the control measures.\nc. Explain vividly how microorganisms find their ways into the human system.",
-                "marks": 20,
-                "image": null
-            },
-            {
-                "id": 3,
-                "question": "a. What's the difference between pyramid of energy and pyramid of numbers?\nb. State the first and second law of thermodynamics.\nc. State the law of 10%.\nd. What's energy flow?\ne. Discuss how relevant agriculture is to biology.",
-                "marks": 20,
-                "image": null
-            },
-            {
-                "id": 4,
-                "question": "a. Explain what's meiosis and mitosis.\nb. Microorganisms cause diseases to animals but with knowledge of science we are able to figure out some means of controlling them like:\ni. high temperature\nii. high salinity\niii. antibiotics\niv. antibacterials\nv. antifungal\nDiscuss each method vividly with examples.",
-                "marks": 20,
-                "image": null
-            },
-            {
-                "id": 5,
-                "question": "a. What's reproduction?\nb. List the two types of reproduction and explain.\nc. Write short note on the following and mention at least one organism that practice it:\ni. budding\nii. fragmentation\niii. spores formation\niv. binary fission\nv. vegetative propagation",
-                "marks": 20,
-                "image": null
-            }
 ];
 
 
+        const staticTheoryQuestions = [
+   
+    {
+      "id": 1,
+      "question": "1a. Define the term \"Family\".\n1b. Mention and explain three types of family.",
+      "marks": 10,
+      "image": null
+    },
+    {
+      "id": 2,
+      "question": "Explain the meaning of Home. State five importance of a home to the family.",
+      "marks": 10,
+      "image": null
+    },
+    {
+      "id": 3,
+      "question": "3a. What are Family Needs?\n3b. Distinguish between Family Needs and Family Wants, giving four examples of each.",
+      "marks": 10,
+      "image": null
+    },
+    {
+      "id": 4,
+      "question": "List and explain five factors that influence family goals and standards.",
+      "marks": 10,
+      "image": null
+    },
+    {
+      "id": 5,
+      "question": "5a. Define Clothing.\n5b. Explain four reasons why clothing is important to an individual.\n5c. Mention three household crafts or articles that can be produced at home.",
+      "marks": 10,
+      "image": null
+    }
+  
 
-
-
+];
         // ================== APPLICATION VARIABLES ==================
         let questions = [];
         let currentQuestion = 0;
@@ -1370,7 +1363,7 @@
                 localStorage.setItem('examSubject', 'EXAM');
                 localStorage.setItem('examClass', 'RESULT');
             }
-            localStorage.setItem('examTerm', 'SECOND TERM 2025/2026');
+            localStorage.setItem('examTerm', 'THIRD TERM 2025/2026');
       
              const username = sessionStorage.getItem('username');
                 const image = sessionStorage.getItem('image');

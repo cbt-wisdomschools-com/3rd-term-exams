@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.wisdom foundationschools.org - BIOLOGY SS1 Exam</title>
+    <title>cbt.wisdom foundationschools.org - FOOD AND NUTRITION  JSS2 Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -624,7 +624,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  BIOLOGY SS1 (THIRD TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  FOOD AND NUTRITION  JSS2 (THIRD TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -690,7 +690,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> BIOLOGY SS1  FOR 3RD TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION </span>
+        <span class="marquee-text"> FOOD AND NUTRITION  JSS2  FOR 3RD TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION </span>
     </div>
    
     <div class="windows-activate">
@@ -699,657 +699,653 @@
 
 
     <script>
-        
+           // Get stored username and image from sessionStorage
        
             
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-         
-  
-
+ 
     {
       "id": 1,
-      "question": "Mushroom is an example of ________",
+      "question": "Household linen refers to ______.",
       "options": {
-        "A": "Photosynthetic plant",
-        "B": "Chemosynthetic plant",
-        "C": "Auto-photosynthetic",
-        "D": "All of the above"
+        "A": "Clothes used in the home",
+        "B": "Household fabric items",
+        "C": "Kitchen utensils",
+        "D": "Electrical appliances"
       },
       "answer": "B",
       "image": null
     },
     {
       "id": 2,
-      "question": "A food chain always begins with a?",
+      "question": "Which of the following is an example of household linen?",
       "options": {
-        "A": "Consumer",
-        "B": "Decomposer",
-        "C": "Producer",
-        "D": "Primary consumer"
+        "A": "Bed sheet",
+        "B": "Spoon",
+        "C": "Television",
+        "D": "Cup"
       },
-      "answer": "C",
+      "answer": "A",
       "image": null
     },
     {
       "id": 3,
-      "question": "Which of the following would form the base of a food chain in a pond?",
+      "question": "A pillowcase is an example of ______.",
       "options": {
-        "A": "Fish",
-        "B": "Algae",
-        "C": "Tadpole",
-        "D": "Frog"
+        "A": "Household linen",
+        "B": "Furniture",
+        "C": "Clothing",
+        "D": "Equipment"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 4,
-      "question": "A complex feeding relationship between organisms in a habitat that involves transfer of energy in the form of food is ?",
+      "question": "A towel is mainly used for ______.",
       "options": {
-        "A": "Food web",
-        "B": "Pyramid of number",
-        "C": "Pyramid of energy",
-        "D": "Food chain"
+        "A": "Drying the body",
+        "B": "Cooking",
+        "C": "Sweeping",
+        "D": "Reading"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 5,
-      "question": "Which of the following best describes the concept of trophic level in functioning ecosystem?",
+      "question": "Curtains are examples of ______.",
       "options": {
-        "A": "The level of ecological interaction within an ecosystem",
-        "B": "The level of energy flow in an ecosystem",
-        "C": "The level of nutrient cycling in an ecosystem",
-        "D": "The level of biological diversity in an ecosystem"
+        "A": "Household linen",
+        "B": "Kitchen tools",
+        "C": "Furniture",
+        "D": "Toys"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 6,
-      "question": "In a food chain involving a primary producer, primary consumer, and secondary consumer, the sharing of trophic energy is in the form that the;",
+      "question": "Tablecloths are used to cover ______.",
       "options": {
-        "A": "Secondary consumers take up all the energy content of the primary consumers",
-        "B": "Primary consumer has more energy than the primary producers",
-        "C": "Energy is shared equally by the three groups",
-        "D": "Secondary consumers gets only a small portion of the food contained in the primary producers"
+        "A": "Tables",
+        "B": "Chairs",
+        "C": "Beds",
+        "D": "Windows"
       },
-      "answer": "D",
+      "answer": "A",
       "image": null
     },
     {
       "id": 7,
-      "question": "The highest percentage of energy in an ecosystem occurs at the level of the ______",
+      "question": "One reason for caring for household linen is to ______.",
       "options": {
-        "A": "Producers",
-        "B": "Primary consumers",
-        "C": "Secondary consumers",
-        "D": "Decomposers"
+        "A": "Make it last longer",
+        "B": "Make it heavier",
+        "C": "Waste water",
+        "D": "Increase cost"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 8,
-      "question": "Rhizopus obtained its food from dead organic matters extracellularly. It is said to be",
+      "question": "Dirty clothes should be ______.",
       "options": {
-        "A": "An autotroph",
-        "B": "A saprophyte",
-        "C": "A photosynthetic plant",
-        "D": "None of the above"
+        "A": "Washed",
+        "B": "Burnt",
+        "C": "Hidden",
+        "D": "Folded only"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 9,
-      "question": "Plants that have special devices for trapping and digesting insects are called",
+      "question": "Family clothing should be stored in a ______ place.",
       "options": {
-        "A": "Carnivorous",
-        "B": "Symbiotic",
-        "C": "Parasite",
-        "D": "Saprophytic"
+        "A": "Clean and dry",
+        "B": "Dirty",
+        "C": "Wet",
+        "D": "Dusty"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 10,
-      "question": "Study the diagram of a food chain: P → Q → R → S → T. The organism designated P in the food chain above is normally sustained by energy from",
+      "question": "Proper care of clothing helps to ______.",
       "options": {
-        "A": "Sunlight",
-        "B": "Carbohydrate",
-        "C": "Green plant",
-        "D": "Mineral salt"
+        "A": "Increase its lifespan",
+        "B": "Damage it",
+        "C": "Fade it quickly",
+        "D": "Tear it"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 11,
-      "question": "Which of the following statement best describe the organism designated R in the food chain P → Q → R → S → T?",
+      "question": "Laundering means ______.",
       "options": {
-        "A": "It feeds on S",
-        "B": "It is a primary consumer",
-        "C": "It is a producer as well as a consumer",
-        "D": "It is a secondary consumer"
+        "A": "Washing and caring for clothes",
+        "B": "Buying clothes",
+        "C": "Selling clothes",
+        "D": "Designing clothes"
       },
-      "answer": "D",
+      "answer": "A",
       "image": null
     },
     {
       "id": 12,
-      "question": "Soil fertility can be caused and renewed by",
+      "question": "The first stage in laundering is ______.",
       "options": {
-        "A": "Yearly mono cropping",
-        "B": "Crop rotation and cover crop",
-        "C": "Bush burning to remove unwanted debris",
-        "D": "Avoiding artificial measures"
+        "A": "Sorting clothes",
+        "B": "Ironing",
+        "C": "Folding",
+        "D": "Storing"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 13,
-      "question": "A farm practice that results in the loss of soil fertility is",
+      "question": "Clothes should be sorted according to ______.",
       "options": {
-        "A": "Bush fallowing",
-        "B": "Mixed farming",
-        "C": "Continuous cropping",
-        "D": "Shifting cultivation"
+        "A": "Colour and fabric",
+        "B": "Owner's age",
+        "C": "Price",
+        "D": "Brand"
       },
-      "answer": "C",
+      "answer": "A",
       "image": null
     },
     {
       "id": 14,
-      "question": "Tsetse fly is harmful to man because it is associated with the spread of",
+      "question": "White clothes should be washed ______.",
       "options": {
-        "A": "River blindness",
-        "B": "Malaria",
-        "C": "Sleeping sickness",
-        "D": "Dysentery"
+        "A": "Separately",
+        "B": "With dark clothes",
+        "C": "Without soap",
+        "D": "In hot oil"
       },
-      "answer": "C",
+      "answer": "A",
       "image": null
     },
     {
       "id": 15,
-      "question": "Poliomyelitis is an infection disease caused by",
+      "question": "Soap is mainly used for ______.",
       "options": {
-        "A": "Virus",
-        "B": "Protozoan",
-        "C": "Bacterium",
-        "D": "Fungus"
+        "A": "Removing dirt",
+        "B": "Colouring clothes",
+        "C": "Drying clothes",
+        "D": "Folding clothes"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 16,
-      "question": "The interaction between living organisms and their physical environment is known as ______.",
+      "question": "Rinsing removes ______.",
       "options": {
-        "A": "Habitat",
-        "B": "Ecosystem",
-        "C": "Population",
-        "D": "Community"
+        "A": "Soap",
+        "B": "Colour",
+        "C": "Buttons",
+        "D": "Labels"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 17,
-      "question": "Green plants are called producers because they ______.",
+      "question": "Clothes should be dried in a ______ place.",
       "options": {
-        "A": "Consume other organisms",
-        "B": "Manufacture their own food",
-        "C": "Decompose dead materials",
-        "D": "Feed on animals"
+        "A": "Clean",
+        "B": "Dirty",
+        "C": "Muddy",
+        "D": "Dusty"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 18,
-      "question": "Which of the following is an abiotic component of an ecosystem?",
+      "question": "Ironing clothes helps to remove ______.",
       "options": {
-        "A": "Fungi",
-        "B": "Bacteria",
-        "C": "Water",
-        "D": "Grass"
+        "A": "Creases",
+        "B": "Colours",
+        "C": "Labels",
+        "D": "Buttons"
       },
-      "answer": "C",
+      "answer": "A",
       "image": null
     },
     {
       "id": 19,
-      "question": "Organisms that feed on both plants and animals are known as ______.",
+      "question": "Pattern drafting is the process of making a ______.",
       "options": {
-        "A": "Herbivores",
-        "B": "Carnivores",
-        "C": "Omnivores",
-        "D": "Decomposers"
+        "A": "Clothing pattern",
+        "B": "Shoe",
+        "C": "Bag",
+        "D": "Hat"
       },
-      "answer": "C",
+      "answer": "A",
       "image": null
     },
     {
       "id": 20,
-      "question": "Which group recycles nutrients in an ecosystem?",
+      "question": "Pattern drafting is important in ______.",
       "options": {
-        "A": "Producers",
-        "B": "Consumers",
-        "C": "Decomposers",
-        "D": "Parasites"
+        "A": "Garment making",
+        "B": "Farming",
+        "C": "Carpentry",
+        "D": "Plumbing"
       },
-      "answer": "C",
+      "answer": "A",
       "image": null
     },
     {
       "id": 21,
-      "question": "A food web is more stable than a food chain because it ______.",
+      "question": "Which of the following is a pattern drafting tool?",
       "options": {
-        "A": "Contains only producers",
-        "B": "Has many feeding relationships",
-        "C": "Contains only consumers",
-        "D": "Has fewer organisms"
+        "A": "Tape measure",
+        "B": "Cutlass",
+        "C": "Hammer",
+        "D": "Hoe"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 22,
-      "question": "The original source of energy in most ecosystems is ______.",
+      "question": "A ruler is used in pattern drafting to ______.",
       "options": {
-        "A": "Water",
-        "B": "The Sun",
-        "C": "Soil",
-        "D": "Wind"
+        "A": "Draw straight lines",
+        "B": "Cut fabric",
+        "C": "Iron clothes",
+        "D": "Wash clothes"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 23,
-      "question": "During photosynthesis, solar energy is converted into ______.",
+      "question": "Scissors are used to ______.",
       "options": {
-        "A": "Sound energy",
-        "B": "Chemical energy",
-        "C": "Electrical energy",
-        "D": "Heat energy"
+        "A": "Cut paper or fabric",
+        "B": "Measure cloth",
+        "C": "Wash clothes",
+        "D": "Mark fabric"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 24,
-      "question": "Which process releases energy stored in food?",
+      "question": "A pencil is used for ______.",
       "options": {
-        "A": "Photosynthesis",
-        "B": "Respiration",
-        "C": "Pollination",
-        "D": "Germination"
+        "A": "Drawing patterns",
+        "B": "Sewing",
+        "C": "Ironing",
+        "D": "Washing"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 25,
-      "question": "As energy moves from one trophic level to another, it ______.",
+      "question": "Fashion designing is the art of ______.",
       "options": {
-        "A": "Increases",
-        "B": "Remains constant",
-        "C": "Decreases",
-        "D": "Doubles"
+        "A": "Creating clothes",
+        "B": "Cooking food",
+        "C": "Building houses",
+        "D": "Repairing shoes"
       },
-      "answer": "C",
+      "answer": "A",
       "image": null
     },
     {
       "id": 26,
-      "question": "The greatest amount of energy in a food chain is found in the ______.",
+      "question": "A fashion designer should consider the ______ of the wearer.",
       "options": {
-        "A": "Producers",
-        "B": "Primary consumers",
-        "C": "Secondary consumers",
-        "D": "Tertiary consumers"
+        "A": "Size",
+        "B": "Name",
+        "C": "Religion only",
+        "D": "Tribe only"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 27,
-      "question": "Heat loss during energy transfer occurs mainly through ______.",
+      "question": "Which factor should be considered when designing clothes?",
       "options": {
-        "A": "Respiration",
-        "B": "Reproduction",
-        "C": "Pollination",
-        "D": "Transpiration"
+        "A": "Age",
+        "B": "Shoe size only",
+        "C": "Hair colour",
+        "D": "Favourite drink"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 28,
-      "question": "Which of the following is the correct food chain?",
+      "question": "The climate influences the choice of ______.",
       "options": {
-        "A": "Grass → Goat → Lion",
-        "B": "Lion → Goat → Grass",
-        "C": "Goat → Grass → Lion",
-        "D": "Grass → Lion → Goat"
+        "A": "Clothing",
+        "B": "Food",
+        "C": "Furniture",
+        "D": "Books"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 29,
-      "question": "The transfer of energy from one feeding level to another is called ______.",
+      "question": "Cotton clothes are suitable for ______ weather.",
       "options": {
-        "A": "Nutrient cycling",
-        "B": "Energy flow",
-        "C": "Respiration",
-        "D": "Succession"
+        "A": "Hot",
+        "B": "Cold",
+        "C": "Snowy",
+        "D": "Rainy"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 30,
-      "question": "Which of the following is NOT a microorganism?",
+      "question": "Woollen clothes are suitable for ______ weather.",
       "options": {
-        "A": "Amoeba",
-        "B": "Mushroom",
-        "C": "Virus",
-        "D": "Bacterium"
+        "A": "Cold",
+        "B": "Hot",
+        "C": "Dry",
+        "D": "Sunny"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 31,
-      "question": "Microorganisms can be seen clearly only with the aid of a ______.",
+      "question": "Household linen should be washed ______.",
       "options": {
-        "A": "Telescope",
-        "B": "Microscope",
-        "C": "Periscope",
-        "D": "Binocular"
+        "A": "Regularly",
+        "B": "Once a year",
+        "C": "Never",
+        "D": "Only on holidays"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 32,
-      "question": "Which microorganism is used in bread production?",
+      "question": "A clean home promotes good ______.",
       "options": {
-        "A": "Bacteria",
-        "B": "Yeast",
-        "C": "Virus",
-        "D": "Algae"
+        "A": "Health",
+        "B": "Sickness",
+        "C": "Poverty",
+        "D": "Laziness"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 33,
-      "question": "Diseases caused by bacteria include ______.",
+      "question": "Torn clothes should be ______.",
       "options": {
-        "A": "Cholera",
-        "B": "Malaria",
-        "C": "Measles",
-        "D": "AIDS"
+        "A": "Repaired",
+        "B": "Ignored",
+        "C": "Burnt immediately",
+        "D": "Hidden"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 34,
-      "question": "Malaria is caused by ______.",
+      "question": "Clothes should be kept away from ______.",
       "options": {
-        "A": "Virus",
-        "B": "Bacterium",
-        "C": "Protozoan",
-        "D": "Fungus"
+        "A": "Moisture",
+        "B": "Air",
+        "C": "Light",
+        "D": "People"
       },
-      "answer": "C",
+      "answer": "A",
       "image": null
     },
     {
       "id": 35,
-      "question": "Which of the following is a harmful effect of microorganisms?",
+      "question": "Which of these is NOT household linen?",
       "options": {
-        "A": "Cheese production",
-        "B": "Food spoilage",
-        "C": "Nitrogen fixation",
-        "D": "Bread making"
+        "A": "Plate",
+        "B": "Bed sheet",
+        "C": "Towel",
+        "D": "Curtain"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 36,
-      "question": "Vaccines help to protect the body against ______.",
+      "question": "Ironing should be done after clothes are ______.",
       "options": {
-        "A": "Infections",
-        "B": "Hunger",
-        "C": "Fatigue",
-        "D": "Injuries"
+        "A": "Dry",
+        "B": "Wet",
+        "C": "Dirty",
+        "D": "Soaked"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 37,
-      "question": "A balanced diet contains ______.",
+      "question": "A tape measure is used to take ______.",
       "options": {
-        "A": "Only carbohydrates",
-        "B": "All nutrients in the correct proportions",
-        "C": "Only proteins",
-        "D": "Only vitamins"
+        "A": "Body measurements",
+        "B": "Temperature",
+        "C": "Weight",
+        "D": "Time"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 38,
-      "question": "Which nutrient is mainly responsible for body building?",
+      "question": "Good laundering keeps clothes ______.",
       "options": {
-        "A": "Protein",
-        "B": "Fat",
-        "C": "Vitamin",
-        "D": "Water"
+        "A": "Neat",
+        "B": "Dirty",
+        "C": "Torn",
+        "D": "Wet"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 39,
-      "question": "Deficiency of vitamin C causes ______.",
+      "question": "Which of these is used for marking fabric?",
       "options": {
-        "A": "Rickets",
-        "B": "Scurvy",
-        "C": "Kwashiorkor",
-        "D": "Night blindness"
+        "A": "Tailor's chalk",
+        "B": "Spoon",
+        "C": "Plate",
+        "D": "Cup"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 40,
-      "question": "Personal hygiene helps to prevent ______.",
+      "question": "Fashion designing requires ______.",
       "options": {
-        "A": "Infectious diseases",
-        "B": "Rainfall",
-        "C": "Earthquakes",
-        "D": "Erosion"
+        "A": "Creativity",
+        "B": "Laziness",
+        "C": "Carelessness",
+        "D": "Anger"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 41,
-      "question": "Which of the following is a communicable disease?",
+      "question": "One reason for storing clothes properly is to prevent ______.",
       "options": {
-        "A": "Diabetes",
-        "B": "Hypertension",
-        "C": "Tuberculosis",
-        "D": "Cancer"
+        "A": "Damage",
+        "B": "Growth",
+        "C": "Decoration",
+        "D": "Expansion"
       },
-      "answer": "C",
+      "answer": "A",
       "image": null
     },
     {
       "id": 42,
-      "question": "Immunization protects people by ______.",
+      "question": "Which of these is a household linen?",
       "options": {
-        "A": "Curing all diseases",
-        "B": "Stimulating immunity against diseases",
-        "C": "Increasing body weight",
-        "D": "Preventing injuries"
+        "A": "Blanket",
+        "B": "Stove",
+        "C": "Pot",
+        "D": "Bucket"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 43,
-      "question": "Which practice promotes good health?",
+      "question": "Clothes should be folded after ______.",
       "options": {
-        "A": "Regular exercise",
-        "B": "Smoking",
-        "C": "Drug abuse",
-        "D": "Poor sanitation"
+        "A": "Ironing",
+        "B": "Washing only",
+        "C": "Soaking",
+        "D": "Sorting"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 44,
-      "question": "Asexual reproduction involves ______.",
+      "question": "Proper clothing care saves ______.",
       "options": {
-        "A": "One parent",
-        "B": "Two parents",
-        "C": "Fertilization only",
-        "D": "Pollination"
+        "A": "Money",
+        "B": "Food",
+        "C": "Fuel",
+        "D": "Water only"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 45,
-      "question": "Hydra reproduces asexually by ______.",
+      "question": "One stage of laundering is ______.",
       "options": {
-        "A": "Budding",
-        "B": "Binary fission",
-        "C": "Conjugation",
-        "D": "Pollination"
+        "A": "Washing",
+        "B": "Selling",
+        "C": "Buying",
+        "D": "Measuring"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 46,
-      "question": "Binary fission is common in ______.",
+      "question": "Which of these helps clothes last longer?",
       "options": {
-        "A": "Amoeba",
-        "B": "Goat",
-        "C": "Bird",
-        "D": "Fish"
+        "A": "Proper care",
+        "B": "Rough handling",
+        "C": "Poor storage",
+        "D": "Dirt"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 47,
-      "question": "Which of the following is an advantage of asexual reproduction?",
+      "question": "Fashion designing considers the ______ of the wearer.",
       "options": {
-        "A": "Rapid multiplication",
-        "B": "Greater genetic variation",
-        "C": "Requires two parents",
-        "D": "Slow reproduction"
+        "A": "Occasion",
+        "B": "Favourite subject",
+        "C": "Telephone number",
+        "D": "Nickname"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 48,
-      "question": "Which organism reproduces by regeneration?",
+      "question": "Household linen should be kept ______.",
       "options": {
-        "A": "Starfish",
-        "B": "Goat",
-        "C": "Fowl",
-        "D": "Rabbit"
+        "A": "Clean",
+        "B": "Wet",
+        "C": "Dirty",
+        "D": "Torn"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 49,
-      "question": "Offspring produced by asexual reproduction are usually ______.",
+      "question": "Pattern drafting helps to produce ______ fitting clothes.",
       "options": {
-        "A": "Genetically identical to the parent",
-        "B": "Completely different from the parent",
-        "C": "Always stronger than the parent",
-        "D": "Always weaker than the parent"
+        "A": "Well",
+        "B": "Poorly",
+        "C": "Tight only",
+        "D": "Loose only"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 50,
-      "question": "Which of the following is NOT a form of asexual reproduction?",
+      "question": "The best way to care for family clothing is to ______.",
       "options": {
-        "A": "Budding",
-        "B": "Binary fission",
-        "C": "Regeneration",
-        "D": "Fertilization"
+        "A": "Wash, dry, iron and store properly",
+        "B": "Leave them dirty",
+        "C": "Throw them away",
+        "D": "Keep them on the floor"
       },
-      "answer": "D",
+      "answer": "A",
       "image": null
     }
 
   ];
 
 
-
         const staticTheoryQuestions = [
-     {
-                "id": 1,
-                "question": "ANSWER QUESTION 1 AND ANY OTHER TWO FROM THIS THEORY SECTION\n\n(1a ) Identify the above diseases (Specimen A and B) and write the native name (Yoruba), English name and the biological name.\n(b) What's the microorganism that's responsible for the cause of specimen A & B?\n(ii) Enumerate the panaceas and control measures for the above diseases.\n\n1.c.\n(i) Draw and label a human kidney.\n(ii) Draw and label a fish.\n(iii) Write short note on the following with at least one example:\na. bilateral symmetrical\nb. radial symmetrical\nc. multilateral symmetrical\nd. triploblastic\ne. diploblastic\n\n1.d.\nCarry out an experiment to show test for protein and starch using beans seeds and bread.\n(i) In a tabular form, report your test, observation and inference of the experiment.\n(ii) Enumerate all the apparatus used.",
-                "marks": 20,
-                "image": "img1/specimen_AB.png"
-            },
-            {
-                "id": 2,
-                "question": "a. What are microorganisms?\nb. Enumerate the types of microorganisms and list at least 3 diseases caused by each together with the control measures.\nc. Explain vividly how microorganisms find their ways into the human system.",
-                "marks": 20,
-                "image": null
-            },
-            {
-                "id": 3,
-                "question": "a. What's the difference between pyramid of energy and pyramid of numbers?\nb. State the first and second law of thermodynamics.\nc. State the law of 10%.\nd. What's energy flow?\ne. Discuss how relevant agriculture is to biology.",
-                "marks": 20,
-                "image": null
-            },
-            {
-                "id": 4,
-                "question": "a. Explain what's meiosis and mitosis.\nb. Microorganisms cause diseases to animals but with knowledge of science we are able to figure out some means of controlling them like:\ni. high temperature\nii. high salinity\niii. antibiotics\niv. antibacterials\nv. antifungal\nDiscuss each method vividly with examples.",
-                "marks": 20,
-                "image": null
-            },
-            {
-                "id": 5,
-                "question": "a. What's reproduction?\nb. List the two types of reproduction and explain.\nc. Write short note on the following and mention at least one organism that practice it:\ni. budding\nii. fragmentation\niii. spores formation\niv. binary fission\nv. vegetative propagation",
-                "marks": 20,
-                "image": null
-            }
+           
+
+      {
+        "id": 1,
+        "question": "(a) Explain the meaning of <u>Household Linen</u>.\n\n(b) List <u>five</u> examples of household linen.",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 2,
+        "question": "State and explain <u>five</u> ways of caring for family clothing and household linen.",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 3,
+        "question": "(a) What is <u>Laundering</u>?\n\n(b) Mention and explain <u>four</u> stages involved in the laundering of family clothing.",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 4,
+        "question": "(a) Define <u>Pattern Drafting</u>.\n\n(b) List and explain <u>four</u> tools and equipment needed for basic pattern drafting.",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 5,
+        "question": "Explain the term <u>Fashion Designing</u>.\n\nDiscuss <u>four</u> factors to consider when designing clothes for family members.",
+        "marks": 10,
+        "image": null
+      }
+ 
+
 ];
-
-
-
-
-
         // ================== APPLICATION VARIABLES ==================
         let questions = [];
         let currentQuestion = 0;

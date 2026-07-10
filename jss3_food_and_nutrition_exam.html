@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.wisdom foundationschools.org - BIOLOGY SS1 Exam</title>
+    <title>cbt.wisdom foundationschools.org - FOOD AND NUTRITION  JSS3 Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -624,7 +624,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  BIOLOGY SS1 (THIRD TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  FOOD AND NUTRITION  JSS3  (THIRD TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -690,7 +690,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> BIOLOGY SS1  FOR 3RD TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION </span>
+        <span class="marquee-text"> FOOD AND NUTRITION  JSS3  FOR 3RD TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION </span>
     </div>
    
     <div class="windows-activate">
@@ -699,657 +699,653 @@
 
 
     <script>
-        
+           // Get stored username and image from sessionStorage
        
             
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-         
-  
-
+ 
     {
       "id": 1,
-      "question": "Mushroom is an example of ________",
+      "question": "A sewing machine is mainly used for ______.",
       "options": {
-        "A": "Photosynthetic plant",
-        "B": "Chemosynthetic plant",
-        "C": "Auto-photosynthetic",
-        "D": "All of the above"
+        "A": "Sewing fabrics",
+        "B": "Cooking food",
+        "C": "Washing clothes",
+        "D": "Ironing clothes"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 2,
-      "question": "A food chain always begins with a?",
+      "question": "Which of the following is a part of a sewing machine?",
       "options": {
-        "A": "Consumer",
-        "B": "Decomposer",
-        "C": "Producer",
-        "D": "Primary consumer"
+        "A": "Needle",
+        "B": "Spoon",
+        "C": "Plate",
+        "D": "Pot"
       },
-      "answer": "C",
+      "answer": "A",
       "image": null
     },
     {
       "id": 3,
-      "question": "Which of the following would form the base of a food chain in a pond?",
+      "question": "The function of the needle is to ______.",
       "options": {
-        "A": "Fish",
-        "B": "Algae",
-        "C": "Tadpole",
-        "D": "Frog"
+        "A": "Stitch fabric",
+        "B": "Cut cloth",
+        "C": "Wash fabric",
+        "D": "Measure cloth"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 4,
-      "question": "A complex feeding relationship between organisms in a habitat that involves transfer of energy in the form of food is ?",
+      "question": "Which part of a sewing machine holds the thread?",
       "options": {
-        "A": "Food web",
-        "B": "Pyramid of number",
-        "C": "Pyramid of energy",
-        "D": "Food chain"
+        "A": "Spool pin",
+        "B": "Foot pedal",
+        "C": "Belt",
+        "D": "Bobbin case"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 5,
-      "question": "Which of the following best describes the concept of trophic level in functioning ecosystem?",
+      "question": "The hand wheel is used to ______.",
       "options": {
-        "A": "The level of ecological interaction within an ecosystem",
-        "B": "The level of energy flow in an ecosystem",
-        "C": "The level of nutrient cycling in an ecosystem",
-        "D": "The level of biological diversity in an ecosystem"
+        "A": "Move the needle",
+        "B": "Cut fabric",
+        "C": "Measure cloth",
+        "D": "Wash clothes"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 6,
-      "question": "In a food chain involving a primary producer, primary consumer, and secondary consumer, the sharing of trophic energy is in the form that the;",
+      "question": "The presser foot is used to ______.",
       "options": {
-        "A": "Secondary consumers take up all the energy content of the primary consumers",
-        "B": "Primary consumer has more energy than the primary producers",
-        "C": "Energy is shared equally by the three groups",
-        "D": "Secondary consumers gets only a small portion of the food contained in the primary producers"
+        "A": "Hold the fabric in place",
+        "B": "Cut thread",
+        "C": "Store needles",
+        "D": "Measure fabric"
       },
-      "answer": "D",
+      "answer": "A",
       "image": null
     },
     {
       "id": 7,
-      "question": "The highest percentage of energy in an ecosystem occurs at the level of the ______",
+      "question": "Which of these is a type of sewing machine?",
       "options": {
-        "A": "Producers",
-        "B": "Primary consumers",
-        "C": "Secondary consumers",
-        "D": "Decomposers"
+        "A": "Hand sewing machine",
+        "B": "Television machine",
+        "C": "Washing machine",
+        "D": "Grinding machine"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 8,
-      "question": "Rhizopus obtained its food from dead organic matters extracellularly. It is said to be",
+      "question": "An electric sewing machine uses ______.",
       "options": {
-        "A": "An autotroph",
-        "B": "A saprophyte",
-        "C": "A photosynthetic plant",
-        "D": "None of the above"
+        "A": "Electricity",
+        "B": "Petrol",
+        "C": "Kerosene",
+        "D": "Charcoal"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 9,
-      "question": "Plants that have special devices for trapping and digesting insects are called",
+      "question": "Garment construction means ______.",
       "options": {
-        "A": "Carnivorous",
-        "B": "Symbiotic",
-        "C": "Parasite",
-        "D": "Saprophytic"
+        "A": "Making clothes",
+        "B": "Selling clothes",
+        "C": "Washing clothes",
+        "D": "Buying clothes"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 10,
-      "question": "Study the diagram of a food chain: P → Q → R → S → T. The organism designated P in the food chain above is normally sustained by energy from",
+      "question": "The first stage in garment construction is ______.",
       "options": {
-        "A": "Sunlight",
-        "B": "Carbohydrate",
-        "C": "Green plant",
-        "D": "Mineral salt"
+        "A": "Taking measurements",
+        "B": "Ironing",
+        "C": "Washing",
+        "D": "Packing"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 11,
-      "question": "Which of the following statement best describe the organism designated R in the food chain P → Q → R → S → T?",
+      "question": "Before cutting fabric, a pattern should be ______.",
       "options": {
-        "A": "It feeds on S",
-        "B": "It is a primary consumer",
-        "C": "It is a producer as well as a consumer",
-        "D": "It is a secondary consumer"
+        "A": "Prepared",
+        "B": "Burnt",
+        "C": "Folded",
+        "D": "Washed"
       },
-      "answer": "D",
+      "answer": "A",
       "image": null
     },
     {
       "id": 12,
-      "question": "Soil fertility can be caused and renewed by",
+      "question": "The process of joining fabric together is called ______.",
       "options": {
-        "A": "Yearly mono cropping",
-        "B": "Crop rotation and cover crop",
-        "C": "Bush burning to remove unwanted debris",
-        "D": "Avoiding artificial measures"
+        "A": "Sewing",
+        "B": "Washing",
+        "C": "Ironing",
+        "D": "Drying"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 13,
-      "question": "A farm practice that results in the loss of soil fertility is",
+      "question": "Pressing a garment makes it look ______.",
       "options": {
-        "A": "Bush fallowing",
-        "B": "Mixed farming",
-        "C": "Continuous cropping",
-        "D": "Shifting cultivation"
+        "A": "Neat",
+        "B": "Dirty",
+        "C": "Wet",
+        "D": "Rough"
       },
-      "answer": "C",
+      "answer": "A",
       "image": null
     },
     {
       "id": 14,
-      "question": "Tsetse fly is harmful to man because it is associated with the spread of",
+      "question": "Textiles are materials used for making ______.",
       "options": {
-        "A": "River blindness",
-        "B": "Malaria",
-        "C": "Sleeping sickness",
-        "D": "Dysentery"
+        "A": "Clothing",
+        "B": "Shoes only",
+        "C": "Food",
+        "D": "Furniture"
       },
-      "answer": "C",
+      "answer": "A",
       "image": null
     },
     {
       "id": 15,
-      "question": "Poliomyelitis is an infection disease caused by",
+      "question": "Cotton is an example of a ______ fibre.",
       "options": {
-        "A": "Virus",
-        "B": "Protozoan",
-        "C": "Bacterium",
-        "D": "Fungus"
+        "A": "Natural",
+        "B": "Synthetic",
+        "C": "Artificial",
+        "D": "Plastic"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 16,
-      "question": "The interaction between living organisms and their physical environment is known as ______.",
+      "question": "Nylon is an example of a ______ fibre.",
       "options": {
-        "A": "Habitat",
-        "B": "Ecosystem",
-        "C": "Population",
-        "D": "Community"
+        "A": "Man-made",
+        "B": "Natural",
+        "C": "Animal",
+        "D": "Plant"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 17,
-      "question": "Green plants are called producers because they ______.",
+      "question": "Wool is obtained from ______.",
       "options": {
-        "A": "Consume other organisms",
-        "B": "Manufacture their own food",
-        "C": "Decompose dead materials",
-        "D": "Feed on animals"
+        "A": "Sheep",
+        "B": "Goat skin",
+        "C": "Cotton plant",
+        "D": "Bamboo"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 18,
-      "question": "Which of the following is an abiotic component of an ecosystem?",
+      "question": "Silk is produced by the ______.",
       "options": {
-        "A": "Fungi",
-        "B": "Bacteria",
-        "C": "Water",
-        "D": "Grass"
+        "A": "Silkworm",
+        "B": "Butterfly",
+        "C": "Bee",
+        "D": "Spider"
       },
-      "answer": "C",
+      "answer": "A",
       "image": null
     },
     {
       "id": 19,
-      "question": "Organisms that feed on both plants and animals are known as ______.",
+      "question": "Which of these is a natural fibre?",
       "options": {
-        "A": "Herbivores",
-        "B": "Carnivores",
-        "C": "Omnivores",
-        "D": "Decomposers"
+        "A": "Cotton",
+        "B": "Polyester",
+        "C": "Nylon",
+        "D": "Acrylic"
       },
-      "answer": "C",
+      "answer": "A",
       "image": null
     },
     {
       "id": 20,
-      "question": "Which group recycles nutrients in an ecosystem?",
+      "question": "Which of these is a synthetic fibre?",
       "options": {
-        "A": "Producers",
-        "B": "Consumers",
-        "C": "Decomposers",
-        "D": "Parasites"
+        "A": "Polyester",
+        "B": "Cotton",
+        "C": "Wool",
+        "D": "Silk"
       },
-      "answer": "C",
+      "answer": "A",
       "image": null
     },
     {
       "id": 21,
-      "question": "A food web is more stable than a food chain because it ______.",
+      "question": "Textiles can be classified into ______ main categories.",
       "options": {
-        "A": "Contains only producers",
-        "B": "Has many feeding relationships",
-        "C": "Contains only consumers",
-        "D": "Has fewer organisms"
+        "A": "Two",
+        "B": "Three",
+        "C": "Four",
+        "D": "Five"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 22,
-      "question": "The original source of energy in most ecosystems is ______.",
+      "question": "Cotton is obtained from the ______.",
       "options": {
-        "A": "Water",
-        "B": "The Sun",
-        "C": "Soil",
-        "D": "Wind"
+        "A": "Cotton plant",
+        "B": "Sheep",
+        "C": "Silkworm",
+        "D": "Coconut tree"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 23,
-      "question": "During photosynthesis, solar energy is converted into ______.",
+      "question": "Wool is mainly used for making clothes for ______ weather.",
       "options": {
-        "A": "Sound energy",
-        "B": "Chemical energy",
-        "C": "Electrical energy",
-        "D": "Heat energy"
+        "A": "Cold",
+        "B": "Hot",
+        "C": "Rainy",
+        "D": "Dry"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 24,
-      "question": "Which process releases energy stored in food?",
+      "question": "One property of a good textile is ______.",
       "options": {
-        "A": "Photosynthesis",
-        "B": "Respiration",
-        "C": "Pollination",
-        "D": "Germination"
+        "A": "Durability",
+        "B": "Weakness",
+        "C": "Dirtiness",
+        "D": "Weight"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 25,
-      "question": "As energy moves from one trophic level to another, it ______.",
+      "question": "Durability means the fabric will ______.",
       "options": {
-        "A": "Increases",
-        "B": "Remains constant",
-        "C": "Decreases",
-        "D": "Doubles"
+        "A": "Last long",
+        "B": "Tear easily",
+        "C": "Shrink quickly",
+        "D": "Fade immediately"
       },
-      "answer": "C",
+      "answer": "A",
       "image": null
     },
     {
       "id": 26,
-      "question": "The greatest amount of energy in a food chain is found in the ______.",
+      "question": "A consumer should consider the ______ of a fabric before buying it.",
       "options": {
-        "A": "Producers",
-        "B": "Primary consumers",
-        "C": "Secondary consumers",
-        "D": "Tertiary consumers"
+        "A": "Colour",
+        "B": "Size only",
+        "C": "Seller's age",
+        "D": "Shop location"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 27,
-      "question": "Heat loss during energy transfer occurs mainly through ______.",
+      "question": "Which property shows how easily a fabric absorbs water?",
       "options": {
-        "A": "Respiration",
-        "B": "Reproduction",
-        "C": "Pollination",
-        "D": "Transpiration"
+        "A": "Absorbency",
+        "B": "Elasticity",
+        "C": "Strength",
+        "D": "Texture"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 28,
-      "question": "Which of the following is the correct food chain?",
+      "question": "Elasticity means a fabric can ______.",
       "options": {
-        "A": "Grass → Goat → Lion",
-        "B": "Lion → Goat → Grass",
-        "C": "Goat → Grass → Lion",
-        "D": "Grass → Lion → Goat"
+        "A": "Stretch and return to shape",
+        "B": "Melt quickly",
+        "C": "Tear easily",
+        "D": "Fade easily"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 29,
-      "question": "The transfer of energy from one feeding level to another is called ______.",
+      "question": "Natural fibres come from ______.",
       "options": {
-        "A": "Nutrient cycling",
-        "B": "Energy flow",
-        "C": "Respiration",
-        "D": "Succession"
+        "A": "Plants and animals",
+        "B": "Factories only",
+        "C": "Machines only",
+        "D": "Chemicals only"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 30,
-      "question": "Which of the following is NOT a microorganism?",
+      "question": "Synthetic fibres are made from ______.",
       "options": {
-        "A": "Amoeba",
-        "B": "Mushroom",
-        "C": "Virus",
-        "D": "Bacterium"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 31,
-      "question": "Microorganisms can be seen clearly only with the aid of a ______.",
-      "options": {
-        "A": "Telescope",
-        "B": "Microscope",
-        "C": "Periscope",
-        "D": "Binocular"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 32,
-      "question": "Which microorganism is used in bread production?",
-      "options": {
-        "A": "Bacteria",
-        "B": "Yeast",
-        "C": "Virus",
-        "D": "Algae"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 33,
-      "question": "Diseases caused by bacteria include ______.",
-      "options": {
-        "A": "Cholera",
-        "B": "Malaria",
-        "C": "Measles",
-        "D": "AIDS"
-      },
-      "answer": "A",
-      "image": null
-    },
-    {
-      "id": 34,
-      "question": "Malaria is caused by ______.",
-      "options": {
-        "A": "Virus",
-        "B": "Bacterium",
-        "C": "Protozoan",
-        "D": "Fungus"
-      },
-      "answer": "C",
-      "image": null
-    },
-    {
-      "id": 35,
-      "question": "Which of the following is a harmful effect of microorganisms?",
-      "options": {
-        "A": "Cheese production",
-        "B": "Food spoilage",
-        "C": "Nitrogen fixation",
-        "D": "Bread making"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 36,
-      "question": "Vaccines help to protect the body against ______.",
-      "options": {
-        "A": "Infections",
-        "B": "Hunger",
-        "C": "Fatigue",
-        "D": "Injuries"
-      },
-      "answer": "A",
-      "image": null
-    },
-    {
-      "id": 37,
-      "question": "A balanced diet contains ______.",
-      "options": {
-        "A": "Only carbohydrates",
-        "B": "All nutrients in the correct proportions",
-        "C": "Only proteins",
-        "D": "Only vitamins"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 38,
-      "question": "Which nutrient is mainly responsible for body building?",
-      "options": {
-        "A": "Protein",
-        "B": "Fat",
-        "C": "Vitamin",
+        "A": "Chemicals",
+        "B": "Plants",
+        "C": "Animals",
         "D": "Water"
       },
       "answer": "A",
       "image": null
     },
     {
-      "id": 39,
-      "question": "Deficiency of vitamin C causes ______.",
+      "id": 31,
+      "question": "Which of these is NOT a natural fibre?",
       "options": {
-        "A": "Rickets",
-        "B": "Scurvy",
-        "C": "Kwashiorkor",
-        "D": "Night blindness"
+        "A": "Nylon",
+        "B": "Cotton",
+        "C": "Wool",
+        "D": "Silk"
       },
-      "answer": "B",
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 32,
+      "question": "Which of these is NOT a synthetic fibre?",
+      "options": {
+        "A": "Cotton",
+        "B": "Polyester",
+        "C": "Nylon",
+        "D": "Acrylic"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 33,
+      "question": "Sewing machines help to make sewing ______.",
+      "options": {
+        "A": "Faster",
+        "B": "Slower",
+        "C": "Harder",
+        "D": "Impossible"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 34,
+      "question": "Which part of the sewing machine supplies the lower thread?",
+      "options": {
+        "A": "Bobbin",
+        "B": "Needle",
+        "C": "Presser foot",
+        "D": "Hand wheel"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 35,
+      "question": "Garment construction requires correct ______.",
+      "options": {
+        "A": "Measurement",
+        "B": "Guessing",
+        "C": "Colour only",
+        "D": "Decoration"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 36,
+      "question": "Which of these is used to stitch fabric together?",
+      "options": {
+        "A": "Needle",
+        "B": "Ruler",
+        "C": "Chalk",
+        "D": "Eraser"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 37,
+      "question": "One advantage of natural fibres is that they are ______.",
+      "options": {
+        "A": "Comfortable",
+        "B": "Waterproof",
+        "C": "Plastic",
+        "D": "Metallic"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 38,
+      "question": "Which fibre is commonly used for school uniforms?",
+      "options": {
+        "A": "Cotton",
+        "B": "Nylon rope",
+        "C": "Wool blanket",
+        "D": "Silk scarf"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 39,
+      "question": "Before sewing begins, fabric should be ______.",
+      "options": {
+        "A": "Cut correctly",
+        "B": "Burnt",
+        "C": "Torn",
+        "D": "Hidden"
+      },
+      "answer": "A",
       "image": null
     },
     {
       "id": 40,
-      "question": "Personal hygiene helps to prevent ______.",
+      "question": "Sewing machine needles should be kept ______.",
       "options": {
-        "A": "Infectious diseases",
-        "B": "Rainfall",
-        "C": "Earthquakes",
-        "D": "Erosion"
+        "A": "Sharp",
+        "B": "Rusty",
+        "C": "Bent",
+        "D": "Broken"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 41,
-      "question": "Which of the following is a communicable disease?",
+      "question": "Which of these is used for taking body measurements?",
       "options": {
-        "A": "Diabetes",
-        "B": "Hypertension",
-        "C": "Tuberculosis",
-        "D": "Cancer"
+        "A": "Tape measure",
+        "B": "Spoon",
+        "C": "Plate",
+        "D": "Cup"
       },
-      "answer": "C",
+      "answer": "A",
       "image": null
     },
     {
       "id": 42,
-      "question": "Immunization protects people by ______.",
+      "question": "A good fabric should be ______.",
       "options": {
-        "A": "Curing all diseases",
-        "B": "Stimulating immunity against diseases",
-        "C": "Increasing body weight",
-        "D": "Preventing injuries"
+        "A": "Strong",
+        "B": "Weak",
+        "C": "Dirty",
+        "D": "Torn"
       },
-      "answer": "B",
+      "answer": "A",
       "image": null
     },
     {
       "id": 43,
-      "question": "Which practice promotes good health?",
+      "question": "Cotton fabric is suitable for ______ weather.",
       "options": {
-        "A": "Regular exercise",
-        "B": "Smoking",
-        "C": "Drug abuse",
-        "D": "Poor sanitation"
+        "A": "Hot",
+        "B": "Cold",
+        "C": "Snowy",
+        "D": "Windy"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 44,
-      "question": "Asexual reproduction involves ______.",
+      "question": "Silk fabric is known for being ______.",
       "options": {
-        "A": "One parent",
-        "B": "Two parents",
-        "C": "Fertilization only",
-        "D": "Pollination"
+        "A": "Smooth",
+        "B": "Rough",
+        "C": "Heavy",
+        "D": "Dirty"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 45,
-      "question": "Hydra reproduces asexually by ______.",
+      "question": "Garment construction ends with ______.",
       "options": {
-        "A": "Budding",
-        "B": "Binary fission",
-        "C": "Conjugation",
-        "D": "Pollination"
+        "A": "Finishing the garment",
+        "B": "Buying fabric",
+        "C": "Measuring",
+        "D": "Washing fabric"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 46,
-      "question": "Binary fission is common in ______.",
+      "question": "One example of a man-made fibre is ______.",
       "options": {
-        "A": "Amoeba",
-        "B": "Goat",
-        "C": "Bird",
-        "D": "Fish"
+        "A": "Polyester",
+        "B": "Cotton",
+        "C": "Wool",
+        "D": "Silk"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 47,
-      "question": "Which of the following is an advantage of asexual reproduction?",
+      "question": "A sewing machine makes work more ______.",
       "options": {
-        "A": "Rapid multiplication",
-        "B": "Greater genetic variation",
-        "C": "Requires two parents",
-        "D": "Slow reproduction"
+        "A": "Efficient",
+        "B": "Difficult",
+        "C": "Slow",
+        "D": "Stressful"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 48,
-      "question": "Which organism reproduces by regeneration?",
+      "question": "Fabric texture refers to how the fabric ______.",
       "options": {
-        "A": "Starfish",
-        "B": "Goat",
-        "C": "Fowl",
-        "D": "Rabbit"
+        "A": "Feels",
+        "B": "Smells",
+        "C": "Sounds",
+        "D": "Tastes"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 49,
-      "question": "Offspring produced by asexual reproduction are usually ______.",
+      "question": "One reason for studying textiles is to help consumers ______.",
       "options": {
-        "A": "Genetically identical to the parent",
-        "B": "Completely different from the parent",
-        "C": "Always stronger than the parent",
-        "D": "Always weaker than the parent"
+        "A": "Choose good fabrics",
+        "B": "Waste money",
+        "C": "Damage clothes",
+        "D": "Avoid sewing"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 50,
-      "question": "Which of the following is NOT a form of asexual reproduction?",
+      "question": "The best fibre for hot weather is ______.",
       "options": {
-        "A": "Budding",
-        "B": "Binary fission",
-        "C": "Regeneration",
-        "D": "Fertilization"
+        "A": "Cotton",
+        "B": "Wool",
+        "C": "Nylon",
+        "D": "Polyester"
       },
-      "answer": "D",
+      "answer": "A",
       "image": null
     }
 
-  ];
-
-
-
-        const staticTheoryQuestions = [
-     {
-                "id": 1,
-                "question": "ANSWER QUESTION 1 AND ANY OTHER TWO FROM THIS THEORY SECTION\n\n(1a ) Identify the above diseases (Specimen A and B) and write the native name (Yoruba), English name and the biological name.\n(b) What's the microorganism that's responsible for the cause of specimen A & B?\n(ii) Enumerate the panaceas and control measures for the above diseases.\n\n1.c.\n(i) Draw and label a human kidney.\n(ii) Draw and label a fish.\n(iii) Write short note on the following with at least one example:\na. bilateral symmetrical\nb. radial symmetrical\nc. multilateral symmetrical\nd. triploblastic\ne. diploblastic\n\n1.d.\nCarry out an experiment to show test for protein and starch using beans seeds and bread.\n(i) In a tabular form, report your test, observation and inference of the experiment.\n(ii) Enumerate all the apparatus used.",
-                "marks": 20,
-                "image": "img1/specimen_AB.png"
-            },
-            {
-                "id": 2,
-                "question": "a. What are microorganisms?\nb. Enumerate the types of microorganisms and list at least 3 diseases caused by each together with the control measures.\nc. Explain vividly how microorganisms find their ways into the human system.",
-                "marks": 20,
-                "image": null
-            },
-            {
-                "id": 3,
-                "question": "a. What's the difference between pyramid of energy and pyramid of numbers?\nb. State the first and second law of thermodynamics.\nc. State the law of 10%.\nd. What's energy flow?\ne. Discuss how relevant agriculture is to biology.",
-                "marks": 20,
-                "image": null
-            },
-            {
-                "id": 4,
-                "question": "a. Explain what's meiosis and mitosis.\nb. Microorganisms cause diseases to animals but with knowledge of science we are able to figure out some means of controlling them like:\ni. high temperature\nii. high salinity\niii. antibiotics\niv. antibacterials\nv. antifungal\nDiscuss each method vividly with examples.",
-                "marks": 20,
-                "image": null
-            },
-            {
-                "id": 5,
-                "question": "a. What's reproduction?\nb. List the two types of reproduction and explain.\nc. Write short note on the following and mention at least one organism that practice it:\ni. budding\nii. fragmentation\niii. spores formation\niv. binary fission\nv. vegetative propagation",
-                "marks": 20,
-                "image": null
-            }
 ];
 
 
+        const staticTheoryQuestions = [
+
+      {
+        "id": 1,
+        "question": "(a) Name <u>five</u> parts of a sewing machine and state the function of each.\n\n(b) Mention <u>three</u> types of sewing machines.",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 2,
+        "question": "Explain the term <u>Garment Construction</u>.\n\nOutline the <u>six</u> processes involved in garment construction.",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 3,
+        "question": "(a) What are <u>Textiles</u>?\n\n(b) Classify textiles into <u>two</u> main categories and give <u>three</u> examples of each.",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 4,
+        "question": "Explain <u>four</u> properties of textiles that a consumer should consider before buying clothing materials.",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 5,
+        "question": "(a) Differentiate between <u>Natural Fibres</u> and <u>Man-made (Synthetic) Fibres</u>.\n\n(b) Give <u>three</u> examples of each.",
+        "marks": 10,
+        "image": null
+      }
 
 
 
+];
         // ================== APPLICATION VARIABLES ==================
         let questions = [];
         let currentQuestion = 0;
@@ -1370,7 +1366,7 @@
                 localStorage.setItem('examSubject', 'EXAM');
                 localStorage.setItem('examClass', 'RESULT');
             }
-            localStorage.setItem('examTerm', 'SECOND TERM 2025/2026');
+            localStorage.setItem('examTerm', 'THIRD TERM 2025/2026');
       
              const username = sessionStorage.getItem('username');
                 const image = sessionStorage.getItem('image');
@@ -1626,7 +1622,7 @@
                         localStorage.setItem("pendingSubject", sub);
                         localStorage.setItem("pendingUsername", username);
                         
-                        const examInfo = sessionStorage.getItem('examInfo') || 'TEST - RESULT (SECOND TERM)';
+                        const examInfo = sessionStorage.getItem('examInfo') || 'TEST - RESULT (THIRD TERM)';
                         localStorage.setItem("examInfo", examInfo);
                         
                         // Build the record
