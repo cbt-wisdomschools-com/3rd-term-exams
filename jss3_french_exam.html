@@ -705,274 +705,640 @@
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-       {
-          "id": 1,
-          "question": "Voisin est ------------------",
-          "options": {
-            "A": "vehicle",
-            "B": "village",
-            "C": "neighbour",
-            "D": "company"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 2,
-          "question": "Medecin est ----------------",
-          "options": {
-            "A": "drug",
-            "B": "medical doctor",
-            "C": "movement",
-            "D": "many"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 3,
-          "question": "Enchante est ----------------",
-          "options": {
-            "A": "delighted",
-            "B": "equipment",
-            "C": "sharing",
-            "D": "share it"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 4,
-          "question": "D'accord est -----------------",
-          "options": {
-            "A": "silent",
-            "B": "alright",
-            "C": "welldone",
-            "D": "thank you"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 5,
-          "question": "Quelqu'un est ----------------",
-          "options": {
-            "A": "somewhere",
-            "B": "someday",
-            "C": "someone",
-            "D": "look here"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 6,
-          "question": "……………………. travaille a l’hôpital",
-          "options": {
-            "A": "cuitivateur",
-            "B": "fermier",
-            "C": "professeur",
-            "D": "docteur"
-          },
-          "answer": "D",
-          "image": null
-        },
-        {
-          "id": 7,
-          "question": "Malade est --------------------",
-          "options": {
-            "A": "to be shouting",
-            "B": "to be sick",
-            "C": "to be quiet",
-            "D": "to look"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 8,
-          "question": "………………….travaile au champ",
-          "options": {
-            "A": "maçon",
-            "B": "infirmière",
-            "C": "fermier",
-            "D": "professeur"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 9,
-          "question": "Fatigue est -------------------",
-          "options": {
-            "A": "tired",
-            "B": "work hard",
-            "C": "lazy",
-            "D": "make up"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 10,
-          "question": "Depuis quand est -------------",
-          "options": {
-            "A": "last year",
-            "B": "next year",
-            "C": "since when",
-            "D": "tomorrow"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 11,
-          "question": "Dormer est ----------------------",
-          "options": {
-            "A": "to sleep",
-            "B": "to dull",
-            "C": "to change",
-            "D": "to manage"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 12,
-          "question": "Pas du tout est ------------------",
-          "options": {
-            "A": "not here",
-            "B": "go there",
-            "C": "over there",
-            "D": "not at all"
-          },
-          "answer": "D",
-          "image": null
-        },
-        {
-          "id": 13,
-          "question": "Perdu est -------------------------",
-          "options": {
-            "A": "to think",
-            "B": "to waste",
-            "C": "to lost",
-            "D": "to move"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 14,
-          "question": "La fièvre est ----------------------",
-          "options": {
-            "A": "fever",
-            "B": "drug",
-            "C": "malaria",
-            "D": "stomach"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 15,
-          "question": "Dans le soir on salue ------------",
-          "options": {
-            "A": "bon nuit",
-            "B": "bon rêve",
-            "C": "bon soir",
-            "D": "au revoir"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 16,
-          "question": "Les étudiants vont a l' -------------",
-          "options": {
-            "A": "champ",
-            "B": "hôpital",
-            "C": "hôtel",
-            "D": "école"
-          },
-          "answer": "D",
-          "image": null
-        },
-        {
-          "id": 17,
-          "question": "On achète au ----------------------",
-          "options": {
-            "A": "marche",
-            "B": "libraire",
-            "C": "école",
-            "D": "banquier"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 18,
-          "question": "Comprime est ----------------------",
-          "options": {
-            "A": "compound",
-            "B": "museum",
-            "C": "movement",
-            "D": "drug"
-          },
-          "answer": "D",
-          "image": null
-        },
-        {
-          "id": 19,
-          "question": "Il y a -------------------jour de la semaine",
-          "options": {
-            "A": "huit",
-            "B": "soixante",
-            "C": "sept",
-            "D": "douze"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 20,
-          "question": "Il y a -------------------mois de l’année",
-          "options": {
-            "A": "douze",
-            "B": "dix-sept",
-            "C": "cinq",
-            "D": "vingt deux"
-          },
-          "answer": "A",
-          "image": null
-        }
+          {
+      "id": 1,
+      "question": "On mange avec la ………………",
+      "options": {
+        "A": "Nez",
+        "B": "Tête",
+        "C": "Pieds",
+        "D": "Bouche"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 2,
+      "question": "On voit avec ………………………",
+      "options": {
+        "A": "Le cou",
+        "B": "Les dents",
+        "C": "Les yeux",
+        "D": "Les bras"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 3,
+      "question": "Quand mon père quitte la maison pour aller au bureau, il dit à maman ………………….",
+      "options": {
+        "A": "C'est dommage",
+        "B": "Félicitations",
+        "C": "À demain",
+        "D": "Au revoir"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 4,
+      "question": "Aujourd'hui, c'est l'anniversaire de Bola, mon ami, je lui dis ……………………….",
+      "options": {
+        "A": "Du courage",
+        "B": "Bonne chance",
+        "C": "Bon anniversaire",
+        "D": "Bienvenue"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 5,
+      "question": "La maison de maman est ………………",
+      "options": {
+        "A": "Belle",
+        "B": "Bel",
+        "C": "Bien",
+        "D": "Beau"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 6,
+      "question": "Quel ………………… homme !",
+      "options": {
+        "A": "Beau",
+        "B": "Bel",
+        "C": "Bon",
+        "D": "Belle"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 7,
+      "question": "Nous mangeons dans la ………………..",
+      "options": {
+        "A": "Du bain",
+        "B": "Salle à manger",
+        "C": "Dortoir",
+        "D": "Hôtel"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 8,
+      "question": "On regarde avec ………………..",
+      "options": {
+        "A": "Les yeux",
+        "B": "Le nez",
+        "C": "Les pieds",
+        "D": "Les oreilles"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 9,
+      "question": "Voilà …………………….. enfants",
+      "options": {
+        "A": "Les",
+        "B": "L'",
+        "C": "Vous",
+        "D": "La"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 10,
+      "question": "Ils dansent …………………..les jours",
+      "options": {
+        "A": "Toute",
+        "B": "Taise",
+        "C": "Tout",
+        "D": "Toutes"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 11,
+      "question": "Monsieur Kojo vient du Ghana, donc, il est …………",
+      "options": {
+        "A": "Nigérian",
+        "B": "Ghanienne",
+        "C": "Ghanéen",
+        "D": "Sénégalais"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 12,
+      "question": "La mère de ma mère est ……………….",
+      "options": {
+        "A": "Grand-père",
+        "B": "Grand-mère",
+        "C": "Oncle",
+        "D": "Frère"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 13,
+      "question": "La sœur de ma mère est ……………..",
+      "options": {
+        "A": "Tante",
+        "B": "Cousine",
+        "C": "Oncle",
+        "D": "Sœur"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 14,
+      "question": "La couleur du sang est ……………..",
+      "options": {
+        "A": "Bleu",
+        "B": "Rouge",
+        "C": "Vert",
+        "D": "Noir"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 15,
+      "question": "La couleur du Drapeau du Nigeria sont ……………..",
+      "options": {
+        "A": "Rouge",
+        "B": "Vert, blanc, vert",
+        "C": "Rouge, et vert",
+        "D": "Vert, blanc, rouge"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 16,
+      "question": "La couleur du sel est ………….",
+      "options": {
+        "A": "Rouge",
+        "B": "Blanc",
+        "C": "Vert",
+        "D": "Noir"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 17,
+      "question": "………………… est le chef de la famille",
+      "options": {
+        "A": "La tante",
+        "B": "Le père",
+        "C": "La sœur",
+        "D": "La mère"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 18,
+      "question": "Ma mère est <u>riche</u> …………………",
+      "options": {
+        "A": "Bon",
+        "B": "Pauvre",
+        "C": "Gentille",
+        "D": "Triste"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 19,
+      "question": "Les pantalons sont <u>vieux</u> ………………..",
+      "options": {
+        "A": "Vielles",
+        "B": "Nouveaux",
+        "C": "Grosses",
+        "D": "Jeunes"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 20,
+      "question": "Kemi est <u>grande</u> ………………",
+      "options": {
+        "A": "Petite",
+        "B": "Longue",
+        "C": "Rapide",
+        "D": "Mince"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 21,
+      "question": "Mon père est <u>gros</u> ………………",
+      "options": {
+        "A": "Laide",
+        "B": "Mince",
+        "C": "Petit",
+        "D": "Longue"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 22,
+      "question": "Le professeur est <u>mauvais</u> …………………..",
+      "options": {
+        "A": "Contente",
+        "B": "Gentil",
+        "C": "Beau",
+        "D": "Belle"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 23,
+      "question": "Pendant la saison d'harmattan, il fait ……………",
+      "options": {
+        "A": "Pleut",
+        "B": "Froid",
+        "C": "Mauvais",
+        "D": "Vert"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 24,
+      "question": "Il fait ……… beaucoup pendant la saison des pluies",
+      "options": {
+        "A": "Froid",
+        "B": "Vend",
+        "C": "Ciel",
+        "D": "Mauvais"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 25,
+      "question": "On achète la timbre à la ……………",
+      "options": {
+        "A": "Poste",
+        "B": "L'église",
+        "C": "École",
+        "D": "L'hôpital"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 26,
+      "question": "On lit à la …………",
+      "options": {
+        "A": "Bibliothèque",
+        "B": "Librairie",
+        "C": "Gare",
+        "D": "L'aéroport"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 27,
+      "question": "L'institutrice travaille à l'école ……………..",
+      "options": {
+        "A": "Primaire",
+        "B": "Secondaire",
+        "C": "Poste",
+        "D": "Gare"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 28,
+      "question": "Bola est mal. Elle va à ……………….",
+      "options": {
+        "A": "Gare",
+        "B": "L'hôpital",
+        "C": "Cuisine",
+        "D": "Toilette"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 29,
+      "question": "On prend la viande à la ……………",
+      "options": {
+        "A": "Boulangerie",
+        "B": "Boucherie",
+        "C": "Poste",
+        "D": "Avion"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 30,
+      "question": "La fête de Pâques est célébrée en ………..",
+      "options": {
+        "A": "Avril",
+        "B": "Juillet",
+        "C": "Juin",
+        "D": "Mars ou Avril"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 31,
+      "question": "Le jour des enfants est ………….",
+      "options": {
+        "A": "Juillet 27",
+        "B": "Mars 27",
+        "C": "Mai 27",
+        "D": "Octobre 27"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 32,
+      "question": "Le Noël est célébré le ………………",
+      "options": {
+        "A": "25 Décembre",
+        "B": "25 Octobre",
+        "C": "25 Mars",
+        "D": "25 Juin"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 33,
+      "question": "……………….. est le premier mois de l'année",
+      "options": {
+        "A": "Février",
+        "B": "Janvier",
+        "C": "Décembre",
+        "D": "Mai"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 34,
+      "question": "Le jour après Lundi c'est ……………..",
+      "options": {
+        "A": "Vendredi",
+        "B": "Mardi",
+        "C": "Dimanche",
+        "D": "Samedi"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 35,
+      "question": "Choose the odd word:",
+      "options": {
+        "A": "Dans",
+        "B": "Sous",
+        "C": "Derrière",
+        "D": "Chanter"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 36,
+      "question": "Choose the odd word:",
+      "options": {
+        "A": "Les yeux",
+        "B": "Les mains",
+        "C": "Le livre",
+        "D": "Les oreilles"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 37,
+      "question": "Choose the odd word:",
+      "options": {
+        "A": "Le médecin",
+        "B": "L'infirmier",
+        "C": "L'avocat",
+        "D": "Le bonbon"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 38,
+      "question": "Choose the odd word:",
+      "options": {
+        "A": "i",
+        "B": "o",
+        "C": "g",
+        "D": "u"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 39,
+      "question": "Choose the odd word:",
+      "options": {
+        "A": "Anglais",
+        "B": "Français",
+        "C": "Chinois",
+        "D": "Porter"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 40,
+      "question": "Choose the odd word:",
+      "options": {
+        "A": "Chanter",
+        "B": "Septembre",
+        "C": "Écouter",
+        "D": "Acheter"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 41,
+      "question": "La Bible est le livre des …………….",
+      "options": {
+        "A": "Musulmans",
+        "B": "Chrétiens",
+        "C": "Traditionnelles",
+        "D": "Femmes"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 42,
+      "question": "Combien de pieds as-tu ?",
+      "options": {
+        "A": "Quatre",
+        "B": "Deux",
+        "C": "Cinq",
+        "D": "Dix"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 43,
+      "question": "Il construit la route et le bâtiment, il est …………",
+      "options": {
+        "A": "L'ingénieur",
+        "B": "L'avocat",
+        "C": "Le chauffeur",
+        "D": "Le professeur"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 44,
+      "question": "Il travaille à l'école primaire donc, il est …………..",
+      "options": {
+        "A": "Institutrice",
+        "B": "Ingénieur",
+        "C": "Pilote",
+        "D": "Avocat"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 45,
+      "question": "Il plante des légumes et travaille au champ, il est ………….",
+      "options": {
+        "A": "L'avocat",
+        "B": "L'infirmière",
+        "C": "Le fermier",
+        "D": "Le professeur"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 46,
+      "question": "Un Pasteur prêche à la ……………",
+      "options": {
+        "A": "Mosquée",
+        "B": "La poste",
+        "C": "L'église",
+        "D": "Le tombeau"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 47,
+      "question": "Il enseigne en classe, donc, il est …………….",
+      "options": {
+        "A": "Le médecin",
+        "B": "L'ingénieur",
+        "C": "L'avocat",
+        "D": "Le professeur"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 48,
+      "question": "Asseyez …………….!",
+      "options": {
+        "A": "Nous",
+        "B": "Lui",
+        "C": "Vous",
+        "D": "Toi"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 49,
+      "question": "……………………. tu as d'argent?",
+      "options": {
+        "A": "Est-ce que",
+        "B": "Est",
+        "C": "Ce que",
+        "D": "Il"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 50,
+      "question": "……………. est le gouverneur de l'État d'Ekiti",
+      "options": {
+        "A": "Dr. Kehinde Ojo",
+        "B": "Dr. Kayode Fayemi",
+        "C": "Gouv. Biodun Oyebanji",
+        "D": "Dr. Ayodele Fayose"
+      },
+      "answer": "C",
+      "image": null
+    }
 ];
 
 
         const staticTheoryQuestions = [
+     {
+        "id": 1,
+        "question": "Complétez avec : {commence, bibliothèque, s'appelle, mon, elle, nigériane, aime, moderne, travaille, s'appelle}\n\n(i) ………………..école\n(ii) ………………………Havilah Int. School,\n(iii) ………………………se trouve à la rue d'Iworoko.\n(iv) La directrice ………………………..Madame Olubamise.\n(v) Il y a une grande …………………………dans mon école.\n(vi) C'est une école …………………………\n(vii) Voilà pourquoi j'………………mon école.\n(viii) Mon professeur de français est Monsieur Emmanuel, il est ………………………..\n(ix) et il …………………………..beaucoup.\n(x) Mon école ………………………….les activités à huit heures et vingt chaque matin.",
+        "marks": 10,
+        "image": null
+      },
       {
-          "id": 1,
-          "question": "Mentionnez dix (10) fruits en français.\n(b)Utilisez ‘où’ pour demander des questions\ni. Le professeur est devant la classe.\n-----\nii. La voiture est dans la rue.\n-----\niii. La poste se trouve derrière la gare.\n-----\niv. Les pantalons sont ici.\n----\nv. Les cahiers se trouvent sur la table.",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 2,
-          "question": "Utilisez Est-il nécessaire de + verbe\ni. Je vais au champ.\n---\nii. Elle invite tout le monde.\n----\niii. Tu parles en Yorouba\n---\niv. Madame Sade a deux maris\n---\n(b)Conjuguer le verbe ‘Avoir’ au présent l’indicatif",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 3,
-          "question": "Utilisez pas encore correctement.\ni. La maladie est déjà grave.\n---\nii. Tu pars déjà en vacances?\n---\niii. Le professeur est déjà en classe.\n---\n(b)Mentionnez sept {7} nourritures en Français",
-          "marks": 10,
-          "image": null
-        },
-        {
-          "id": 4,
-          "question": "Utilisez depuis quand correctement\ni. Etes – vous dans cette ecole depuis quand\n→\nii. Apprenez-vous le francais depuis quand.\n→\niii. Depuis quand as tu mal a la tete\n→\niv. Tu habites ici depuis quand\n→\nv. Tu travailes depuis quand\n→\n(b)Mentionnez dix (10) mois de l’annee en francais.",
-          "marks": 10,
-          "image": null
-        }
+        "id": 2,
+        "question": "Écrivez les nombres en français:\n(i) 70 →\n(ii) 85 →\n(iii) 50 →\n(iv) 100 →\n(v) 120 →",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 3,
+        "question": "(a) Écrivez les mots en français:\n(i) Congratulations →\n(ii) Auntie →\n(iii) Good luck →\n(iv) Good bye →\n(v) Welcome →\n\n(b) Mentionnez cinq (5) vêtements en français.",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 4,
+        "question": "(a) Underline the definite and indefinite articles in the following sentences:\n(i) J'ai un stylo.\n(ii) Le crayon est gris.\n(iii) Ojo est derrière la classe.\n(iv) L'hôtel palmier est à côté de mon école.\n(v) Ma femme a une voiture.\n\n(b) Mentionnez cinq (5) objets dans la maison en français.",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 5,
+        "question": "(a) Mentionnez cinq (5) nourritures en français.\n\n(b) Mentionnez cinq (5) moyens de transport en français.",
+        "marks": 10,
+        "image": null
+      }
 ];
         // ================== APPLICATION VARIABLES ==================
         let questions = [];
