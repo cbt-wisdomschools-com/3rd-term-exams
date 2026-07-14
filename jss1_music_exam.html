@@ -705,66 +705,400 @@
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-      { "id": 1, "question": "Major scale has --- notes.", "options": { "A": "5", "B": "8", "C": "9", "D": "6" }, "answer": "B", "image": null },
-          { "id": 2, "question": "Interval is the distance between ---", "options": { "A": "1 notes", "B": "2 notes", "C": "3 notes", "D": "4 notes" }, "answer": "B", "image": null },
-          { "id": 3, "question": "A minim note counts how many beats", "options": { "A": "3", "B": "2", "C": "4", "D": "5" }, "answer": "B", "image": null },
-          { "id": 4, "question": "CDEFGABC is the scale of –", "options": { "A": "A major", "B": "B major", "C": "C major", "D": "D major" }, "answer": "C", "image": null },
-          { "id": 5, "question": "This sign ♯ is – key signature", "options": { "A": "sharp", "B": "flat", "C": "treble", "D": "bass" }, "answer": "A", "image": null },
-          { "id": 6, "question": "Tonic solfa are how many?", "options": { "A": "6", "B": "4", "C": "8", "D": "5" }, "answer": "D", "image": null },
-          { "id": 7, "question": "The primary importance of music is ---", "options": { "A": "sport", "B": "career", "C": "game", "D": "entertainment" }, "answer": "D", "image": null },
-          { "id": 8, "question": "Which of these is not a musical sound?", "options": { "A": "Trumpet sound", "B": "Rain fall Sound", "C": "Car sound", "D": "Generator sound" }, "answer": "D", "image": "img1/jss1_music_que_8.png" },
-          { "id": 9, "question": "The symbol 𝄞 is also called ----", "options": { "A": "Clef", "B": "Bass clef", "C": "D clef", "D": "G clef" }, "answer": "D", "image": null },
-          { "id": 10, "question": "Recorder is played by -----", "options": { "A": "touching it", "B": "blowing it", "C": "pressing it", "D": "shaking it" }, "answer": "B", "image": null },
-          { "id": 11, "question": "Musical alphabets are how many?", "options": { "A": "5", "B": "4", "C": "7", "D": "6" }, "answer": "C", "image": null },
-          { "id": 12, "question": "Tetrachord consists of how many notes?", "options": { "A": "3", "B": "4", "C": "5", "D": "6" }, "answer": "B", "image": null },
-          { "id": 13, "question": "A staff has how many spaces?", "options": { "A": "1", "B": "2", "C": "3", "D": "4" }, "answer": "D", "image": null },
-          { "id": 14, "question": "----- is a natural sound.", "options": { "A": "drum set", "B": "gangan", "C": "rain fall", "D": "piano" }, "answer": "C", "image": null },
-          { "id": 15, "question": "The type of music used in telling moonlight story is -----", "options": { "A": "popular music", "B": "military music", "C": "folk music", "D": "traditional music" }, "answer": "C", "image": null },
-          { "id": 16, "question": "The word tetrachord is a--------word", "options": { "A": "Nigerian", "B": "Greece", "C": "British", "D": "Spanish" }, "answer": "B", "image": null },
-          { "id": 17, "question": "Sound has how many origins?", "options": { "A": "2", "B": "3", "C": "4", "D": "5" }, "answer": "A", "image": null },
-          { "id": 18, "question": "-----is not an origin of sound", "options": { "A": "natural", "B": "Artificial", "C": "Musical", "D": "Rhythmic" }, "answer": "D", "image": null },
-          { "id": 19, "question": "What is the last musical alphabet?", "options": { "A": "C", "B": "A", "C": "F", "D": "G" }, "answer": "D", "image": null },
-          { "id": 20, "question": "Sound can be -----", "options": { "A": "touched", "B": "heard", "C": "smell", "D": "seen" }, "answer": "B", "image": null },
-          { "id": 21, "question": "What is the name of this note 𝅝", "options": { "A": "Crotchet", "B": "Semibreve", "C": "Breve", "D": "Minim" }, "answer": "B", "image": null },
-          { "id": 22, "question": "Nathaniel Bassey is --- musician.", "options": { "A": "Gospel", "B": "Fuji", "C": "Hip Hop", "D": "Reggae" }, "answer": "A", "image": null },
-          { "id": 23, "question": "Which of these is not a use of music", "options": { "A": "serves as career", "B": "use for advertisement", "C": "use to pet baby", "D": "Use to fetch water" }, "answer": "D", "image": null },
-          { "id": 24, "question": "Combination of two or more note in music is called ----", "options": { "A": "Harmony", "B": "Melody", "C": "Pitch", "D": "Timbre" }, "answer": "A", "image": null },
-          { "id": 25, "question": "----- is not a type of bar line", "options": { "A": "Single", "B": "Double", "C": "Thick", "D": "Work" }, "answer": "D", "image": null },
-          { "id": 26, "question": "A recorder has ----- parts", "options": { "A": "3", "B": "2", "C": "4", "D": "5" }, "answer": "A", "image": null },
-          { "id": 27, "question": "How would you play a trumpet", "options": { "A": "By Blowing", "B": "By pressing", "C": "By Stamping", "D": "By Bowing" }, "answer": "A", "image": null },
-          { "id": 28, "question": "A tetrachord has how many types", "options": { "A": "4", "B": "5", "C": "2", "D": "3" }, "answer": "C", "image": null, "note": "Two main types: diatonic and chromatic." },
-          { "id": 29, "question": "How many tetrachord is found in a scale", "options": { "A": "1", "B": "2", "C": "3", "D": "4" }, "answer": "B", "image": null },
-          { "id": 30, "question": "Which of these is not a music alphabet", "options": { "A": "Q", "B": "A", "C": "G", "D": "F" }, "answer": "A", "image": null }
-        
+       {
+      "id": 1,
+      "question": "---- is the arrangement of pitches in successions starting from a given letter",
+      "options": {
+        "A": "Triad",
+        "B": "Scale",
+        "C": "Transcription",
+        "D": "Tetrachord"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 2,
+      "question": "Construction or writing of scale usually start on the ---",
+      "options": {
+        "A": "Middle letter",
+        "B": "Second letter",
+        "C": "Letter name of the key",
+        "D": "Musical alphabets"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 3,
+      "question": "What is the interval between C – G?",
+      "options": {
+        "A": "7th",
+        "B": "5th",
+        "C": "4th",
+        "D": "6th"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 4,
+      "question": "What key signature is on this staff?",
+      "options": {
+        "A": "Sharp",
+        "B": "Minim",
+        "C": "Flat",
+        "D": "Crochet"
+      },
+      "answer": "A",
+      "image": "img1/music_jss1_obj_que_4.png"
+    },
+    {
+      "id": 5,
+      "question": "Which of these is heard through a medium?",
+      "options": {
+        "A": "Triad",
+        "B": "Scale",
+        "C": "Transcription",
+        "D": "Sound"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 6,
+      "question": "DEFGABCD is the scale of",
+      "options": {
+        "A": "C major",
+        "B": "B major",
+        "C": "G major",
+        "D": "D major"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 7,
+      "question": "Tetra mean ---",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 8,
+      "question": "Which of these is NOT a Western instrument?",
+      "options": {
+        "A": "Talking Drum",
+        "B": "Piano",
+        "C": "Saxophone",
+        "D": "Recorder"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 9,
+      "question": "The two notes on these staff are",
+      "options": {
+        "A": "C, D",
+        "B": "A, G",
+        "C": "F, E",
+        "D": "C, F"
+      },
+      "answer": "D",
+      "image": "img1/music_jss1_obj_que_9.png"
+    },
+    {
+      "id": 10,
+      "question": "What is the interval above?",
+      "options": {
+        "A": "7th",
+        "B": "5th",
+        "C": "4th",
+        "D": "6th"
+      },
+      "answer": "B",
+      "image": "img1/music_jss1_obj_que_10.png"
+    },
+    {
+      "id": 11,
+      "question": "What is the upper tetrachord of this key? CDEFGABC",
+      "options": {
+        "A": "CDEF",
+        "B": "DEFG",
+        "C": "EFGA",
+        "D": "GABC"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 12,
+      "question": "What is the lower tetrachord of this key? CDEFGABC",
+      "options": {
+        "A": "CDEF",
+        "B": "DEFG",
+        "C": "EFGA",
+        "D": "FGAB"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 13,
+      "question": "Which of these instruments is found in human body?",
+      "options": {
+        "A": "Voice",
+        "B": "Drum Set",
+        "C": "Piano",
+        "D": "Talking Drum"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 14,
+      "question": "You sing through your ......",
+      "options": {
+        "A": "Nose",
+        "B": "Mouth",
+        "C": "Eye",
+        "D": "Ear"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 15,
+      "question": "A keyboard will be played by",
+      "options": {
+        "A": "Pressing",
+        "B": "Stamping",
+        "C": "Plucking",
+        "D": "Blowing"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 16,
+      "question": "A recorder is divided into",
+      "options": {
+        "A": "5",
+        "B": "4",
+        "C": "3",
+        "D": "2"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 17,
+      "question": "Which of these types of music is used by the police?",
+      "options": {
+        "A": "Popular music",
+        "B": "Military music",
+        "C": "Folk music",
+        "D": "Sacred music"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 18,
+      "question": "The note on the staff below is ---",
+      "options": {
+        "A": "Minim",
+        "B": "Crochet",
+        "C": "Semibreve",
+        "D": "Breve"
+      },
+      "answer": "C",
+      "image": "img1/music_jss1_obj_que_18.png"
+    },
+    {
+      "id": 19,
+      "question": "The letter on that spot where the note is written is ----",
+      "options": {
+        "A": "B",
+        "B": "F",
+        "C": "D",
+        "D": "G"
+      },
+      "answer": "D",
+      "image": "img1/music_jss1_obj_que_19.png"
+    },
+    {
+      "id": 20,
+      "question": "Combination of treble and bass staff is ---",
+      "options": {
+        "A": "Double staff",
+        "B": "Great Staff",
+        "C": "Two staff",
+        "D": "Clef"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 21,
+      "question": "Which of these musicians did not live in the Baroque period?",
+      "options": {
+        "A": "Antonio Vivaldi",
+        "B": "J.S. Bach",
+        "C": "Asake",
+        "D": "G. F. Handel"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 22,
+      "question": "This rest is a--",
+      "options": {
+        "A": "Minim Rest",
+        "B": "Crochet Rest",
+        "C": "Quaver Rest",
+        "D": "Semibreve Rest"
+      },
+      "answer": "D",
+      "image": "img1/music_jss1_obj_que_22.png"
+    },
+    {
+      "id": 23,
+      "question": "Allegro means—",
+      "options": {
+        "A": "Slow",
+        "B": "Tempo",
+        "C": "Fast",
+        "D": "Eager"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 24,
+      "question": "Handel and Bach were both native of ----",
+      "options": {
+        "A": "USA",
+        "B": "England",
+        "C": "Austria",
+        "D": "Germany"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 25,
+      "question": "This staff is a/an",
+      "options": {
+        "A": "Bass staff",
+        "B": "Great staff",
+        "C": "Treble staff",
+        "D": "Tenor staff"
+      },
+      "answer": "A",
+      "image": "img1/music_jss1_obj_que_25.png"
+    },
+    {
+      "id": 26,
+      "question": "Handel was born in the year ---",
+      "options": {
+        "A": "1684",
+        "B": "1688",
+        "C": "1687",
+        "D": "1685"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 27,
+      "question": "This rest is a---",
+      "options": {
+        "A": "Minim Rest",
+        "B": "Crochet Rest",
+        "C": "Quaver Rest",
+        "D": "Semibreve Rest"
+      },
+      "answer": "C",
+      "image": "img1/music_jss1_obj_que_27a.png"
+    },
+    {
+      "id": 28,
+      "question": "The letter on that spot where the note is written is ----",
+      "options": {
+        "A": "B",
+        "B": "F",
+        "C": "D",
+        "D": "C"
+      },
+      "answer": "D",
+      "image": "img1/music_jss1_obj_que_28.png"
+    },
+    {
+      "id": 29,
+      "question": "Which of these is a natural sound?",
+      "options": {
+        "A": "Hammer sound",
+        "B": "Rainfall",
+        "C": "Clap",
+        "D": "Snap"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 30,
+      "question": "Major scale has how many notes in total?",
+      "options": {
+        "A": "8",
+        "B": "20",
+        "C": "5",
+        "D": "10"
+      },
+      "answer": "A",
+      "image": null
+    }
 ];
 
 
         const staticTheoryQuestions = [
      {
-            "id": 1,
-            "question": "a. Define a scale.\nb. List 5 types of scale.",
-            "marks": 10,
-            "image": null
-          },
-          {
-            "id": 2,
-            "question": "a. Define music.\nb. Name five types of music.",
-            "marks": 10,
-            "image": null
-          },
-          {
-            "id": 3,
-            "question": "a. Draw five treble clef on a staff.\nb. Draw five bass clef on staff.",
-            "marks": 10,
-            "image": null,
-            "note": "Drawing questions require graphical representation."
-          },
-          {
-            "id": 4,
-            "question": "a. Define sound.\nb. Name three origin/sources of sound with examples.",
-            "marks": 10,
-            "image": null
-          }
+        "id": 1,
+        "question": "(A) Divide this scale into lower and upper tetrachord:\nFGABCDEF\nEFGABCDE\n\n(B) Define sound.",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 2,
+        "question": "(A) Write the scale of the following keys with letters:\nC major - \nG major -\n\n(B) Define tetrachord.",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 3,
+        "question": "(A) Define costume.\n\n(B) Mention 3 functions of costume and 3 functions of makeup.",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 4,
+        "question": "Copy and name the interval between the notes in each bar.",
+        "marks": 10,
+        "image": "img1/music_jss1_theory_que_4.png"
+      },
+      {
+        "id": 5,
+        "question": "Copy and name the letter of these notes.",
+        "marks": 10,
+        "image": "img1/music_jss1_theory_que_5.png"
+    }
 ];
         // ================== APPLICATION VARIABLES ==================
         let questions = [];
