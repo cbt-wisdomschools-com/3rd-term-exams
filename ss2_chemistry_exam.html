@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.wisdom foundationschools.org - GEOGRAPHY SS1 Exam</title>
+    <title>cbt.wisdom foundationschools.org -CHEMISTRY SS2 Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -581,13 +581,19 @@
         <div id="logout-container">
             <button id="logout" onclick="logout()">Logout</button>
                  <div class="marquee-container">
-        <span class="marquee-text">WISDOM FOUNDATION SCHOOLS  :  GATEWAY TO THE UNIVERSITY FOR YOUR CHILD </span>
+        <span class="marquee-text">WISDOM FOUNDATION SCHOOLS  :  GATEWAY TO THE UNIVERSITY</span>
     </div>
         </div>
         <div id="logo">
             <img src="img/wisdom_logo1.png" alt="image">
 
-           
+               <!--<div class="logo-left">
+                <img src="img/9ja1.png" alt="Nigeria Logo" >
+            </div>
+
+            <div class="logo-right">
+                <img src="img/nappps1.png" alt="NAPPS Logo" >
+            </div>-->
         </div>
 
            
@@ -618,7 +624,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  GEOGRAPHY SS1  (THIRD TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;"> CHEMISTRY SS2 (THIRD TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -684,7 +690,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> GEOGRAPHY SS1  FOR 3RD TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION  </span>
+        <span class="marquee-text">CHEMISTRY SS2  FOR 3RD TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION</span>
     </div>
    
     <div class="windows-activate">
@@ -693,545 +699,543 @@
 
 
     <script>
-        
+           // Get stored username and image from sessionStorage
        
             
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-       {
+           
+                                       {
       "id": 1,
-      "question": "Geography is the study and description of the _______",
+      "question": "……. states that the properties of the elements varied periodically with their atomic masses.",
       "options": {
-        "A": "Marriage",
-        "B": "Earth",
-        "C": "Planet",
-        "D": "Sun"
+        "A": "Element",
+        "B": "Periodic table",
+        "C": "Chemistry",
+        "D": "Physics"
       },
       "answer": "B",
       "image": null
     },
     {
       "id": 2,
-      "question": "There are major cardinal points",
+      "question": "is a scientific study that deals with the properties of substances and the transformation they undergo",
       "options": {
-        "A": "1",
-        "B": "2",
-        "C": "3",
-        "D": "4"
+        "A": "Biology",
+        "B": "Geography",
+        "C": "Chemistry",
+        "D": "Economics"
       },
-      "answer": "D",
+      "answer": "C",
       "image": null
     },
     {
       "id": 3,
-      "question": "Which of the following is not among the four (4) major cardinal points?",
+      "question": "The modern periodic law states that the physical and the chemical properties of the elements are the periodic function of their ……",
       "options": {
-        "A": "North",
-        "B": "South",
-        "C": "East",
-        "D": "Wing"
+        "A": "Atomic numbers",
+        "B": "Radioactivity",
+        "C": "Valency",
+        "D": "Theories"
+      },
+      "answer": "A",
+      "image": null
+    },
+    {
+      "id": 4,
+      "question": "Some of the importance of Chemistry include the following except ………..",
+      "options": {
+        "A": "Provision of food",
+        "B": "Provision of shelter",
+        "C": "Transportation",
+        "D": "Weapon for destruction"
       },
       "answer": "D",
       "image": null
     },
     {
-      "id": 4,
-      "question": "There are …… Local Government areas in Nigeria",
-      "options": {
-        "A": "700",
-        "B": "774",
-        "C": "16",
-        "D": "477"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
       "id": 5,
-      "question": "Nigeria as a country is located in ………",
+      "question": "The periodic table is divided into eight vertical rows known as …..",
       "options": {
-        "A": "East Africa",
-        "B": "South Africa",
-        "C": "North Africa",
-        "D": "West Africa"
+        "A": "Periods",
+        "B": "Features",
+        "C": "Cations",
+        "D": "Groups"
       },
       "answer": "D",
       "image": null
     },
     {
       "id": 6,
-      "question": "Which of the following is not among the evidence of the Earth's sphericity?",
+      "question": "Wood (burning) → Ash + Gases. This reaction is an example of",
       "options": {
-        "A": "Circumnavigation of earth",
-        "B": "Lunar Eclipse",
-        "C": "Sunrise and sunset",
-        "D": "Essential Landscape"
+        "A": "Physical change",
+        "B": "Chemical change",
+        "C": "Atmospheric change",
+        "D": "Burning change"
       },
-      "answer": "D",
+      "answer": "B",
       "image": null
     },
     {
       "id": 7,
-      "question": "What will be the time in Nigeria when it is 4pm in Addis Ababa, Ethiopia?",
+      "question": "The periodic table is divided into seven horizontal rows known as …….",
       "options": {
-        "A": "1pm",
-        "B": "2pm",
-        "C": "3pm",
-        "D": "5pm"
+        "A": "Periods",
+        "B": "Groups",
+        "C": "Metallic",
+        "D": "Metalloids"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 8,
-      "question": "The largest planet is called ________",
+      "question": "Zn + 2HCl → ZnCl₂ + H₂. This equation represents the production of ………..",
       "options": {
-        "A": "Earth",
-        "B": "Jupiter",
-        "C": "Saturn",
-        "D": "Pluto"
+        "A": "Oxygen",
+        "B": "Hydrogen",
+        "C": "Magnesium",
+        "D": "Aluminium"
       },
       "answer": "B",
       "image": null
     },
     {
       "id": 9,
-      "question": "The natural satellite of the earth is called _____",
+      "question": "All the following are separation techniques except ………",
       "options": {
-        "A": "Ring",
-        "B": "Moon",
-        "C": "Solar",
-        "D": "Lunar"
+        "A": "Sublimation",
+        "B": "Fractional distillation",
+        "C": "Filtration",
+        "D": "Pollination"
       },
-      "answer": "B",
+      "answer": "D",
       "image": null
     },
     {
       "id": 10,
-      "question": "Ekiti State is located in ____",
+      "question": "The group one elements are called …….",
       "options": {
-        "A": "North East",
-        "B": "South West",
-        "C": "North Central",
-        "D": "South East"
+        "A": "Elemental",
+        "B": "Alkaline Metals",
+        "C": "Noble gases",
+        "D": "Inert gases"
       },
       "answer": "B",
       "image": null
     },
     {
       "id": 11,
-      "question": "The countries hosting the ongoing FIFA 2026 World Cup are",
+      "question": "2,8,8,2 is an electronic configuration for ……….",
       "options": {
-        "A": "Mexico, Canada and Argentina",
-        "B": "Mexico, Portugal and USA",
-        "C": "Canada, USA and Australia",
-        "D": "Canada, Mexico and USA"
+        "A": "Magnesium",
+        "B": "Aluminium",
+        "C": "Sodium",
+        "D": "Calcium"
       },
       "answer": "D",
       "image": null
     },
     {
       "id": 12,
-      "question": "Occurs when the three bodies the sun, moon and the earth are in a straight line during rotation of the earth",
+      "question": "Group seven elements are called ……..",
       "options": {
-        "A": "Planet",
-        "B": "Darkness",
-        "C": "Eclipse",
-        "D": "Geography"
+        "A": "Metalloids",
+        "B": "Rare gases",
+        "C": "Alkaline-earth metals",
+        "D": "Halogens"
       },
-      "answer": "C",
+      "answer": "D",
       "image": null
     },
     {
       "id": 13,
-      "question": "______ is the hardest part of the Earth",
+      "question": "Which of the following elements is not a metal?",
       "options": {
-        "A": "Rock",
-        "B": "Moon",
-        "C": "Sun",
-        "D": "Planet"
+        "A": "Magnesium",
+        "B": "Oxygen",
+        "C": "Calcium",
+        "D": "Sodium"
       },
-      "answer": "A",
+      "answer": "B",
       "image": null
     },
     {
       "id": 14,
-      "question": "Which of the following is not among the importance of rocks",
+      "question": "The electronic configuration for Silicon is ……..",
       "options": {
-        "A": "Weapon for destruction",
-        "B": "Source of rivers",
-        "C": "Source of Minerals",
-        "D": "Construction materials"
+        "A": "2,8,4",
+        "B": "2,8,1",
+        "C": "2,8,5",
+        "D": "2,8,6"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 15,
-      "question": "_____ is between Venus and Mars",
+      "question": "Which of the following is not among the group two elements",
       "options": {
-        "A": "Mercury",
-        "B": "Earth",
-        "C": "Pluto",
-        "D": "Saturn"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 16,
-      "question": "The solid portion of the earth is called……",
-      "options": {
-        "A": "Lithosphere",
-        "B": "Moon",
-        "C": "Sun",
-        "D": "Planet"
-      },
-      "answer": "A",
-      "image": null
-    },
-    {
-      "id": 17,
-      "question": "The liquid portion of the earth surface is known as ……",
-      "options": {
-        "A": "Atmosphere",
-        "B": "Biosphere",
-        "C": "Hydrosphere",
-        "D": "Lithosphere"
-      },
-      "answer": "C",
-      "image": null
-    },
-    {
-      "id": 18,
-      "question": "There are …….. major types of rocks",
-      "options": {
-        "A": "2",
-        "B": "4",
-        "C": "5",
-        "D": "3"
+        "A": "Beryllium",
+        "B": "Magnesium",
+        "C": "Calcium",
+        "D": "Helium"
       },
       "answer": "D",
       "image": null
     },
     {
-      "id": 19,
-      "question": "……… refers to the situation where we have equal day and equal night",
+      "id": 16,
+      "question": "…… can simply be defined as an element that has the same atomic number but different mass number",
       "options": {
-        "A": "Equinoxes",
-        "B": "Eclipse",
-        "C": "Magma",
-        "D": "Equal day/night"
+        "A": "Ion",
+        "B": "Isotope",
+        "C": "Allotrope",
+        "D": "Periodic table"
       },
-      "answer": "A",
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 17,
+      "question": "All the following elements are in group 1 of the periodic table except ……..",
+      "options": {
+        "A": "Sodium",
+        "B": "Magnesium",
+        "C": "Lithium",
+        "D": "Potassium"
+      },
+      "answer": "B",
+      "image": null
+    },
+    {
+      "id": 18,
+      "question": "H₂SO₄ + NaCl → Na₂SO₄ + HCl. This equation is ………",
+      "options": {
+        "A": "Partially balanced",
+        "B": "Completely balanced",
+        "C": "Not balanced",
+        "D": "Not sure"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 19,
+      "question": "Calculate the oxidation number of Sulphur, S in Na₂SO₄",
+      "options": {
+        "A": "+2",
+        "B": "+4",
+        "C": "+6",
+        "D": "-6"
+      },
+      "answer": "C",
       "image": null
     },
     {
       "id": 20,
-      "question": "The Gaseous portion of the earth is called……",
+      "question": "The IUPAC name for Na₂SO₄ is",
       "options": {
-        "A": "Atmosphere",
-        "B": "Biosphere",
-        "C": "Hydrosphere",
-        "D": "Lithosphere"
+        "A": "Sodium tetraoxosulphate (VI)",
+        "B": "Sodium trioxonitrate (V)",
+        "C": "Sodium tetraoxosulphate (IV)",
+        "D": "Sodium tetraoxosulphate (VI) ion"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 21,
-      "question": "…….. is the ultimate source of light and energy to all the planets",
+      "question": "All the following elements can lose electrons and become positively charged except………",
       "options": {
-        "A": "Moon",
-        "B": "Earth",
-        "C": "Sun",
-        "D": "Star"
-      },
-      "answer": "C",
-      "image": null
-    },
-    {
-      "id": 22,
-      "question": "…… are great elevated land surfaces resulting from intense action of internal forces",
-      "options": {
-        "A": "Planets",
-        "B": "Earth",
-        "C": "Sun",
-        "D": "Mountains"
+        "A": "Sodium",
+        "B": "Magnesium",
+        "C": "Calcium",
+        "D": "Chlorine"
       },
       "answer": "D",
       "image": null
     },
     {
-      "id": 23,
-      "question": "……. is the zone of the earth occupied by the living things",
+      "id": 22,
+      "question": "All the following elements can gain electrons and become negatively charged except………",
       "options": {
-        "A": "Biosphere",
-        "B": "Rock",
-        "C": "Water",
-        "D": "Mountain"
+        "A": "Aluminium",
+        "B": "Chlorine",
+        "C": "Fluorine",
+        "D": "Oxygen"
       },
       "answer": "A",
       "image": null
     },
     {
-      "id": 24,
-      "question": "Which of the following is not a type of mountains?",
+      "id": 23,
+      "question": "Calculate the relative molecular mass of Tetraoxosulphate (VI) acid, H₂SO₄ {H=1, S=32, O=16}",
       "options": {
-        "A": "Fold mountain",
-        "B": "Residual mountain",
-        "C": "Block mountain",
-        "D": "Volcanic mountain"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 25,
-      "question": "The average atmospheric condition of an area over a long period of time is known as …….",
-      "options": {
-        "A": "Weather",
-        "B": "Biosphere",
-        "C": "Climate",
-        "D": "Water"
+        "A": "100g",
+        "B": "89g",
+        "C": "98g",
+        "D": "108g"
       },
       "answer": "C",
       "image": null
     },
     {
-      "id": 26,
-      "question": "Which of the following is not one of the elements of weather and climate",
+      "id": 24,
+      "question": "Some of the gas laws include the following except………",
       "options": {
-        "A": "Sunshine",
-        "B": "Temperature",
-        "C": "Wind",
-        "D": "Moon"
+        "A": "Boyle's law",
+        "B": "Charles' law",
+        "C": "General gas law",
+        "D": "Wisdom law"
       },
       "answer": "D",
+      "image": null
+    },
+    {
+      "id": 25,
+      "question": "How many moles of Oxygen are present in 16g of Oxygen gas? {O=16}",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "0.5"
+      },
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 26,
+      "question": "How many moles of atoms are present in 12g of carbon? {C=12}",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "answer": "A",
       "image": null
     },
     {
       "id": 27,
-      "question": "The instrument used in measuring the hotness or coldness of a body or place is known as ……",
+      "question": "Calculate the molar mass of Sodium trioxocarbonate containing 5.3g of 0.05 mole of the compound",
       "options": {
-        "A": "Barometer",
-        "B": "Rain-gauge",
-        "C": "Temperature",
-        "D": "Thermometer"
+        "A": "100",
+        "B": "106",
+        "C": "41",
+        "D": "160"
       },
-      "answer": "D",
+      "answer": "B",
       "image": null
     },
     {
       "id": 28,
-      "question": "The shape of the earth is best described as ………",
+      "question": "There are ……. types of Hardness",
       "options": {
-        "A": "Ball",
-        "B": "Geoid",
-        "C": "Flat",
-        "D": "Oval"
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
       },
       "answer": "B",
       "image": null
     },
     {
       "id": 29,
-      "question": "Sailing round the earth and coming back to the same point is a proof of the earth's sphericity known as……..",
+      "question": "Hydrogen is a……",
       "options": {
-        "A": "Aerial photography",
-        "B": "Sunrise and sunset",
-        "C": "Circumnavigation of the earth",
-        "D": "Lunar eclipse"
+        "A": "Metal",
+        "B": "Semi-metal",
+        "C": "Non-metal",
+        "D": "Metalloid"
       },
       "answer": "C",
       "image": null
     },
     {
       "id": 30,
-      "question": "Latitude 0° is known as ……….",
+      "question": "Hydrogen is a diatomic ……",
       "options": {
-        "A": "Equator",
-        "B": "Greenwich meridian",
-        "C": "Atmosphere",
-        "D": "Geoid"
+        "A": "Gas",
+        "B": "Metal",
+        "C": "Ion",
+        "D": "Cation"
       },
       "answer": "A",
       "image": null
     },
     {
       "id": 31,
-      "question": "Longitude 0° is called ………",
+      "question": "Hydrogen is an element in group ……..",
       "options": {
-        "A": "Jupiter",
-        "B": "Equator",
-        "C": "Greenwich meridian",
-        "D": "Planetary bodies"
+        "A": "4",
+        "B": "6",
+        "C": "0",
+        "D": "1"
       },
-      "answer": "C",
+      "answer": "D",
       "image": null
     },
     {
       "id": 32,
-      "question": "Which of the following is not one of the importance of rivers",
+      "question": "2HgO (heat) → 2Hg + O₂. This is the equation representing the production of Mercury and …….",
       "options": {
-        "A": "Means of transportation",
-        "B": "Source of income",
-        "C": "Source of drowning",
-        "D": "Source of water"
+        "A": "Chlorine",
+        "B": "Oxygen",
+        "C": "Sodium",
+        "D": "Neon"
       },
-      "answer": "C",
+      "answer": "B",
       "image": null
     },
     {
       "id": 33,
-      "question": "Use the table below to answer questions 33-41. Month with the lowest rainfall was ……",
+      "question": "There are …….. classifications of oxides of Oxygen",
       "options": {
-        "A": "January",
-        "B": "June",
-        "C": "May",
-        "D": "March"
+        "A": "6",
+        "B": "5",
+        "C": "4",
+        "D": "3"
       },
       "answer": "C",
       "image": null
     },
     {
       "id": 34,
-      "question": "Month with the lowest temperature was….",
+      "question": "The group eight or 0 elements are referred to as ……",
       "options": {
-        "A": "December",
-        "B": "October",
-        "C": "March",
-        "D": "May"
+        "A": "Halogens",
+        "B": "Catogens",
+        "C": "Inert or noble gases",
+        "D": "Chloroforms"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 35,
+      "question": "Which of the following is not a member of the group seven elements?",
+      "options": {
+        "A": "Fluorine",
+        "B": "Chlorine",
+        "C": "Bromine",
+        "D": "Hydrogen"
       },
       "answer": "D",
       "image": null
     },
     {
-      "id": 35,
-      "question": "The annual range of rainfall was ….",
-      "options": {
-        "A": "80mm",
-        "B": "85mm",
-        "C": "90mm",
-        "D": "75mm"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
       "id": 36,
-      "question": "The annual range of temperature was …..",
+      "question": "Nitrogen is a diatomic ……",
       "options": {
-        "A": "10°C",
-        "B": "38°C",
-        "C": "48°C",
-        "D": "58°C"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 37,
-      "question": "The annual rainfall in the location was approximately…..",
-      "options": {
-        "A": "864mm",
-        "B": "468mm",
-        "C": "648mm",
-        "D": "486mm"
-      },
-      "answer": "B",
-      "image": null
-    },
-    {
-      "id": 38,
-      "question": "The annual temperature in the study area was ….",
-      "options": {
-        "A": "334°C",
-        "B": "433°C",
-        "C": "343°C",
-        "D": "333°C"
-      },
-      "answer": "C",
-      "image": null
-    },
-    {
-      "id": 39,
-      "question": "The mean annual rainfall was …..",
-      "options": {
-        "A": "39mm",
-        "B": "93mm",
-        "C": "468mm",
-        "D": "309mm"
+        "A": "Gas",
+        "B": "Metal",
+        "C": "Ion",
+        "D": "Cation"
       },
       "answer": "A",
       "image": null
     },
     {
-      "id": 40,
-      "question": "The mean annual temperature of the location was ….",
+      "id": 37,
+      "question": "Nitrogen is a……",
       "options": {
-        "A": "12°C",
-        "B": "334°C",
-        "C": "27.8°C",
-        "D": "278.0°C"
+        "A": "Metal",
+        "B": "Semi-metal",
+        "C": "Non-metal",
+        "D": "Metalloid"
       },
       "answer": "C",
       "image": null
     },
     {
-      "id": 41,
-      "question": "The present Meteorologist at Wisdom Foundation International College, Ado Ekiti is …….",
+      "id": 38,
+      "question": "Nitrogen is an element in group ……..",
       "options": {
-        "A": "Engr. Ayomide Olofintoye",
-        "B": "Engr. Aduralere Ajibola",
-        "C": "Hon. Taiwo Odeleye",
-        "D": "None of the above"
+        "A": "4",
+        "B": "6",
+        "C": "0",
+        "D": "5"
       },
-      "answer": "B",
+      "answer": "D",
+      "image": null
+    },
+    {
+      "id": 39,
+      "question": "The oxidation number of Nitrogen in NaNO₃ is ….",
+      "options": {
+        "A": "+3",
+        "B": "+4",
+        "C": "+5",
+        "D": "+6"
+      },
+      "answer": "C",
+      "image": null
+    },
+    {
+      "id": 40,
+      "question": "The IUPAC name for NO₂ is …..",
+      "options": {
+        "A": "Nitrogen (II) oxide",
+        "B": "Nitrogen (IV) oxide",
+        "C": "Nitrogen (I) oxide",
+        "D": "Nitrogen dioxide"
+      },
+      "answer": "D",
       "image": null
     }
+
 ];
 
 
         const staticTheoryQuestions = [
-    {
+            
+                     {
         "id": 1,
-        "question": "Define Geography and list three (3) importance of Geography.",
+        "question": "Draw a modern periodic table for the first twenty (20) elements and give an example each of the element in the groups.",
         "marks": 10,
         "image": null
       },
       {
         "id": 2,
-        "question": "Define rock and list the major types of rocks.",
+        "question": "Write the Electronic configuration of the following elements in (i) KLMN Shell (ii) spdf:\n(a) Sodium\n(b) Calcium\n(c) Boron\n(d) Potassium\n(e) Aluminium",
         "marks": 10,
         "image": null
       },
       {
         "id": 3,
-        "question": "Define mountain and highlight the major types.",
+        "question": "Balance the equations and write the Equilibrium Constant (Kc) for each of the equations:\n(a) H₂ + H₂ → NH₃\n(b) CO₂ + C → CO\n(c) N₂O₄ → NO₂",
         "marks": 10,
         "image": null
       },
       {
         "id": 4,
-        "question": "With the aid of well labelled diagram, explain the formation of any two of the types of mountains.",
+        "question": "Calculate the mass of Hydrogen that would be produced if 12.0g of Magnesium react completely with dilute Hydrochloric acid:\nMg + HCl → MgCl₂ + H₂\n{Mg = 24, H = 1, Cl = 35.5}",
         "marks": 10,
         "image": null
       },
       {
         "id": 5,
-        "question": "The information below were recorded by Olofintoye Blessing, a former Meteorologist at Wisfos Meteorological Station, Ado Ekiti.\n\nMonths: J F M A M J J A S O N D\nRainfall (mm): 20 90 30 28 15 60 55 50 100 30 60 50\nTemperature (°C): 50 40 31 35 20 50 58 40 35 40 30 25\n\nUse the information to answer the questions below:\n(i) Month with the lowest rainfall\n(ii) Month with the lowest temperature\n(iii) The annual range of rainfall\n(iv) The annual range of temperature\n(v) The annual rainfall in the station\n(vi) The annual temperature in the school\n(vii) The mean annual rainfall\n(viii) The mean annual temperature",
+        "question": "Name three (3) Oxides of Oxygen.",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 6,
+        "question": "List any three (3) chemical oxides of Nitrogen and calculate their oxidation number.",
+        "marks": 10,
+        "image": null
+      },
+      {
+        "id": 7,
+        "question": "List any four (4) members of the halogens.",
         "marks": 10,
         "image": null
       }
-];
-
-
-
-
-
-
+        ];
+      
 
         // ================== APPLICATION VARIABLES ==================
         let questions = [];
@@ -1253,7 +1257,7 @@
                 localStorage.setItem('examSubject', 'EXAM');
                 localStorage.setItem('examClass', 'RESULT');
             }
-            localStorage.setItem('examTerm', 'THIRD TERM 2025/2026');
+            localStorage.setItem('examTerm', 'SECOND TERM 2025/2026');
       
              const username = sessionStorage.getItem('username');
                 const image = sessionStorage.getItem('image');
@@ -1286,7 +1290,7 @@
         };
        
                     // ================== TIMER ==================
-                let timeLeft = 60 * 90; // 90 minutes in seconds
+                let timeLeft = 60 * 60; // 90 minutes in seconds
                 const timerEl = document.getElementById('timer');
                 const timerInterval = setInterval(() => {
                     const hours = Math.floor(timeLeft / 3600);
